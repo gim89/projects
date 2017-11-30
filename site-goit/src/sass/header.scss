@@ -1,0 +1,106 @@
+.header{
+    padding-bottom: 60px;
+}
+
+.header__section{
+    margin-bottom: rem(23px);
+    text-align: center;
+}
+
+.header__logo{
+    display: inline-block;
+    background-color: #fff;
+    padding: rem(22px) rem(16px);
+    @include decor(#263555, uppercase, 0, 0);
+    font:  rem(33px) 'dorsa';
+    border-radius: 50%;
+    &--hover:hover{
+        color: #263555;
+    }
+}
+
+.header__menu{
+    @include flex(flex, center, center);
+}
+
+.header__list{
+    @include flex(flex, space-between, center);
+    flex-wrap: wrap;
+    width: 47%;
+    margin-bottom: 0;
+    margin-left: rem(25px);
+}
+
+.header__item{
+    margin-bottom: rem(12px);
+
+    &--nth-child-two:nth-child(2){
+        @include flex(flex, center);
+        position: relative;
+        margin-left: rem(43px);
+        margin-right: rem(48px);
+    }
+
+    &--nth-child-three:nth-child(3){
+        margin-right: rem(10px);
+    }
+
+    &--hover:hover .dropdown{
+        opacity: 1;
+    }
+
+    &--nth-last-child:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+
+}
+
+.header__link{
+    display: block;
+    @include decor(#fff, uppercase, 0, 0);
+    font: 300 rem(20px) 'Pathway Gothic One';
+    transition: all .1s ease-in .1s;
+
+    &--hover:hover{
+        color: #263555;
+    }
+}
+
+.dropdown{
+    opacity: 0;
+    position: absolute;
+    top: rem(32px);
+    background-color: #fff;
+    border-radius: rem(4px);
+    transition: all .2s ease-in .2s;
+
+    &--before:before{
+        position: absolute;
+        top: rem(-8px);
+        left: 50%;
+        content: "";
+        border: rem(4px) solid transparent;
+        border-bottom: rem(4px) solid #fff;
+        transform: translate(-50%, 0);
+    }
+}
+
+.dropdown__item{
+    padding: 0 rem(8px);
+    text-align: center;
+
+    &--first-child:first-child{
+        padding-top: rem(4px);
+    }
+}
+
+.dropdown__link{
+    @include decor(#7f8798, uppercase);
+    font: 300 rem(14px) 'Pathway Gothic One';
+    text-align: center;
+    transition: all .1s ease-in .1s;
+
+    &--hover:hover{
+        color: #263555;
+    }
+}

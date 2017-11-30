@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    // outline: 1px solid green;
+}
+
+body{
+    min-height: 100vh;
+    background: #4da5cf url(../img/body.png) no-repeat;
+    background-size: cover;
+    padding-top: 23px;
+}
+
+.container{
+    min-width: 480px;
+    width: 480px;
+}
+
+li{
+    list-style: none;
+}
+
+h2{
+    @include decor(#263555, uppercase, 0, 0);
+    font: 300 rem(24px) 'pathway-gothic-one';
+}
+
+h3{
+    @include decor(#263555, uppercase, 0, 0);
+    font: rem(18px) 'pathway-gothic-one';
+}
+
+h4{
+    @include decor(#263555, uppercase, 0, 0);
+    font: rem(14px) 'pathway-gothic-one';
+}
+
+p{
+    @include decor(#263535, none, 0, 0);
+    font: rem(14px) 'Arial';
+}
+
+a{
+    @include decor(#4e5050, none, 0, 0);
+    font: rem(12px)/1.5 'Arial';
+}
+
+a:hover{
+    color: #38afe5;
+    text-decoration: none;
+}
+
+input{
+    @include decor(#263555, uppercase, 0, 0);
+    font: rem(14px) 'Arial';
+}
