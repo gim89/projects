@@ -1,7 +1,14 @@
-*{
-    padding: 0;
-    margin: 0;
-    // outline: 1px solid green;
+html, body, div, span,
+h1, h2, h3, h4, h5, h6,
+p, a, em, img, i, ol, ul, li,
+form, label, article, aside,
+figure, figcaption, footer,
+header, main, nav, section, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 body{
@@ -42,12 +49,13 @@ p{
 
 a{
     @include decor(#4e5050, none, 0, 0);
-    font: rem(12px)/1.5 'Arial';
+    font: rem(12px) 'Arial';
 }
 
 a:hover{
     color: #38afe5;
     text-decoration: none;
+    transition: all ease-in .1s;
 }
 
 input{

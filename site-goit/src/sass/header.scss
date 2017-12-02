@@ -1,5 +1,5 @@
 .header{
-    padding-bottom: 60px;
+    padding-bottom: rem(60px);
 }
 
 .header__section{
@@ -63,6 +63,7 @@
 
     &--hover:hover{
         color: #263555;
+        transition: all ease-in .1s;
     }
 }
 

@@ -1,0 +1,114 @@
+.footer__part{
+    @include flex(flex, center);
+    flex-wrap: wrap;
+    background-color: #30455b;
+    padding-top: rem(25px);
+    padding-bottom: rem(35px);
+    &--last-child:last-child{
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        padding-top: rem(30px);
+        padding-bottom: rem(15px);
+    }
+}
+
+.footer__list{
+    margin-right: rem(50px);
+    margin-bottom: rem(25px);
+
+    &--nth-child-three:nth-child(3){
+        margin-right: 0;
+    }
+}
+
+.footer__item{
+    margin-bottom: 10px;
+
+    &--nth-last-child:nth-child(-n+3){
+        margin-bottom: 0;
+    }
+}
+
+.footer__contact{
+    flex-basis: 100%;
+    @include flex(flex, center, center);
+}
+
+.footer__title{
+    margin-right: rem(20px);
+    color: #fff;
+}
+
+.footer__text{
+    margin-right: rem(35px);
+    font-size: 10px;
+    color: #fff;
+    &--last-child:last-child{
+        margin-right: 0;
+    }
+}
+
+.footer__link{
+    display: block;
+    @include decor(#fff, uppercase);
+    font-weight: 300;
+    font-family: 'open-sans';
+}
+
+.footer__picture{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+    &--first-child:first-child{
+        margin-right: 0;
+    }
+}
+
+.footer__img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+
+.social{
+    @include flex(flex, center);
+    margin-bottom: 15px;
+}
+
+.social__item{
+    width: 27px;
+    height: 27px;
+    margin-right: rem(10px);
+    border-radius: 50%;
+    &--last-child:last-child{
+        margin-right: 0;
+    }
+}
+
+.social__link{
+    @include flex(flex, center, center);
+    width: 27px;
+    height: 27px;
+    background-color: #fff;
+    border-radius: 50%;
+    &--hover:hover{
+        box-shadow: inset 0 0 1rem rgba(230,146,14,0.8);
+        transition: all ease-in .1s;
+    }
+}
+
+.social__img{
+    width: 10px;
+    height: 10px;
+    fill: #e4b264;
+}
+
+.footer__copyrighted{
+    margin-bottom: 0;
+    font-size: 9px;
+    color: #eef5f6;
+}
