@@ -1,0 +1,75 @@
+.tabs{
+    padding-bottom: rem(36px);
+}
+
+.tabs-section{
+    padding: 0 rem(36px);
+}
+
+.nav-tabs .nav-link{
+    padding: rem(3px) rem(16px);
+}
+
+.nav-title:hover{
+    color: #45b4e7;
+}
+
+.active .nav-title:hover{
+    color: #263555;
+}
+
+.tab-content{
+    border: rem(1px) solid #dedbdb;
+    border-top: 0;
+}
+
+.tab-post{
+    padding: rem(31px) rem(25px) 0 rem(25px);
+    margin-bottom: rem(32px);
+
+    &:last-child{
+        padding-top: 0;
+    }
+}
+
+.tab-img{
+    margin-bottom: rem(13px);
+}
+
+.tab-info{
+    @include flex(flex, space-between);
+}
+
+.article-post{
+    flex-basis: 65%;
+}
+
+.tab-title{
+    margin-bottom: rem(7px);
+    font: rem(10px) Arial;
+    @include decor(#263555);
+}
+
+.tab-passage{
+    margin-bottom: rem(3px);
+    font-size: rem(7px);
+    line-height: 1.5;
+    color: #000;
+
+    &:last-child{
+        margin-bottom: 0;
+        color: #4e5050;
+    }
+}
+
+.tab-link{
+    margin-right: rem(2px);
+    font-size: rem(7px);
+    color: #fa7e7e;
+}
+
+.tab-btn{
+    align-self: flex-end;
+    margin-right: 0;
+    font-size: rem(7px);
+}

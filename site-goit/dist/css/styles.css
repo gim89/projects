@@ -1,24 +1,21 @@
 @font-face {
-	font-family: 'dorsa';
-	src: url("../fonts/dorsa-regular-webfont.eot");
-	src: url("../fonts/dorsa-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/dorsa-regular-webfont.woff2") format("woff2"), url("../fonts/dorsa-regular-webfont.woff") format("woff"), url("../fonts/dorsa-regular-webfont.ttf") format("truetype"), url("../fonts/dorsa-regular-webfont.svg#dorsaregular") format("svg");
-	font-weight: normal;
+	font-family: 'Dorsa';
+	src: local("dorsa"), local("dorsa"), url("../fonts/dorsa.woff2") format("woff2"), url("../fonts/dorsa.woff") format("woff"), url("../fonts/dorsa.ttf") format("truetype");
+	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'open-sans';
-	src: url("../fonts/opensans-regular-webfont.eot");
-	src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
-	font-weight: normal;
+	font-family: 'Open Sans';
+	src: local("Open Sans"), local("Open Sans"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.ttf") format("truetype");
+	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'pathway-gothic-one';
-	src: url("../fonts/pathwaygothicone-regular-webfont.eot");
-	src: url("../fonts/pathwaygothicone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pathwaygothicone-regular-webfont.woff2") format("woff2"), url("../fonts/pathwaygothicone-regular-webfont.woff") format("woff"), url("../fonts/pathwaygothicone-regular-webfont.ttf") format("truetype"), url("../fonts/pathwaygothicone-regular-webfont.svg#pathway_gothic_oneregular") format("svg");
-	font-weight: normal;
+	font-family: 'Pathway Gothic One';
+	src: local("pathway"), local("pathway"), url("../fonts/pathway.woff2") format("woff2"), url("../fonts/pathway.woff") format("woff"), url("../fonts/pathway.ttf") format("truetype");
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -60,12 +57,30 @@ button {
 	box-sizing: border-box;
 }
 
+img {
+	display: block;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	width: 100%;
+	height: auto;
+}
+
 body {
 	min-height: 100vh;
 	background: #4da5cf url(../img/body.png) no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	padding-top: 23px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1;
+	font-family: Arial, sans-serif;
+}
+
+.main {
+	width: 480px;
+	margin: 0 auto;
+	background-color: #fff;
 }
 
 .container {
@@ -82,7 +97,7 @@ h2 {
 	word-spacing: 0;
 	letter-spacing: 0;
 	text-transform: uppercase;
-	font: 300 1.5rem "pathway-gothic-one";
+	font: 300 1.5625rem "Pathway Gothic One";
 }
 
 h3 {
@@ -90,7 +105,7 @@ h3 {
 	word-spacing: 0;
 	letter-spacing: 0;
 	text-transform: uppercase;
-	font: 1.125rem "pathway-gothic-one";
+	font: 1.125rem "Pathway Gothic One";
 }
 
 h4 {
@@ -98,7 +113,7 @@ h4 {
 	word-spacing: 0;
 	letter-spacing: 0;
 	text-transform: uppercase;
-	font: 0.875rem "pathway-gothic-one";
+	font: 0.875rem "Pathway Gothic One";
 }
 
 p {
@@ -133,16 +148,42 @@ input {
 	font: 0.875rem "Arial";
 }
 
+.btn {
+	display: inline-block;
+	background-color: #fff;
+	padding: 2px 12px;
+	margin-right: 10px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #000;
+	border: 1px solid #dedbdb;
+	-webkit-border-radius: 0.25rem;
+	border-radius: 0.25rem;
+	-webkit-transition: all .1s ease-in .1s;
+	-o-transition: all .1s ease-in .1s;
+	transition: all .1s ease-in .1s;
+}
+
+.btn:hover {
+	-webkit-box-shadow: inset 0 0 0.25rem rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 0 0.25rem rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+	-webkit-box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
 .header {
 	padding-bottom: 3.75rem;
 }
 
-.header__section {
+.header-section {
 	margin-bottom: 1.4375rem;
 	text-align: center;
 }
 
-.header__logo {
+.header-logo {
 	display: inline-block;
 	background-color: #fff;
 	padding: 1.375rem 1rem;
@@ -150,16 +191,16 @@ input {
 	word-spacing: 0;
 	letter-spacing: 0;
 	text-transform: uppercase;
-	font: 2.0625rem "dorsa";
+	font: 2.0625rem "Dorsa";
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 }
 
-.header__logo--hover:hover {
+.header-logo:hover {
 	color: #263555;
 }
 
-.header__menu {
+.header-menu {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -174,7 +215,7 @@ input {
 	align-items: center;
 }
 
-.header__list {
+.header-list {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -195,11 +236,11 @@ input {
 	margin-left: 1.5625rem;
 }
 
-.header__item {
+.header-item {
 	margin-bottom: 0.75rem;
 }
 
-.header__item--nth-child-two:nth-child(2) {
+.header-item:nth-child(2) {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -217,19 +258,19 @@ input {
 	margin-right: 3rem;
 }
 
-.header__item--nth-child-three:nth-child(3) {
+.header-item:nth-child(3) {
 	margin-right: 0.625rem;
 }
 
-.header__item--hover:hover .dropdown {
+.header-item:hover .dropdown {
 	opacity: 1;
 }
 
-.header__item--nth-last-child:nth-last-child(-n+2) {
+.header-item:nth-last-child(-n+2) {
 	margin-bottom: 0;
 }
 
-.header__link {
+.header-link {
 	display: block;
 	color: #fff;
 	word-spacing: 0;
@@ -241,7 +282,7 @@ input {
 	transition: all .1s ease-in .1s;
 }
 
-.header__link--hover:hover {
+.header-link:hover {
 	color: #263555;
 	-webkit-transition: all ease-in .1s;
 	-o-transition: all ease-in .1s;
@@ -260,7 +301,7 @@ input {
 	transition: all .2s ease-in .2s;
 }
 
-.dropdown--before:before {
+.dropdown:before {
 	position: absolute;
 	top: -0.5rem;
 	left: 50%;
@@ -272,16 +313,23 @@ input {
 	transform: translate(-50%, 0);
 }
 
-.dropdown__item {
+.dropdown-item {
 	padding: 0 0.5rem;
 	text-align: center;
 }
 
-.dropdown__item--first-child:first-child {
+.dropdown-item:first-child {
 	padding-top: 0.25rem;
+	-webkit-border-radius: 0.3125rem;
+	border-radius: 0.3125rem;
 }
 
-.dropdown__link {
+.dropdown-item:last-child {
+	-webkit-border-radius: 0.3125rem;
+	border-radius: 0.3125rem;
+}
+
+.dropdown-link {
 	color: #7f8798;
 	word-spacing: 0;
 	letter-spacing: 0;
@@ -293,19 +341,13 @@ input {
 	transition: all .1s ease-in .1s;
 }
 
-.dropdown__link--hover:hover {
+.dropdown-link:hover {
 	color: #263555;
-}
-
-.main {
-	width: 480px;
-	margin: 0 auto;
-	background-color: #fff;
 }
 
 .slide {
 	position: relative;
-	padding: 39px 36px 62px 39px;
+	padding: 2.4375rem 2.25rem 3.875rem 2.25rem;
 }
 
 .carousel-inner {
@@ -318,18 +360,18 @@ input {
 
 .carousel-control-prev,
 .carousel-control-next {
-	position: absolute;
-	top: 41.5%;
 	display: block;
+	position: absolute;
+	top: 47%;
 	width: 50%;
-	height: 64.5%;
+	height: 73%;
 	-webkit-transform: translate(0, -50%);
 	-ms-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 }
 
 .carousel-control-prev {
-	left: 8%;
+	left: 7.5%;
 }
 
 .carousel-control-prev:hover {
@@ -369,8 +411,8 @@ input {
 	opacity: 0;
 	position: absolute;
 	top: 50%;
-	width: 10px;
-	height: 10px;
+	width: 0.625rem;
+	height: 0.625rem;
 }
 
 .arrow-left {
@@ -381,43 +423,282 @@ input {
 	right: 10%;
 }
 
-.carousel-caption {
-	position: relative;
-}
-
-.slider__text {
+.slider-text {
 	display: inline-block;
 	position: absolute;
-	top: -49%;
-	left: 115px;
-	z-index: 2;
+	top: 49%;
+	left: 6.25rem;
 	background-color: #fff;
+	padding: 0.625rem 0.3125rem;
+	font: 300 0.625rem "Pathway Gothic One";
 	color: #344260;
-	padding: 10px 5px;
-	font-size: 10px;
-	font-weight: 300;
-	font-family: "Pathway Gothic One";
+	word-spacing: 0;
+	letter-spacing: 0;
 	text-transform: uppercase;
 	text-shadow: none;
 }
 
-.slider__title {
+.slider-title {
 	display: inline-block;
 	position: absolute;
-	top: 15%;
-	left: 115px;
-	z-index: 2;
+	top: 112%;
+	left: 6.25rem;
 	background-color: #38afe5;
+	padding: 0.625rem 0.3125rem;
+	font: 300 0.875rem "Pathway Gothic One";
 	color: #fff;
-	padding: 10px 5px;
-	font-size: 14px;
-	font-weight: 300;
-	font-family: "Pathway Gothic One";
+	word-spacing: 0;
+	letter-spacing: 0;
 	text-transform: uppercase;
 	text-shadow: none;
 }
 
-.footer__part {
+.destinations-section {
+	padding: 0 2.25rem;
+}
+
+.destinations-title {
+	margin-bottom: 1.25rem;
+}
+
+.destinations-card {
+	padding-bottom: 4.375rem;
+}
+
+.card-item {
+	position: relative;
+	margin-bottom: 2.3125rem;
+	overflow: hidden;
+}
+
+.card-item:last-child {
+	margin-bottom: 0;
+}
+
+.card-img {
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.card-item-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	min-height: 100%;
+	background-color: rgba(25, 49, 73, 0.8);
+	text-align: right;
+	-webkit-transform: translate(-100%, 0);
+	-ms-transform: translate(-100%, 0);
+	transform: translate(-100%, 0);
+	-webkit-transition: all 0.1s ease-in 0.1s;
+	-o-transition: all 0.1s ease-in 0.1s;
+	transition: all 0.1s ease-in 0.1s;
+}
+
+.card-item:hover .card-item-hover {
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+.card-title {
+	margin: 0.625rem 0 0.625rem 0.625rem;
+	color: #fff;
+	text-align: left;
+}
+
+.card-text {
+	max-height: 4.0625rem;
+	margin: 0 0.625rem 0.625rem 0.625rem;
+	font-size: 11px;
+	line-height: 1.5;
+	color: #cbc6c6;
+	text-align: left;
+	overflow: hidden;
+}
+
+.card-btn {
+	font-size: 0.6875rem;
+	padding: 0.0625rem 0.5rem;
+}
+
+.tabs {
+	padding-bottom: 2.25rem;
+}
+
+.tabs-section {
+	padding: 0 2.25rem;
+}
+
+.nav-tabs .nav-link {
+	padding: 0.1875rem 1rem;
+}
+
+.nav-title:hover {
+	color: #45b4e7;
+}
+
+.active .nav-title:hover {
+	color: #263555;
+}
+
+.tab-content {
+	border: 0.0625rem solid #dedbdb;
+	border-top: 0;
+}
+
+.tab-post {
+	padding: 1.9375rem 1.5625rem 0 1.5625rem;
+	margin-bottom: 2rem;
+}
+
+.tab-post:last-child {
+	padding-top: 0;
+}
+
+.tab-img {
+	margin-bottom: 0.8125rem;
+}
+
+.tab-info {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+}
+
+.article-post {
+	-webkit-flex-basis: 65%;
+	-ms-flex-preferred-size: 65%;
+	flex-basis: 65%;
+}
+
+.tab-title {
+	margin-bottom: 0.4375rem;
+	font: 0.625rem Arial;
+	color: #263555;
+	word-spacing: 0;
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+.tab-passage {
+	margin-bottom: 0.1875rem;
+	font-size: 0.4375rem;
+	line-height: 1.5;
+	color: #000;
+}
+
+.tab-passage:last-child {
+	margin-bottom: 0;
+	color: #4e5050;
+}
+
+.tab-link {
+	margin-right: 0.125rem;
+	font-size: 0.4375rem;
+	color: #fa7e7e;
+}
+
+.tab-btn {
+	-webkit-align-self: flex-end;
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+	margin-right: 0;
+	font-size: 0.4375rem;
+}
+
+.newsletter-section {
+	padding: 0 2.25rem;
+	margin-bottom: 3.125rem;
+}
+
+.newsletter-title {
+	padding: 0.375rem 0 0.125rem 3.75rem;
+	font: 300 1.1875rem "Pathway Gothic One";
+	color: #263555;
+	word-spacing: 0;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	border: 0.0625rem solid #dbdede;
+	border-bottom: 0;
+}
+
+.newsletter-form {
+	padding-bottom: 1.875rem;
+	padding-top: 1.9375rem;
+	padding-right: 0.875rem;
+	padding-left: 3.75rem;
+	border: 0.0625rem solid #dbdede;
+	border-bottom: 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 1.25rem;
+	font: 0.875rem Arial;
+	color: #263555;
+}
+
+input[type="email"] {
+	width: 86%;
+	padding: 0.375rem 1.5rem;
+	margin: 0 auto;
+	font-size: 0.75rem;
+	color: #868f8f;
+	word-spacing: 0;
+	letter-spacing: 0;
+	text-transform: none;
+	border: 0.0625rem solid #dedbdb;
+	-webkit-border-radius: 0.25rem;
+	border-radius: 0.25rem;
+}
+
+.newsletter-list {
+	padding-left: 3.75rem;
+	padding-bottom: 2.1875rem;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+	columns: 2;
+	-webkit-column-gap: 0;
+	-moz-column-gap: 0;
+	column-gap: 0;
+	border: 0.0625rem solid #dbdede;
+	border-top: 0;
+}
+
+.newsletter-item {
+	margin-bottom: 0.75rem;
+	font-size: 0.75rem;
+}
+
+.newsletter-item:nth-child(4) {
+	margin-bottom: 0;
+}
+
+.newsletter-item:before {
+	display: inline-block;
+	content: url(../img/right.png);
+	width: 0.875rem;
+	height: 0.9375rem;
+	background-color: #5abce9;
+	margin-right: 0.625rem;
+	text-align: center;
+	line-height: 1.3;
+	-webkit-border-radius: 0.5rem;
+	border-radius: 0.5rem;
+}
+
+.footer-part {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -434,11 +715,11 @@ input {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	background-color: #30455b;
-	padding-top: 1.5625rem;
+	padding-top: 1.25rem;
 	padding-bottom: 2.1875rem;
 }
 
-.footer__part--last-child:last-child {
+.footer-part:last-child {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
@@ -449,28 +730,28 @@ input {
 	-ms-flex-align: center;
 	align-items: center;
 	background-color: transparent;
-	padding-top: 1.875rem;
+	padding-top: 1.75rem;
 	padding-bottom: 0.9375rem;
 }
 
-.footer__list {
+.footer-list {
 	margin-right: 3.125rem;
-	margin-bottom: 1.5625rem;
+	margin-bottom: 0.9375rem;
 }
 
-.footer__list--nth-child-three:nth-child(3) {
+.footer-list:nth-child(3) {
 	margin-right: 0;
 }
 
-.footer__item {
-	margin-bottom: 10px;
+.footer-item {
+	margin-bottom: 0.625rem;
 }
 
-.footer__item--nth-last-child:nth-child(-n+3) {
+.footer-item:nth-child(-n+3) {
 	margin-bottom: 0;
 }
 
-.footer__contact {
+.footer-contact {
 	-webkit-flex-basis: 100%;
 	-ms-flex-preferred-size: 100%;
 	flex-basis: 100%;
@@ -488,47 +769,47 @@ input {
 	align-items: center;
 }
 
-.footer__title {
+.footer-title {
 	margin-right: 1.25rem;
 	color: #fff;
 }
 
-.footer__text {
+.footer-text {
 	margin-right: 2.1875rem;
-	font-size: 10px;
+	font-size: 0.625rem;
 	color: #fff;
 }
 
-.footer__text--last-child:last-child {
+.footer-text:last-child {
 	margin-right: 0;
 }
 
-.footer__link {
+.footer-link {
 	display: block;
+	font-weight: 300;
+	font-family: 'Open Sans';
 	color: #fff;
 	word-spacing: 0;
 	letter-spacing: 0;
 	text-transform: uppercase;
-	font-weight: 300;
-	font-family: 'open-sans';
 }
 
-.footer__picture {
+.footer-picture {
 	display: inline-block;
-	width: 20px;
-	height: 20px;
-	margin-right: 5px;
+	width: 1.25rem;
+	height: 1.25rem;
+	margin-right: 0.3125rem;
 	vertical-align: middle;
 }
 
-.footer__picture--first-child:first-child {
+.footer-picture:first-child {
 	margin-right: 0;
 }
 
-.footer__img {
+.footer-img {
 	display: inline-block;
-	width: 20px;
-	height: 20px;
+	width: 1.25rem;
+	height: 1.25rem;
 	fill: #fff;
 }
 
@@ -545,22 +826,22 @@ input {
 	-webkit-align-items: stretch;
 	-ms-flex-align: stretch;
 	align-items: stretch;
-	margin-bottom: 15px;
+	margin-bottom: 0.75rem;
 }
 
-.social__item {
-	width: 27px;
-	height: 27px;
+.social-item {
+	width: 1.6875rem;
+	height: 1.6875rem;
 	margin-right: 0.625rem;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 }
 
-.social__item--last-child:last-child {
+.social-item:last-child {
 	margin-right: 0;
 }
 
-.social__link {
+.social-link {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -573,14 +854,14 @@ input {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-	width: 27px;
-	height: 27px;
+	width: 1.6875rem;
+	height: 1.6875rem;
 	background-color: #fff;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 }
 
-.social__link--hover:hover {
+.social-link:hover {
 	-webkit-box-shadow: inset 0 0 1rem rgba(230, 146, 14, 0.8);
 	box-shadow: inset 0 0 1rem rgba(230, 146, 14, 0.8);
 	-webkit-transition: all ease-in .1s;
@@ -588,15 +869,15 @@ input {
 	transition: all ease-in .1s;
 }
 
-.social__img {
-	width: 10px;
-	height: 10px;
+.social-img {
+	width: 0.625rem;
+	height: 0.625rem;
 	fill: #e4b264;
 }
 
-.footer__copyrighted {
+.footer-copyrighted {
 	margin-bottom: 0;
-	font-size: 9px;
+	font-size: 0.5625rem;
 	color: #eef5f6;
 }
 

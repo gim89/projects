@@ -2,28 +2,29 @@
     padding-bottom: rem(60px);
 }
 
-.header__section{
+.header-section{
     margin-bottom: rem(23px);
     text-align: center;
 }
 
-.header__logo{
+.header-logo{
     display: inline-block;
     background-color: #fff;
     padding: rem(22px) rem(16px);
     @include decor(#263555, uppercase, 0, 0);
-    font:  rem(33px) 'dorsa';
+    font:  rem(33px) 'Dorsa';
     border-radius: 50%;
-    &--hover:hover{
+
+    &:hover{
         color: #263555;
     }
 }
 
-.header__menu{
+.header-menu{
     @include flex(flex, center, center);
 }
 
-.header__list{
+.header-list{
     @include flex(flex, space-between, center);
     flex-wrap: wrap;
     width: 47%;
@@ -31,37 +32,37 @@
     margin-left: rem(25px);
 }
 
-.header__item{
+.header-item{
     margin-bottom: rem(12px);
 
-    &--nth-child-two:nth-child(2){
+    &:nth-child(2){
         @include flex(flex, center);
         position: relative;
         margin-left: rem(43px);
         margin-right: rem(48px);
     }
 
-    &--nth-child-three:nth-child(3){
+    &:nth-child(3){
         margin-right: rem(10px);
     }
 
-    &--hover:hover .dropdown{
+    &:hover .dropdown{
         opacity: 1;
     }
 
-    &--nth-last-child:nth-last-child(-n+2){
+    &:nth-last-child(-n+2){
         margin-bottom: 0;
     }
 
 }
 
-.header__link{
+.header-link{
     display: block;
     @include decor(#fff, uppercase, 0, 0);
     font: 300 rem(20px) 'Pathway Gothic One';
     transition: all .1s ease-in .1s;
 
-    &--hover:hover{
+    &:hover{
         color: #263555;
         transition: all ease-in .1s;
     }
@@ -75,7 +76,7 @@
     border-radius: rem(4px);
     transition: all .2s ease-in .2s;
 
-    &--before:before{
+    &:before{
         position: absolute;
         top: rem(-8px);
         left: 50%;
@@ -86,22 +87,27 @@
     }
 }
 
-.dropdown__item{
+.dropdown-item{
     padding: 0 rem(8px);
     text-align: center;
 
-    &--first-child:first-child{
+    &:first-child{
         padding-top: rem(4px);
+        border-radius: rem(5px);
+    }
+
+    &:last-child{
+        border-radius: rem(5px);
     }
 }
 
-.dropdown__link{
+.dropdown-link{
     @include decor(#7f8798, uppercase);
     font: 300 rem(14px) 'Pathway Gothic One';
     text-align: center;
     transition: all .1s ease-in .1s;
 
-    &--hover:hover{
+    &:hover{
         color: #263555;
     }
 }
