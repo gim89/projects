@@ -29,15 +29,12 @@ body{
 	font-family: Arial, sans-serif;
 }
 
-.main{
-    width: 480px;
-    margin: 0 auto;
-    background-color: #fff;
-}
-
 .container{
     min-width: 480px;
-    width: 480px;
+    // width: 768px;
+	@media (min-width: 768px){
+
+	}
 }
 
 li{
@@ -47,6 +44,9 @@ li{
 h2{
     @include decor(#263555, uppercase, 0, 0);
     font: 300 rem(25px) 'Pathway Gothic One';
+	@media (min-width: 768px){
+		font-size: rem(35px);
+	}
 }
 
 h3{

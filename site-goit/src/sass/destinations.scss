@@ -1,5 +1,12 @@
+.destinations{
+    background-color: #fff;
+}
+
 .destinations-section{
     padding: 0 rem(36px);
+    @media (min-width: 768px){
+        padding: 0 rem(45px) rem(85px) rem(45px);
+    }
 }
 
 .destinations-title{
@@ -8,16 +15,28 @@
 
 .destinations-card{
     padding-bottom: rem(70px);
+    @media (min-width: 768px){
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
 }
 
 .card-item{
     position: relative;
     margin-bottom: rem(37px);
     overflow: hidden;
+    @media (min-width: 768px){
+        flex-basis: 49%;
+        margin-bottom: 0;
+    }
 }
 
 .card-item:last-child{
     margin-bottom: 0;
+    @media (min-width: 768px){
+        display: none;
+    }
 }
 
 .card-img{
@@ -44,6 +63,11 @@
     margin: rem(10px) 0 rem(10px) rem(10px);
     color: #fff;
     text-align: left;
+    @media (min-width: 768px){
+        margin: rem(25px) 0;
+		font-size: rem(35px);
+        text-align: center;
+	}
 }
 
 .card-text{
@@ -54,6 +78,11 @@
     color: #cbc6c6;
     text-align: left;
     overflow: hidden;
+    @media (min-width: 768px){
+        margin-bottom: rem(30px);
+		font-size: rem(12px);
+        overflow: visible;
+	}
 }
 
 .card-btn{

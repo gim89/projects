@@ -1,6 +1,14 @@
+.slider{
+    background-color: #fff;
+}
+
 .slide{
     position: relative;
     padding: rem(39px) rem(36px) rem(62px) rem(36px);
+
+    @media (min-width: 768px){
+        padding: rem(45px) rem(45px) rem(65px) rem(45px);
+    }
 }
 
 .carousel-inner{
@@ -13,12 +21,21 @@
 
 .carousel-control-prev,
 .carousel-control-next{
-    display: block;
+    display: inline-block;
     position: absolute;
     top: 47%;
     width: 50%;
     height: 73%;
     transform: translate(0, -50%);
+
+    @media (min-width: 768px){
+            top: 75%;
+            display: block;
+            width: rem(37px);
+            height: rem(70px);
+            background-color: #38afe5;
+            transition: all .1s ease-in .1s;
+    }
 }
 
 .carousel-control-prev{
@@ -32,10 +49,19 @@
         opacity: 1;
         transition: all ease-in .3s;
     }
+
+    @media (min-width: 768px){
+        top: 75%;
+        left: 10%;
+        border-radius: 100% 0 0 100% / 50% 0 0 50%;
+        &:hover{
+            background-color: #193149;
+        }
+    }
 }
 
 .carousel-control-next{
-    right: 7.5%;
+    right: 75%;
 
     &:hover{
         background: linear-gradient(to left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
@@ -44,6 +70,14 @@
     &:hover .arrow-right{
         opacity: 1;
         transition: all ease-in .3s;
+    }
+
+    @media (min-width: 768px){
+        right: 80%;
+        border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+        &:hover{
+            background-color: #193149;
+        }
     }
 }
 
@@ -54,36 +88,112 @@
     top: 50%;
     width: rem(10px);
     height: rem(10px);
+
+    @media (min-width: 768px){
+        opacity: 1;
+        transform: translate(0, -45%);
+    }
 }
 
 .arrow-left{
     left: 10%;
+    @media (min-width: 768px){
+        left: 55%;
+
+    }
 }
 
 .arrow-right{
     right: 10%;
+    @media (min-width: 768px){
+        right: 55%;
+
+    }
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 84%;
+    right: 25%;
+    left: 47%;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: left;
+
+    @media (min-width: 768px){
+        top: 35%;
+        left: 0;
+        right: 70%;
+
+    }
+
 }
 
 .slider-text{
     display: inline-block;
-    position: absolute;
-    top: 49%;
-    left: rem(100px);
     background-color: #fff;
     padding: rem(10px) rem(5px);
     font: 300 rem(10px) 'Pathway Gothic One';
     @include decor(#344260, uppercase);
     text-shadow: none;
+
+    @media (min-width: 768px){
+        font-size: rem(17px);
+    }
 }
 
 .slider-title{
-    display: inline-block;
-    position: absolute;
-    top: 112%;
-    left: rem(100px);
     background-color: #38afe5;
     padding: rem(10px) rem(5px);
     font: 300 rem(14px) 'Pathway Gothic One';
     @include decor(#fff, uppercase);
     text-shadow: none;
+
+    @media (min-width: 768px){
+        font-size: rem(24px);
+    }
 }
+
+// .arrow-left,
+// .arrow-right{
+//     float: left;
+//     display: block;
+//     width: 2.75rem;
+//     height: 5.625rem;
+//     background-color: #38afe5;
+//     transition: all .1s ease-in .1s;
+// }
+//
+// .arrow-left{
+//     border-radius: 100% 0 0 100% / 50% 0 0 50%;
+// }
+//
+// .arrow-right{
+//     border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+// }
+//
+// .arrow-left:before,
+// .arrow-right:before{
+//     position: absolute;
+//     top: 50%;
+//     text-align: center;
+//     transform: translate(-50%, -50%);
+//     width: 0.75rem;
+//     height: 0.75rem;
+//     content: "";
+// }
+//
+// .arrow-left:before{
+//     left: 2.1875rem;
+//     background: url(../img/home/arrow-left.png) no-repeat;
+// }
+//
+// .arrow-right:before{
+//     right: 1.25rem;
+//     background: url(../img/home/arrow-right.png) no-repeat;
+// }
+//
+// .arrow-left:hover,
+// .arrow-right:hover{
+//     background-color: #263555;
+// }

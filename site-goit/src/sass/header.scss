@@ -1,5 +1,8 @@
 .header{
     padding-bottom: rem(60px);
+    @media (min-width: 768px){
+        padding-bottom: rem(20px);
+    }
 }
 
 .header-section{
@@ -18,6 +21,10 @@
     &:hover{
         color: #263555;
     }
+
+    @media (min-width: 768px){
+        font-size: rem(44px);
+    }
 }
 
 .header-menu{
@@ -30,6 +37,10 @@
     width: 47%;
     margin-bottom: 0;
     margin-left: rem(25px);
+
+    @media (min-width: 768px){
+        width: 35%;
+    }
 }
 
 .header-item{
@@ -53,7 +64,6 @@
     &:nth-last-child(-n+2){
         margin-bottom: 0;
     }
-
 }
 
 .header-link{
@@ -66,13 +76,17 @@
         color: #263555;
         transition: all ease-in .1s;
     }
+
+    @media (min-width: 768px){
+        font-size: rem(24px);
+    }
 }
 
 .dropdown{
     opacity: 0;
     position: absolute;
     top: rem(32px);
-    background-color: #fff;
+    background-color: #f2f2f3;
     border-radius: rem(4px);
     transition: all .2s ease-in .2s;
 

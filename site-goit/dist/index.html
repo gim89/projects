@@ -48,7 +48,7 @@
             </div>
         </div>
     </header>
-    <main class="main">
+    
         <div class="slider container">
                 <div class="row">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -99,7 +99,7 @@
         </div>
         <div class="destinations container">
             <div class="row">
-                <section class="destinations-section">
+                <section class="col destinations-section">
                     <h2 class="destinations-title">Top destinations</h2>
                     <div class="destinations-card">
                         <div class="card-item">
@@ -156,7 +156,7 @@
         </div>
         <div class="tabs container">
             <div class="row">
-                <div class="tabs-section">
+                <div class="col tabs-section">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="tab" href="#home" role="tab">
@@ -298,25 +298,26 @@
         </div>
         <div class="newsletter container">
             <div class="row">
-                <div class="newsletter-section">
+                <div class="col newsletter-section">
                     <h4 class="newsletter-title">Newsletter</h4>
-                    <form class="newsletter-form" action="#">
-                        <label for="email">Sign up to receive our newsletters</label>
-                            <input id="email" type="email" placeholder="email address">
-                    </form>
-                    <ul class="newsletter-list">
-                        <li class="item newsletter-item"><a class="link" href="">Fgo psu dr sit</a></li>
-                        <li class="item newsletter-item"><a class="link" href="">Sem psum dr sit ametre</a></li>
-                        <li class="item newsletter-item"><a class="link" href="">Rame sum dr sit ame</a></li>
-                        <li class="item newsletter-item"><a class="link" href="">Bem psum dr sit ameteko</a></li>
-                        <li class="item newsletter-item"><a class="link" href="">Nem dsum dr sit</a></li>
-                        <li class="item newsletter-item"><a class="link" href="">Vcem psum dr</a></li>
-                        <li class="item newsletter-item"><a class="link" href="">Zdfem psum dr sittr</a></li>
-                    </ul>
+                    <div class="newsletter-body">
+                        <form class="newsletter-form" action="#">
+                            <label for="email">Sign up to receive our newsletters</label>
+                                <input id="email" type="email" placeholder="email address">
+                        </form>
+                        <ul class="newsletter-list">
+                            <li class="item newsletter-item"><a class="link" href="">Fgo psu dr sit</a></li>
+                            <li class="item newsletter-item"><a class="link" href="">Sem psum dr sit ametre</a></li>
+                            <li class="item newsletter-item"><a class="link" href="">Rame sum dr sit ame</a></li>
+                            <li class="item newsletter-item"><a class="link" href="">Bem psum dr sit ameteko</a></li>
+                            <li class="item newsletter-item"><a class="link" href="">Nem dsum dr sit</a></li>
+                            <li class="item newsletter-item"><a class="link" href="">Vcem psum dr</a></li>
+                            <li class="item newsletter-item"><a class="link" href="">Zdfem psum dr sittr</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
     <footer class="footer container">
         <div class="row">
             <div class="col footer-part">
@@ -344,7 +345,7 @@
                         <a class="footer-link" href="#">family travel</a>
                     </li>
                 </ul>
-                <div class="footer-contact">
+                <div class="col footer-contact">
                     <h4 class="footer-title">Contact us:</h4>
                     <p class="footer-text">
                         <i class="footer-picture">
@@ -395,9 +396,11 @@
                         </a>
                     </li>
                 </ul>
-                <p class="footer-copyrighted">
-                    Journey &copy; 2013 | Privacy Policy | Website designed by TemplateMonster.com
-                </p>
+                <div class="col">
+                    <p class="footer-copyrighted">
+                        Journey &copy; 2013 | Privacy Policy | Website designed by TemplateMonster.com
+                    </p>
+                </div>
             </div>
         </div>
     </footer>

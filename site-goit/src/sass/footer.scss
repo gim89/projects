@@ -12,6 +12,10 @@
         padding-top: rem(28px);
         padding-bottom: rem(15px);
     }
+
+    @media (min-width: 768px){
+        justify-content: center;
+    }
 }
 
 .footer-list{
@@ -21,6 +25,14 @@
     &:nth-child(3){
         margin-right: 0;
     }
+
+    @media (min-width: 768px){
+        margin-right: rem(75px);
+        margin-bottom: 0;
+        &:nth-child(3){
+            margin-right: rem(75px);
+        }
+    }
 }
 
 .footer-item{
@@ -29,16 +41,39 @@
     &:nth-child(-n+3){
         margin-bottom: 0;
     }
+
+    @media (min-width: 768px){
+        margin-bottom: rem(10px);
+
+        &:nth-child(-n+3){
+            margin-bottom: rem(10px);
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
 }
 
 .footer-contact{
     flex-basis: 100%;
     @include flex(flex, center, center);
+
+    @media (min-width: 768px){
+        flex-basis: 14%;
+        display: block;
+    }
 }
 
 .footer-title{
     margin-right: rem(20px);
     color: #fff;
+
+    @media (min-width: 768px){
+        margin-right: 0;
+        margin-bottom: rem(10px);
+        font-size: rem(18px);
+    }
 }
 
 .footer-text{
@@ -49,6 +84,12 @@
     &:last-child{
         margin-right: 0;
     }
+
+    @media (min-width: 768px){
+        margin-right: 0;
+        margin-bottom: rem(5px);
+        font-size: rem(12px);
+    }
 }
 
 .footer-link{
@@ -56,6 +97,10 @@
     font-weight: 300;
     font-family: 'Open Sans';
     @include decor(#fff, uppercase);
+
+    @media (min-width: 768px){
+        font-size: rem(16px);
+    }
 }
 
 .footer-picture{
@@ -67,6 +112,10 @@
 
     &:first-child{
         margin-right: 0;
+    }
+
+    @media (min-width: 768px){
+        display: none;
     }
 }
 
@@ -91,6 +140,12 @@
     &:last-child{
         margin-right: 0;
     }
+
+    @media (min-width: 768px){
+        width: rem(35px);
+        height: rem(35px);
+        margin-right: rem(15px);
+    }
 }
 
 .social-link{
@@ -104,16 +159,30 @@
         box-shadow: inset 0 0 1rem rgba(230,146,14,0.8);
         transition: all ease-in .1s;
     }
+
+    @media (min-width: 768px){
+        width: rem(35px);
+        height: rem(35px);
+    }
 }
 
 .social-img{
     width: rem(10px);
     height: rem(10px);
     fill: #e4b264;
+
+    @media (min-width: 768px){
+        width: rem(15px);
+        height: rem(15px);
+    }
 }
 
 .footer-copyrighted{
     margin-bottom: 0;
     font-size: rem(9px);
     color: #eef5f6;
+
+    @media (min-width: 768px){
+        font-size: rem(12px);
+    }
 }

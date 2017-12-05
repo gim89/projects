@@ -1,13 +1,29 @@
 .tabs{
+    background-color: #fff;
     padding-bottom: rem(36px);
+    @media (min-width: 768px){
+        padding-bottom: rem(80px);
+    }
 }
 
 .tabs-section{
     padding: 0 rem(36px);
+    @media (min-width: 768px){
+        padding: 0 rem(45px);
+    }
 }
 
 .nav-tabs .nav-link{
     padding: rem(3px) rem(16px);
+    @media (min-width: 768px){
+        padding: rem(10px) rem(30px);
+    }
+}
+
+.nav-title{
+    @media (min-width: 768px){
+        font-size: 22px;
+    }
 }
 
 .nav-title:hover{
@@ -30,14 +46,32 @@
     &:last-child{
         padding-top: 0;
     }
+
+    @media (min-width: 768px){
+        display: flex;
+        justify-content: space-between;
+        padding: rem(45px) rem(15px) 0 rem(15px);
+        margin-bottom: rem(45px);
+    }
 }
 
 .tab-img{
     margin-bottom: rem(13px);
+    @media (min-width: 768px){
+        flex-basis: 30%;
+        width: 35%;
+        margin-bottom: 0;
+    }
 }
 
 .tab-info{
     @include flex(flex, space-between);
+    @media (min-width: 768px){
+        display: block;
+        flex-basis: 60%;
+        width: 60%;
+        text-align: right;
+    }
 }
 
 .article-post{
@@ -48,6 +82,11 @@
     margin-bottom: rem(7px);
     font: rem(10px) Arial;
     @include decor(#263555);
+    @media (min-width: 768px){
+        margin-bottom: rem(20px);
+        font-size: rem(17px);
+        text-align: left;
+    }
 }
 
 .tab-passage{
@@ -60,16 +99,33 @@
         margin-bottom: 0;
         color: #4e5050;
     }
+
+    @media (min-width: 768px){
+        margin-bottom: rem(20px);
+        font-size: rem(12px);
+        text-align: left;
+        &:last-child{
+            margin-bottom: rem(20px);
+        }
+    }
 }
 
 .tab-link{
     margin-right: rem(2px);
     font-size: rem(7px);
     color: #fa7e7e;
+
+    @media (min-width: 768px){
+        margin-right: rem(2px);
+        font-size: rem(12px);
+    }
 }
 
 .tab-btn{
     align-self: flex-end;
     margin-right: 0;
     font-size: rem(7px);
+    @media (min-width: 768px){
+        font-size: rem(14px);
+    }
 }
