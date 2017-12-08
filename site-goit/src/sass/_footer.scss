@@ -27,6 +27,7 @@
     }
 
     @media (min-width: rem(768px)){
+        align-self: flex-start;
         margin-right: rem(75px);
         margin-bottom: 0;
 
@@ -84,12 +85,17 @@
 
     &:last-child{
         margin-right: 0;
+
     }
 
     @media (min-width: rem(768px)){
         margin-right: 0;
         margin-bottom: rem(5px);
         font-size: rem(12px);
+
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -99,7 +105,7 @@
     font-family: 'Open Sans';
     @include decor(#fff, uppercase);
 
-    @media (min-width: 768px){
+    @media (min-width: rem(768px)){
         font-size: rem(16px);
     }
 }
@@ -156,8 +162,8 @@
 
 .social-link{
     @include flex(flex, center, center);
-    width: rem(27px);
-    height: rem(27px);
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     border-radius: 50%;
 
@@ -167,8 +173,8 @@
     }
 
     @media (min-width: rem(768px)){
-        width: rem(35px);
-        height: rem(35px);
+        width: 100%;
+        height: 100%;
     }
 }
 

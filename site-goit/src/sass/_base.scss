@@ -41,6 +41,17 @@ body{
 	@media (min-width: rem(768px)){
 		padding: rem(50px) rem(46px) rem(74px) rem(46px);
 	}
+
+	@media (min-width: rem(768px)){
+		padding: rem(60px) rem(60px) rem(90px) rem(60px);
+	}
+}
+
+.home-section{
+	@media (min-width: rem(1024px)){
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 li{

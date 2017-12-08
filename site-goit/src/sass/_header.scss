@@ -44,20 +44,12 @@
     }
 }
 
-.header-menu{
-    @include flex(flex, center, center);
-}
-
 .header-list{
     @include flex(flex, space-between, center);
     flex-wrap: wrap;
-    width: 47%;
-    margin-bottom: 0;
-    margin-left: rem(25px);
-
-    @media (min-width: rem(768px)){
-        width: 35%;
-    }
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 
     @media (min-width: rem(1024px)){
         width: 100%;
@@ -68,8 +60,10 @@
 }
 
 .header-item{
+    flex-basis: 33.33%;
     margin-bottom: rem(12px);
     @media (min-width: rem(1024px)){
+        flex-basis: auto;
         margin-bottom: 0;
         margin-right: rem(60px);
         &:last-child{
@@ -80,15 +74,12 @@
     &:nth-child(2){
         @include flex(flex, center);
         position: relative;
-        margin-left: rem(43px);
-        margin-right: rem(48px);
         @media (min-width: rem(1024px)){
             margin-left: 0;
         }
     }
 
     &:nth-child(3){
-        margin-right: rem(10px);
         @media (min-width: rem(1024px)){
             margin-right: rem(240px);
         }

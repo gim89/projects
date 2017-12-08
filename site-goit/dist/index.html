@@ -16,39 +16,37 @@
             <div class="header-section">
                 <a class="header-logo" href="#">Journey</a>
             </div>
-            <div class="header-menu">
-                <ul class="header-list">
-                    <li class="header-item">
-                        <a class="header-link" href="#">Home</a>
-                    </li>
-                    <li class="header-item">
-                        <a class="header-link" href="#">About</a>
-                        <ul class="dropdown">
-                            <li class="dropdown-item">
+            <ul class="header-list">
+                <li class="header-item">
+                    <a class="header-link" href="#">Home</a>
+                </li>
+                <li class="header-item">
+                    <a class="header-link" href="#">About</a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
                                 <a class="dropdown-link" href="#">Agency</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a class="dropdown-link" href="#">News</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a class="dropdown-link" href="#">Team</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header-item">
-                        <a class="header-link" href="#">Gallery</a>
-                    </li>
-                    <li class="header-item">
-                            <a class="header-link" href="#">Tours</a>
-                    </li>
-                    <li class="header-item">
-                            <a class="header-link" href="#">Blog</a>
-                    </li>
-                    <li class="header-item">
-                        <a class="header-link" href="#">Contacts</a>
-                    </li>
-                </ul>
-            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-link" href="#">News</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a class="dropdown-link" href="#">Team</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-item">
+                    <a class="header-link" href="#">Gallery</a>
+                </li>
+                <li class="header-item">
+                        <a class="header-link" href="#">Tours</a>
+                </li>
+                <li class="header-item">
+                        <a class="header-link" href="#">Blog</a>
+                </li>
+                <li class="header-item">
+                    <a class="header-link" href="#">Contacts</a>
+                </li>
+            </ul>
         </header>
         <main class="main">
             <!DOCTYPE html>
@@ -114,12 +112,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                    <img class="arrow-left" src="img/arrow-left.svg" alt="">
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                    <img class="arrow-right" src="img/arrow-right.svg" alt="">
-                                </a>
+                                <div class="controls">
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <img class="arrow-left" src="img/arrow-left.svg" alt="">
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <img class="arrow-right" src="img/arrow-right.svg" alt="">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                 <section class="destinations">
@@ -168,7 +168,6 @@
                         <div class="card-item">
                             <picture class="d-block img-fluid">
                                 <source media="(min-width: 1024px)" srcset="img/card-three-desktop.jpg">
-                                <source media="(min-width: 768px)" srcset="img/card-three-tablet.jpg">
                                 <img src="img/card-three-mobile.jpg" alt="Third slide">
                             </picture>
                             <div class="card-item-hover">
@@ -187,7 +186,7 @@
                         </div>
                     </div>
                 </section>
-                <div class="section">
+                <div class="home-section">
                     <div class="tabs">
                         <div class="tabs-section">
                             <ul class="nav nav-tabs" role="tablist">
@@ -210,7 +209,7 @@
                             <div class="tab-content">
                                 <div class="tab-pane active" id="home" role="tabpanel">
                                     <div class="tab-post">
-                                        <picture class="d-block img-fluid">
+                                        <picture class="tab-img d-block img-fluid">
                                             <source media="(min-width: 1024px)" srcset="img/tabs-one-desktop.jpg">
                                             <source media="(min-width: 768px)" srcset="img/tabs-one-tablet.jpg">
                                             <img src="img/tabs-one-mobile.jpg" alt="First tabs">
@@ -233,7 +232,7 @@
                                         </div>
                                     </div>
                                     <div class="tab-post">
-                                        <picture class="d-block img-fluid">
+                                        <picture class="tab-img d-block img-fluid">
                                             <source media="(min-width: 1024px)" srcset="img/tabs-four-desktop.jpg">
                                             <source media="(min-width: 768px)" srcset="img/tabs-four-tablet.jpg">
                                             <img src="img/tabs-four-mobile.jpg" alt="Fourth tabs">
@@ -257,7 +256,7 @@
                                 </div>
                                 <div class="tab-pane" id="profile" role="tabpanel">
                                     <div class="tab-post">
-                                        <picture class="d-block img-fluid">
+                                        <picture class="tab-img d-block img-fluid">
                                             <source media="(min-width: 1024px)" srcset="img/tabs-two-desktop.jpg">
                                             <source media="(min-width: 768px)" srcset="img/tabs-two-tablet.jpg">
                                             <img src="img/tabs-two-mobile.jpg" alt="Second tabs">
@@ -280,7 +279,7 @@
                                         </div>
                                     </div>
                                     <div class="tab-post">
-                                        <picture class="d-block img-fluid">
+                                        <picture class=" tab-img d-block img-fluid">
                                             <source media="(min-width: 1024px)" srcset="img/tabs-five-desktop.jpg">
                                             <source media="(min-width: 768px)" srcset="img/tabs-five-tablet.jpg">
                                             <img src="img/tabs-five-mobile.jpg" alt="Fifth tabs">
@@ -304,7 +303,7 @@
                                 </div>
                                 <div class="tab-pane" id="messages" role="tabpanel">
                                     <div class="tab-post">
-                                        <picture class="d-block img-fluid">
+                                        <picture class=" tab-img d-block img-fluid">
                                             <source media="(min-width: 1024px)" srcset="img/tabs-three-desktop.jpg">
                                             <source media="(min-width: 768px)" srcset="img/tabs-three-tablet.jpg">
                                             <img src="img/tabs-three-mobile.jpg" alt="Third tabs">
@@ -327,7 +326,7 @@
                                         </div>
                                     </div>
                                     <div class="tab-post">
-                                        <picture class="d-block img-fluid">
+                                        <picture class="tab-img d-block img-fluid">
                                             <source media="(min-width: 1024px)" srcset="img/tabs-six-desktop.jpg">
                                             <source media="(min-width: 768px)" srcset="img/tabs-six-tablet.jpg">
                                             <img src="img/tabs-six-mobile.jpg" alt="Six tabs">
@@ -400,7 +399,7 @@
                         <a class="footer-link" href="#">family travel</a>
                     </li>
                 </ul>
-                <div class="col footer-contact">
+                <div class="footer-contact">
                     <h4 class="footer-title">Contact us:</h4>
                     <p class="footer-text">
                         <i class="footer-picture">

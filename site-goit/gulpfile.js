@@ -10,8 +10,8 @@ var gulp         = require('gulp'),
     pngquant     = require('imagemin-pngquant'),
     cache        = require('gulp-cache'),
     del          = require('del'),
-    browserSync  = require('browser-sync');
-    flatten = require('gulp-flatten');
+    browserSync  = require('browser-sync').create(),
+    flatten      = require('gulp-flatten');
 
 gulp.task('html', function() {
     return gulp.src('src/html/*.html')
@@ -80,11 +80,11 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('src/html/*.html', ['html'], browserSync.reload);
-    gulp.watch('src/css/*.css', ['css'], browserSync.reload);
-    gulp.watch('src/sass/*.scss', ['sass'], browserSync.reload);
-    gulp.watch('src/img/*', ['img'], browserSync.reload);
-    gulp.watch('src/fonts/*', ['fonts'], browserSync.reload);
+    gulp.watch('src/html/**/*.html', ['html'], browserSync.reload);
+    gulp.watch('src/css/**/*.css', ['css'], browserSync.reload);
+    gulp.watch('src/sass/**/*.scss', ['sass'], browserSync.reload);
+    gulp.watch('src/img/**/*', ['img'], browserSync.reload);
+    gulp.watch('src/fonts/**/*', ['fonts'], browserSync.reload);
 });
 
 gulp.task('del', function() {

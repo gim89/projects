@@ -5,6 +5,11 @@
     @media (min-width: rem(768px)){
         margin-bottom: rem(80px);
     }
+
+    @media (min-width: rem(1024px)){
+        flex-basis: 66%;
+        margin-bottom: 0;
+    }
 }
 
 .nav-tabs .nav-link{
@@ -40,6 +45,7 @@
 
     &:last-child{
         padding-top: 0;
+        margin-bottom: 0;
     }
 
     @media (min-width: rem(768px)){
@@ -53,18 +59,18 @@
 .tab-img{
     margin-bottom: rem(13px);
     @media (min-width: rem(768px)){
-        flex-basis: 30%;
-        width: 35%;
+        align-self: flex-start;
+        flex-basis: 40%;
         margin-bottom: 0;
     }
 }
 
 .tab-info{
     @include flex(flex, space-between);
+    align-self: flex-start;
     @media (min-width: rem(768px)){
         display: block;
-        flex-basis: 60%;
-        width: 60%;
+        flex-basis: 56%;
         text-align: right;
     }
 }

@@ -19,6 +19,15 @@
     display: none;
 }
 
+.controls{
+    @media (min-width: rem(768px)){
+        display: flex;
+        position: absolute;
+        top: 75%;
+        left: 5%;
+    }
+}
+
 .carousel-control-prev,
 .carousel-control-next{
     display: flex;
@@ -29,7 +38,7 @@
     min-height: 100%;
 
     @media (min-width: rem(768px)){
-            top: 60%;
+            position: static;
             width: rem(37px);
             min-height: 0;
             height: rem(70px);
@@ -38,7 +47,6 @@
     }
 
     @media (min-width: rem(1024px)){
-            top: 60%;
             width: rem(45px);
             height: rem(90px);
             background-color: #38afe5;
@@ -59,8 +67,8 @@
     }
 
     @media (min-width: rem(768px)){
-        left: 10%;
         border-radius: 100% 0 0 100% / 50% 0 0 50%;
+
         &:hover{
             background-color: #193149;
         }
@@ -81,16 +89,12 @@
     }
 
     @media (min-width: rem(768px)){
-        right: 79.1%;
         border-radius: 0 100% 100% 0 / 0 50% 50% 0;
         &:hover{
             background-color: #193149;
         }
     }
 
-    @media (min-width: rem(1024px)){
-        right: 80.5%;
-    }
 }
 
 .arrow-left,
@@ -131,6 +135,7 @@
     position: absolute;
     top: 84%;
     right: 25%;
+    bottom: auto;
     left: 47%;
     padding-top: 0;
     padding-bottom: 0;
