@@ -1,27 +1,22 @@
 .tabs{
     background-color: #fff;
-    padding-bottom: rem(36px);
-    @media (min-width: 768px){
-        padding-bottom: rem(80px);
-    }
-}
+    margin-bottom: rem(36px);
 
-.tabs-section{
-    padding: 0 rem(36px);
-    @media (min-width: 768px){
-        padding: 0 rem(45px);
+    @media (min-width: rem(768px)){
+        margin-bottom: rem(80px);
     }
 }
 
 .nav-tabs .nav-link{
     padding: rem(3px) rem(16px);
-    @media (min-width: 768px){
+
+    @media (min-width: rem(768px)){
         padding: rem(10px) rem(30px);
     }
 }
 
 .nav-title{
-    @media (min-width: 768px){
+    @media (min-width: rem(768px)){
         font-size: 22px;
     }
 }
@@ -47,7 +42,7 @@
         padding-top: 0;
     }
 
-    @media (min-width: 768px){
+    @media (min-width: rem(768px)){
         display: flex;
         justify-content: space-between;
         padding: rem(45px) rem(15px) 0 rem(15px);
@@ -57,7 +52,7 @@
 
 .tab-img{
     margin-bottom: rem(13px);
-    @media (min-width: 768px){
+    @media (min-width: rem(768px)){
         flex-basis: 30%;
         width: 35%;
         margin-bottom: 0;
@@ -66,7 +61,7 @@
 
 .tab-info{
     @include flex(flex, space-between);
-    @media (min-width: 768px){
+    @media (min-width: rem(768px)){
         display: block;
         flex-basis: 60%;
         width: 60%;
@@ -82,7 +77,7 @@
     margin-bottom: rem(7px);
     font: rem(10px) Arial;
     @include decor(#263555);
-    @media (min-width: 768px){
+    @media (min-width: rem(768px)){
         margin-bottom: rem(20px);
         font-size: rem(17px);
         text-align: left;
@@ -100,7 +95,7 @@
         color: #4e5050;
     }
 
-    @media (min-width: 768px){
+    @media (min-width: rem(768px)){
         margin-bottom: rem(20px);
         font-size: rem(12px);
         text-align: left;
@@ -115,7 +110,7 @@
     font-size: rem(7px);
     color: #fa7e7e;
 
-    @media (min-width: 768px){
+    @media (min-width: rem(768px)){
         margin-right: rem(2px);
         font-size: rem(12px);
     }
@@ -125,7 +120,7 @@
     align-self: flex-end;
     margin-right: 0;
     font-size: rem(7px);
-    @media (min-width: 768px){
+    @media (min-width: rem(768px)){
         font-size: rem(14px);
     }
 }

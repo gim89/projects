@@ -11,9 +11,10 @@ var gulp         = require('gulp'),
     cache        = require('gulp-cache'),
     del          = require('del'),
     browserSync  = require('browser-sync');
+    flatten = require('gulp-flatten');
 
 gulp.task('html', function() {
-    return gulp.src('src/html/index.html')
+    return gulp.src('src/html/*.html')
         .pipe(rigger())
         .pipe(gulp.dest('dist'))
         .pipe(browserSync.reload({stream: true}))
@@ -41,7 +42,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('sass', function() {
-    return gulp.src(['src/sass/styles.scss', 'src/sass/bootstrap.scss'])
+    return gulp.src('src/sass/*.scss')
         .pipe(sass())
         .pipe(autoprefixer({
             browsers: ['last 15 versions', '> 1%', 'ie 9', 'ie 8', 'ie 7'],
@@ -59,7 +60,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('img', function() {
-    return gulp.src('src/img/*')
+    return gulp.src('src/img/**/*')
         .pipe(cache(imagemin({
             interlaced: true,
             progressive: true,
@@ -67,6 +68,7 @@ gulp.task('img', function() {
             svgoPlugins: [{removeViewBox: true}],
             use: [pngquant()]
         })))
+        .pipe(flatten())
         .pipe(gulp.dest('dist/img'))
         .pipe(browserSync.reload({stream: true}));
 });

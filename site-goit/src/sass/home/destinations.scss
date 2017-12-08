@@ -1,21 +1,32 @@
 .destinations{
     background-color: #fff;
-}
+    margin-bottom: rem(70px);
 
-.destinations-section{
-    padding: 0 rem(36px);
-    @media (min-width: 768px){
-        padding: 0 rem(45px) rem(85px) rem(45px);
+    @media (min-width: rem(768px)){
+        margin-bottom: rem(80px);
+    }
+
+    @media (min-width: rem(1024px)){
+        margin-bottom: rem(60px);
     }
 }
 
 .destinations-title{
     margin-bottom: rem(20px);
+
+    @media (min-width: rem(768px)){
+        margin-bottom: rem(40px);
+    }
+
+    @media (min-width: rem(1024px)){
+        margin-bottom: rem(50px);
+    }
 }
 
 .destinations-card{
-    padding-bottom: rem(70px);
-    @media (min-width: 768px){
+    padding-bottom: 0;
+    
+    @media (min-width: rem(768px)){
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
@@ -26,16 +37,22 @@
     position: relative;
     margin-bottom: rem(37px);
     overflow: hidden;
-    @media (min-width: 768px){
+
+    @media (min-width: rem(768px)){
         flex-basis: 49%;
         margin-bottom: 0;
     }
-}
 
-.card-item:last-child{
-    margin-bottom: 0;
-    @media (min-width: 768px){
-        display: none;
+    &:last-child{
+        margin-bottom: 0;
+
+        @media (min-width: rem(768px)){
+            display: none;
+        }
+
+        @media (min-width: rem(1024px)){
+            display: block;
+        }
     }
 }
 
@@ -63,7 +80,8 @@
     margin: rem(10px) 0 rem(10px) rem(10px);
     color: #fff;
     text-align: left;
-    @media (min-width: 768px){
+
+    @media (min-width: rem(768px)){
         margin: rem(25px) 0;
 		font-size: rem(35px);
         text-align: center;
@@ -78,7 +96,8 @@
     color: #cbc6c6;
     text-align: left;
     overflow: hidden;
-    @media (min-width: 768px){
+
+    @media (min-width: rem(768px)){
         margin-bottom: rem(30px);
 		font-size: rem(12px);
         overflow: visible;
