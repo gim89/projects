@@ -137,7 +137,7 @@
         transform: translate(-50%, 0);
     }
 
-    @media (min-width: 768px){
+    @media (min-width: rem(768px)){
         top: rem(40px);
     }
 }

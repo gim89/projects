@@ -891,6 +891,10 @@ h2 {
 	font-size: 1.5rem;
 }
 
+.dropdown {
+	top: 2.5rem;
+}
+
 .dropdown-link {
 	font-size: 1.125rem;
 }
@@ -1426,14 +1430,6 @@ input[type="email"] {
 .social-item {
 	width: 2.5rem;
 	height: 2.5rem;
-}
-
-}
-
-@media (min-width: 768px) {
-
-.dropdown {
-	top: 2.5rem;
 }
 
 }
