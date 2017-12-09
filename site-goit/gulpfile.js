@@ -42,7 +42,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('sass', function() {
-    return gulp.src('src/sass/*.scss')
+    return gulp.src(['src/sass/*.scss', 'src/sass/bootstrap/*.scss'])
         .pipe(sass())
         .pipe(autoprefixer({
             browsers: ['last 15 versions', '> 1%', 'ie 9', 'ie 8', 'ie 7'],
@@ -55,6 +55,7 @@ gulp.task('sass', function() {
         .pipe(browserSync.reload({stream: true}))
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
+        .pipe(flatten())
         .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.reload({stream: true}));
 });

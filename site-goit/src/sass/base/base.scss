@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6,
 p, a, em, img, i, ol, ul, li,
 form, label, article, aside,
 figure, figcaption, footer,
-header, main, nav, section, button {
+header, main, nav, section, button{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -22,8 +22,6 @@ body{
     min-height: 100vh;
     background: #4da5cf url(../img/body.png) no-repeat;
     background-size: cover;
-	font-size: rem(16px);
-	font-weight: 400;
 	line-height: 1;
 	font-family: Arial, sans-serif;
 }
@@ -48,9 +46,9 @@ body{
 }
 
 .home-section{
+
 	@media (min-width: rem(1024px)){
-		display: flex;
-		justify-content: space-between;
+		@include flex(flex, space-between)
 	}
 }
 
@@ -101,10 +99,7 @@ input{
 .btn{
     display: inline-block;
     background-color: #fff;
-    padding: 2px 12px;
-	margin-right: 10px;
-    font-size: 12px;
-	font-weight: 600;
+	font: 600 rem(12px) Arial;
     color: #000;
     border: 1px solid #dedbdb;
     border-radius: 0.25rem;

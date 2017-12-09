@@ -3,19 +3,23 @@
 
     @media (min-width: rem(1024px)){
         flex-basis: 32%;
+        border: rem(1px) solid #dbdede;
     }
 }
 
 .newsletter-title{
     padding: rem(6px) 0 rem(2px) rem(60px);
-    font: 300 rem(19px) 'Open Sans';
+    font: 300 rem(20px) 'Open Sans';
     @include decor(#263555, uppercase);
     border: rem(1px) solid #dbdede;
     border-bottom: 0;
 
     @media (min-width: rem(1024px)){
+        padding-bottom: rem(4px);
         padding-left: 0;
         text-align: center;
+        border: none;
+        border-bottom: rem(1px) solid #dbdede;
     }
 }
 
@@ -23,33 +27,33 @@
     border: rem(1px) solid #dbdede;
 
     @media (min-width: rem(768px)){
-        display: flex;
-        justify-content: space-between;
+        @include flex(flex, space-between);
         padding-top: rem(40px);
+        padding-bottom: rem(30px);
     }
 
     @media (min-width: rem(1024px)){
         flex-direction: column;
+        border: none;
     }
 }
 
 .newsletter-form{
-    padding-bottom: rem(30px);
-    padding-top: rem(31px);
-    padding-right: rem(14px);
-    padding-left: rem(60px);
+    padding: rem(30px) rem(14px) rem(30px) rem(60px);
     border-bottom: 0;
+
     @media (min-width: rem(768px)){
         flex-basis: 38%;
         align-self: flex-start;
         padding-top: 0;
         padding-right: 0;
         padding-bottom: 0;
-        padding-left: rem(15px);
+        padding-left: rem(16px);
     }
+
     @media (min-width: rem(1024px)){
         width: 100%;
-        margin-bottom: rem(40px);
+        margin-bottom: rem(46px);
     }
 }
 
@@ -60,7 +64,7 @@ label{
     color: #263555;
 
     @media (min-width: rem(768px)){
-        font-size: rem(15px);
+        font-size: rem(16px);
     }
 }
 
@@ -72,13 +76,21 @@ input[type="email"]{
     @include decor(#868f8f);
     border: rem(1px) solid #dedbdb;
     border-radius: rem(4px);
+
+    @media (min-width: rem(768px)){
+        width: 100%;
+    }
+
+    @media (min-width: rem(1024px)){
+        width: 86%;
+    }
 }
 
 .newsletter-list{
     padding-left: rem(60px);
-    padding-bottom: rem(35px);
+    padding-bottom: rem(36px);
     columns: 2;
-    column-gap: 0;
+    column-gap: 10px;
     border-top: 0;
 
     @media (min-width: rem(768px)){
@@ -90,35 +102,37 @@ input[type="email"]{
     }
 
     @media (min-width: rem(1024px)){
-        margin-left: rem(15px);
+        margin-left: rem(16px);
         columns: 1;
     }
 }
 
 .newsletter-item{
     margin-bottom: rem(12px);
+
     &:nth-child(4){
         margin-bottom: 0;
     }
+
     @media (min-width: rem(1024px)){
-        margin-bottom: rem(15px);
+        margin-bottom: rem(20px);
+
         &:nth-child(4){
-            margin-bottom: rem(15px);
+            margin-bottom: rem(20px);
         }
     }
-
 }
 
 .newsletter-item:before{
     display: inline-block;
 	content: url(../img/right.png);
     width: rem(14px);
-    height: rem(15px);
+    height: rem(14px);
     background-color: #5abce9;
 	margin-right: rem(10px);
     text-align: center;
     line-height: 0.9;
-    border-radius: 0.5rem;
+    border-radius: rem(8px);
 
 }
 
@@ -129,6 +143,6 @@ input[type="email"]{
         font-size: rem(14px);
     }
     @media (min-width: rem(1024px)){
-        font-size: rem(15px);
+        font-size: rem(16px);
     }
 }

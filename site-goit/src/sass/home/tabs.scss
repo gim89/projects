@@ -13,10 +13,14 @@
 }
 
 .nav-tabs .nav-link{
-    padding: rem(3px) rem(16px);
+    padding: rem(4px) rem(16px);
 
     @media (min-width: rem(768px)){
         padding: rem(10px) rem(30px);
+    }
+
+    @media (min-width: rem(768px)){
+        padding: rem(4px) rem(30px);
     }
 }
 
@@ -40,24 +44,22 @@
 }
 
 .tab-post{
-    padding: rem(31px) rem(25px) 0 rem(25px);
+    padding: rem(30px) rem(25px) 0 rem(25px);
     margin-bottom: rem(32px);
 
     &:last-child{
         padding-top: 0;
-        margin-bottom: 0;
     }
 
     @media (min-width: rem(768px)){
-        display: flex;
-        justify-content: space-between;
-        padding: rem(45px) rem(15px) 0 rem(15px);
-        margin-bottom: rem(45px);
+        @include flex(flex, space-between);
+        padding: rem(46px) rem(16px) 0 rem(16px);
+        margin-bottom: rem(46px);
     }
 }
 
 .tab-img{
-    margin-bottom: rem(13px);
+    margin-bottom: rem(14px);
     @media (min-width: rem(768px)){
         align-self: flex-start;
         flex-basis: 40%;
@@ -80,19 +82,19 @@
 }
 
 .tab-title{
-    margin-bottom: rem(7px);
+    margin-bottom: rem(8px);
     font: rem(10px) Arial;
     @include decor(#263555);
     @media (min-width: rem(768px)){
         margin-bottom: rem(20px);
-        font-size: rem(17px);
+        font-size: rem(18px);
         text-align: left;
     }
 }
 
 .tab-passage{
-    margin-bottom: rem(3px);
-    font-size: rem(7px);
+    margin-bottom: rem(4px);
+    font-size: rem(8px);
     line-height: 1.5;
     color: #000;
 
@@ -113,7 +115,7 @@
 
 .tab-link{
     margin-right: rem(2px);
-    font-size: rem(7px);
+    font-size: rem(8px);
     color: #fa7e7e;
 
     @media (min-width: rem(768px)){
@@ -125,7 +127,7 @@
 .tab-btn{
     align-self: flex-end;
     margin-right: 0;
-    font-size: rem(7px);
+    font-size: rem(8px);
     @media (min-width: rem(768px)){
         font-size: rem(14px);
     }

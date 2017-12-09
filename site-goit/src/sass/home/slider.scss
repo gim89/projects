@@ -38,19 +38,19 @@
     min-height: 100%;
 
     @media (min-width: rem(768px)){
-            position: static;
-            width: rem(37px);
-            min-height: 0;
-            height: rem(70px);
-            background-color: #38afe5;
-            transition: all .1s ease-in .1s;
+        position: static;
+        width: rem(38px);
+        min-height: 0;
+        height: rem(70px);
+        background-color: #38afe5;
+        transition: all .1s ease-in .1s;
     }
 
     @media (min-width: rem(1024px)){
-            width: rem(45px);
-            height: rem(90px);
-            background-color: #38afe5;
-            transition: all .1s ease-in .1s;
+        width: rem(46px);
+        height: rem(90px);
+        background-color: #38afe5;
+        transition: all .1s ease-in .1s;
     }
 }
 
@@ -94,7 +94,6 @@
             background-color: #193149;
         }
     }
-
 }
 
 .arrow-left,
@@ -109,21 +108,20 @@
 
     @media (min-width: rem(1024px)){
         opacity: 1;
-        width: rem(15px);
-        height: rem(15px);
+        width: rem(16px);
+        height: rem(16px);
     }
 }
 
 .arrow-left{
-    margin-left: 20px;
+    margin-left: rem(20px);
     @media (min-width: rem(768px)){
         left: 55%;
-
     }
 }
 
 .arrow-right{
-    margin-right: 20px;
+    margin-right: rem(20px);
 
     @media (min-width: rem(768px)){
         right: 55%;
@@ -133,33 +131,29 @@
 
 .carousel-caption{
     position: absolute;
-    top: 84%;
     right: 25%;
-    bottom: auto;
+    bottom: -7%;
     left: 47%;
     padding-top: 0;
     padding-bottom: 0;
     text-align: left;
-
     @media (min-width: rem(768px)){
         top: 35%;
         left: 0;
         right: 70%;
-
     }
-
 }
 
 .slider-text{
     display: inline-block;
     background-color: #fff;
-    padding: rem(10px) rem(5px);
+    padding: rem(10px) rem(6px);
     font: 300 rem(10px) 'Pathway Gothic One';
     @include decor(#344260, uppercase);
     text-shadow: none;
 
     @media (min-width: rem(768px)){
-        font-size: rem(17px);
+        font-size: rem(18px);
     }
 
     @media (min-width: rem(1024px)){
@@ -169,7 +163,7 @@
 
 .slider-title{
     background-color: #38afe5;
-    padding: rem(10px) rem(5px);
+    padding: rem(10px) rem(6px);
     font: 300 rem(14px) 'Pathway Gothic One';
     @include decor(#fff, uppercase);
     text-shadow: none;

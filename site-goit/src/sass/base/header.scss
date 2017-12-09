@@ -1,9 +1,11 @@
 .header{
-    padding-top: rem(23px);
+    padding-top: rem(24px);
     padding-bottom: rem(60px);
+
     @media (min-width: rem(768px)){
         padding-bottom: rem(20px);
     }
+
     @media (min-width:rem(1024px)){
         padding-top: rem(40px);
         padding-bottom: rem(50px);
@@ -11,8 +13,9 @@
 }
 
 .header-section{
-    margin-bottom: rem(23px);
+    margin-bottom: rem(24px);
     text-align: center;
+
     @media (min-width: rem(1024px)){
         position: relative;
         margin-bottom: 0;
@@ -24,7 +27,7 @@
     background-color: #fff;
     padding: rem(22px) rem(16px);
     @include decor(#263555, uppercase, 0, 0);
-    font:  rem(33px) 'Dorsa';
+    font:  rem(32px) 'Dorsa';
     border-radius: 50%;
 
     &:hover{
@@ -52,20 +55,21 @@
     text-align: center;
 
     @media (min-width: rem(1024px)){
-        width: 100%;
         justify-content: center;
-        margin-top: 60px;
-        margin-bottom: 60px;
+        width: 100%;
+        margin: rem(60px) 0;
     }
 }
 
 .header-item{
     flex-basis: 33.33%;
     margin-bottom: rem(12px);
+
     @media (min-width: rem(1024px)){
         flex-basis: auto;
-        margin-bottom: 0;
         margin-right: rem(60px);
+        margin-bottom: 0;
+
         &:last-child{
             margin-right: 0;
         }
@@ -74,6 +78,7 @@
     &:nth-child(2){
         @include flex(flex, center);
         position: relative;
+
         @media (min-width: rem(1024px)){
             margin-left: 0;
         }
@@ -131,20 +136,21 @@
         border-bottom: rem(4px) solid #fff;
         transform: translate(-50%, 0);
     }
+
+    @media (min-width: 768px){
+        top: rem(40px);
+    }
 }
 
 .dropdown-item{
     padding: 0 rem(8px);
     text-align: center;
+    border-radius: rem(4px);
 
     &:first-child{
         padding-top: rem(4px);
-        border-radius: rem(5px);
     }
 
-    &:last-child{
-        border-radius: rem(5px);
-    }
 }
 
 .dropdown-link{
@@ -158,7 +164,7 @@
     }
 
     @media (min-width: rem(768px)){
-        font-size: rem(17px);
+        font-size: rem(18px);
     }
 
     @media (min-width: rem(1024px)){
