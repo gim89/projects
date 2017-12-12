@@ -58,7 +58,12 @@
     @include flex(flex, center, center);
 
     @media (min-width: rem(768px)){
-        flex-basis: 14%;
+        flex-basis: 13%;
+        display: block;
+    }
+
+    @media (min-width: rem(1024px)){
+        flex-basis: 10%;
         display: block;
     }
 }

@@ -131,16 +131,21 @@
 
 .carousel-caption{
     position: absolute;
-    right: 25%;
+    right: 27%;
     bottom: -7%;
-    left: 47%;
+    left: 45%;
     padding-top: 0;
     padding-bottom: 0;
     text-align: left;
+
     @media (min-width: rem(768px)){
         top: 35%;
         left: 0;
-        right: 70%;
+        right: 72%;
+    }
+
+    @media (min-width: rem(1024px)){
+        right: 71%;
     }
 }
 

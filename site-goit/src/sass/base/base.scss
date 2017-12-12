@@ -26,22 +26,20 @@ body{
 	font-family: Arial, sans-serif;
 }
 
-.wrapper{
+.container-fluid{
 	min-width: rem(480px);
-	max-width: rem(1024px);
-	margin: 0 auto;
 }
 
 .main{
 	background-color: #fff;
-	padding: rem(40px) rem(36px) rem(50px) rem(36px);
+	padding: rem(20px) rem(16px) rem(30px) rem(16px);
 
 	@media (min-width: rem(768px)){
-		padding: rem(50px) rem(46px) rem(74px) rem(46px);
+		padding: rem(30px) rem(26px) rem(44px) rem(26px);
 	}
 
-	@media (min-width: rem(768px)){
-		padding: rem(60px) rem(60px) rem(90px) rem(60px);
+	@media (min-width: rem(1024px)){
+		padding: rem(40px) rem(40px) rem(60px) rem(40px);
 	}
 }
 

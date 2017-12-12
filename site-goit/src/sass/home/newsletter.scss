@@ -8,7 +8,7 @@
 }
 
 .newsletter-title{
-    padding: rem(6px) 0 rem(2px) rem(60px);
+    padding: rem(6px) 0 rem(2px) rem(48px);
     font: 300 rem(20px) 'Open Sans';
     @include decor(#263555, uppercase);
     border: rem(1px) solid #dbdede;
@@ -39,11 +39,11 @@
 }
 
 .newsletter-form{
-    padding: rem(30px) rem(14px) rem(30px) rem(60px);
+    padding: rem(30px) rem(14px) rem(30px) rem(40px);
     border-bottom: 0;
 
     @media (min-width: rem(768px)){
-        flex-basis: 38%;
+        flex-basis: 42%;
         align-self: flex-start;
         padding-top: 0;
         padding-right: 0;
@@ -87,18 +87,17 @@ input[type="email"]{
 }
 
 .newsletter-list{
-    padding-left: rem(60px);
+    padding-left: rem(40px);
     padding-bottom: rem(36px);
     columns: 2;
-    column-gap: 10px;
+    column-gap: 0;
     border-top: 0;
 
     @media (min-width: rem(768px)){
-        flex-basis: 58%;
+        flex-basis: 54%;
         align-self: flex-start;
         padding-left: 0;
         padding-bottom: 0;
-        column-gap: rem(8px);
     }
 
     @media (min-width: rem(1024px)){
@@ -140,8 +139,9 @@ input[type="email"]{
     font-size: rem(12px);
 
     @media (min-width: rem(768px)){
-        font-size: rem(14px);
+        line-height: 0.8;
     }
+
     @media (min-width: rem(1024px)){
         font-size: rem(16px);
     }
