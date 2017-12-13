@@ -43,6 +43,10 @@ body{
 	}
 }
 
+.section{
+	margin-bottom: rem(50px);
+}
+
 .home-section{
 
 	@media (min-width: rem(1024px)){
@@ -50,12 +54,37 @@ body{
 	}
 }
 
+.about-section{
+
+	@media (min-width: rem(768px)){
+		&:last-child{
+			display: flex;
+		}
+	}
+
+	@media (min-width: rem(1024px)){
+		&:first-child{
+			display: flex;
+		}
+	}
+
+
+}
+
+
+.text-bold{
+	margin-bottom: rem(20px);
+	font-weight: 700;
+	line-height: 1.5;
+}
+
 li{
     list-style: none;
 }
 
 h2{
-    @include decor(#263555, uppercase, 0, 0);
+	margin-bottom: rem(20px);
+	@include decor(#263555, uppercase, 0, 0);
     font: 300 rem(25px) 'Pathway Gothic One';
 
 	@media (min-width: rem(768px)){
@@ -81,6 +110,7 @@ p{
 a{
     @include decor(#4e5050, none, 0, 0);
     font: rem(12px) 'Arial';
+	text-decoration: none;
 }
 
 a:hover{

@@ -1,0 +1,32 @@
+.offer{
+    flex-basis: 70%;
+}
+
+.offer-section{
+    display: flex;
+    margin-top: rem(36px);
+}
+
+.offer-list{
+    margin-right: rem(14px);
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.offer-item{
+    margin-bottom: rem(20px);
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.offer-item:before{
+	content: "→";
+	margin-right: 0.625rem;
+    color: #38afe5;
+}
+
+.offer-link{
+    font-size: rem(14px);
+}
