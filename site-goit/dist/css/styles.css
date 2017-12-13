@@ -78,6 +78,12 @@ body {
 	min-width: 30rem;
 }
 
+.clearfix:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
 .main {
 	background-color: #fff;
 	padding: 1.25rem 1rem 1.875rem 1rem;
@@ -886,6 +892,10 @@ input[type="email"] {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 h2 {
@@ -1269,6 +1279,10 @@ input[type="email"] {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 .header {

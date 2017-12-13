@@ -1,16 +1,39 @@
 .offer{
-    flex-basis: 70%;
+    @media (min-width: 768px){
+        flex-basis: 65%;
+        align-self: flex-start;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 1024px){
+        flex-basis: 70%;
+    }
+}
+
+.offer-none{
+    display: none;
 }
 
 .offer-section{
     display: flex;
+    justify-content: space-between;
     margin-top: rem(36px);
+
+    @media (min-width: 1024px){
+        justify-content: flex-start;
+    }
 }
 
 .offer-list{
-    margin-right: rem(14px);
-    &:last-child{
-        margin-bottom: 0;
+    @media (min-width: 768px){
+        margin-right: rem(25px);
+    }
+
+    @media (min-width: 1024px){
+        margin-right: rem(40px);
+        &:last-child{
+            margin-right: 0;
+        }
     }
 }
 

@@ -30,6 +30,12 @@ body{
 	min-width: rem(480px);
 }
 
+.clearfix:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+
 .main{
 	background-color: #fff;
 	padding: rem(20px) rem(16px) rem(30px) rem(16px);
@@ -59,12 +65,14 @@ body{
 	@media (min-width: rem(768px)){
 		&:last-child{
 			display: flex;
+			justify-content: space-between;
 		}
 	}
 
 	@media (min-width: rem(1024px)){
 		&:first-child{
 			display: flex;
+			justify-content: space-between;
 		}
 	}
 

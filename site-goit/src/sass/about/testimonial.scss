@@ -1,5 +1,6 @@
 .testimonial{
-    flex-basis: 30%;
+    flex-basis: 28%;
+    align-self: flex-start;
 }
 
 .testimonial-text{
@@ -11,6 +12,10 @@
     text-align: left;
     border: 1px solid #dedbdb;
     border-radius: 0.25rem;
+
+    @media (min-width: 768px){
+        width: 100%;
+    }
 }
 
 .testimonial-text:before,

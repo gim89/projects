@@ -3,41 +3,35 @@
     margin-bottom: 50px;
 }
 
-.profile-article{
-    @media (min-width: rem(768px)){
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
 .profile-title{
     margin-bottom: rem(20px);
 }
 
 .profile-img{
-    flex-basis: 50%;
-    align-self: flex-start;
-    margin-bottom: rem(25px);
+    @media (min-width: rem(768px)){
+        float: left;
+        margin-right: rem(20px);
+        margin-bottom: rem(16px);
+    }
+
+    @media (min-width: rem(1024px)){
+        margin-bottom: rem(15px);
+    }
 }
 
-.profile-section{
-    @media (min-width: rem(768px)){
-        flex-basis: 50%;
-    }
+.profile-bold{
+    margin-top: rem(25px);
 }
 
 .profile-text{
+    max-height: rem(125px);
     font-size: rem(12px);
     line-height: 1.5;
     color: #4e5050;
-    &:last-child{
-        display: none;
-    }
+    overflow: hidden;
 
     @media (min-width: rem(768px)){
-        &:last-child{
-            display: block;
-            flex-basis: 100%;
-        }
+        overflow: inherit;
+        max-height: inherit;
     }
 }

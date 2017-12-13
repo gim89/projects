@@ -78,6 +78,12 @@ body {
 	min-width: 30rem;
 }
 
+.clearfix:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
 .main {
 	background-color: #fff;
 	padding: 1.25rem 1rem 1.875rem 1rem;
@@ -338,30 +344,22 @@ input {
 	margin-bottom: 1.25rem;
 }
 
-.profile-img {
-	-webkit-flex-basis: 50%;
-	-ms-flex-preferred-size: 50%;
-	flex-basis: 50%;
-	-webkit-align-self: flex-start;
-	-ms-flex-item-align: start;
-	align-self: flex-start;
-	margin-bottom: 1.5625rem;
+.profile-bold {
+	margin-top: 1.5625rem;
 }
 
 .profile-text {
+	max-height: 7.8125rem;
 	font-size: 0.75rem;
 	line-height: 1.5;
 	color: #4e5050;
-}
-
-.profile-text:last-child {
-	display: none;
+	overflow: hidden;
 }
 
 .principles {
-	-webkit-flex-basis: 30%;
-	-ms-flex-preferred-size: 30%;
-	flex-basis: 30%;
+	-webkit-flex-basis: 28%;
+	-ms-flex-preferred-size: 28%;
+	flex-basis: 28%;
 }
 
 .principles-section {
@@ -370,10 +368,6 @@ input {
 }
 
 .principles-list {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
 	counter-reset: section;
 }
 
@@ -419,10 +413,8 @@ input {
 	border-radius: 0.9375rem;
 }
 
-.offer {
-	-webkit-flex-basis: 70%;
-	-ms-flex-preferred-size: 70%;
-	flex-basis: 70%;
+.offer-none {
+	display: none;
 }
 
 .offer-section {
@@ -430,15 +422,11 @@ input {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	margin-top: 2.25rem;
-}
-
-.offer-list {
-	margin-right: 0.875rem;
-}
-
-.offer-list:last-child {
-	margin-bottom: 0;
 }
 
 .offer-item {
@@ -460,9 +448,12 @@ input {
 }
 
 .testimonial {
-	-webkit-flex-basis: 30%;
-	-ms-flex-preferred-size: 30%;
-	flex-basis: 30%;
+	-webkit-flex-basis: 28%;
+	-ms-flex-preferred-size: 28%;
+	flex-basis: 28%;
+	-webkit-align-self: flex-start;
+	-ms-flex-item-align: start;
+	align-self: flex-start;
 }
 
 .testimonial-text {
@@ -706,6 +697,10 @@ input {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 h2 {
@@ -732,27 +727,15 @@ h2 {
 	font-size: 1.125rem;
 }
 
-.profile-article {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+.profile-img {
+	float: left;
+	margin-right: 1.25rem;
+	margin-bottom: 1rem;
 }
 
-.profile-section {
-	-webkit-flex-basis: 50%;
-	-ms-flex-preferred-size: 50%;
-	flex-basis: 50%;
-}
-
-.profile-text:last-child {
-	display: block;
-	-webkit-flex-basis: 100%;
-	-ms-flex-preferred-size: 100%;
-	flex-basis: 100%;
+.profile-text {
+	overflow: inherit;
+	max-height: inherit;
 }
 
 .footer-part {
@@ -861,6 +844,10 @@ h2 {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 .header {
@@ -920,6 +907,10 @@ h2 {
 	font-size: 1.25rem;
 }
 
+.profile-img {
+	margin-bottom: 0.9375rem;
+}
+
 .footer-contact {
 	-webkit-flex-basis: 10%;
 	-ms-flex-preferred-size: 10%;
@@ -930,6 +921,64 @@ h2 {
 .social-item {
 	width: 2.5rem;
 	height: 2.5rem;
+}
+
+}
+
+@media (min-width: 768px) {
+
+.principles-list {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.offer {
+	-webkit-flex-basis: 65%;
+	-ms-flex-preferred-size: 65%;
+	flex-basis: 65%;
+	-webkit-align-self: flex-start;
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+	margin-bottom: 0;
+}
+
+.offer-list {
+	margin-right: 1.5625rem;
+}
+
+.testimonial-text {
+	width: 100%;
+}
+
+}
+
+@media (min-width: 1024px) {
+
+.principles-list {
+	display: block;
+}
+
+.offer {
+	-webkit-flex-basis: 70%;
+	-ms-flex-preferred-size: 70%;
+	flex-basis: 70%;
+}
+
+.offer-section {
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
+.offer-list {
+	margin-right: 2.5rem;
+}
+
+.offer-list:last-child {
+	margin-right: 0;
 }
 
 }
