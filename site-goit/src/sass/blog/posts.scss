@@ -1,0 +1,82 @@
+.posts{
+    @media (min-width: rem(1024px)){
+        flex-basis: 70%;
+    }
+}
+
+.posts-article{
+    margin-bottom: rem(40px);
+
+    @media (min-width: rem(768px)){
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: rem(1024px)){
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.posts-article:first-child{
+    padding-bottom: rem(40px);
+    border-bottom: 1px solid #dedbdb;
+}
+
+.posts-header{
+    flex-basis: 100%;
+    margin-bottom: rem(20px);
+}
+
+.header-comments{
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(10px);
+    font-size: 0.75rem;
+
+}
+
+.posts-header:before{
+    float: left;
+    display: block;
+    content: "23 Apr";
+    width: 1.75rem;
+    height: 1.75rem;
+    background-color: #38afe5;
+    margin-top: 0.25rem;
+    margin-right: 0.75rem;
+    font-size: 0.5rem;
+    line-height: 1.75rem;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #4b99bd;
+    border-radius: 0.9375rem;
+}
+
+.posts-passage{
+    text-align: center;
+
+    @media (min-width: rem(768px)){
+        flex-basis: 53%;
+        text-align: left;
+    }
+
+    @media (min-width: rem(1024px)){
+        flex-basis: 50%;
+    }
+}
+
+.posts-text{
+    margin-bottom: rem(20px);
+    text-align: left;
+}
+
+.posts-btn{
+    padding: rem(10px) rem(120px);
+
+    @media (min-width: rem(768px)){
+        padding: rem(5px) rem(15px);
+    }
+}

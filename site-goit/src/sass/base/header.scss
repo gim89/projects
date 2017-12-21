@@ -91,7 +91,7 @@
     }
 
     &:hover .dropdown{
-        opacity: 1;
+        display: block;
     }
 
     &:nth-last-child(-n+3){
@@ -120,7 +120,7 @@
 }
 
 .dropdown{
-    opacity: 0;
+    display: none;
     position: absolute;
     top: rem(32px);
     background-color: #f2f2f3;

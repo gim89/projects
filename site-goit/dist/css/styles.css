@@ -76,6 +76,7 @@ body {
 
 .container-fluid {
 	min-width: 30rem;
+	max-width: 64rem;
 }
 
 .clearfix:after {
@@ -87,6 +88,17 @@ body {
 .main {
 	background-color: #fff;
 	padding: 1.25rem 1rem 1.875rem 1rem;
+}
+
+.tours-section {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 .section {
@@ -256,7 +268,7 @@ input {
 }
 
 .header-item:hover .dropdown {
-	opacity: 1;
+	display: block;
 }
 
 .header-item:nth-last-child(-n+3) {
@@ -283,7 +295,7 @@ input {
 }
 
 .dropdown {
-	opacity: 0;
+	display: none;
 	position: absolute;
 	top: 2rem;
 	background-color: #f2f2f3;
@@ -887,6 +899,20 @@ input[type="email"] {
 	padding: 1.875rem 1.625rem 2.75rem 1.625rem;
 }
 
+.contacts-main {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
 .about-section:last-child {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -1257,6 +1283,43 @@ input[type="email"] {
 
 .main {
 	padding: 2.5rem 2.5rem 3.75rem 2.5rem;
+}
+
+.blog-main {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.tours-main {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.tours-section {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-flex-basis: 20%;
+	-ms-flex-preferred-size: 20%;
+	flex-basis: 20%;
 }
 
 .home-section {

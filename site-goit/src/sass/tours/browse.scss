@@ -1,0 +1,25 @@
+.browse{
+    flex-basis: 35%;
+    margin-bottom: rem(40px);
+}
+
+.browse-form{
+    width: 60%;
+    margin: 0 auto;
+    @media (min-width: rem(768px)){
+        width: 100%;
+    }
+}
+
+.browse-form-title{
+    margin-bottom: rem(10px);
+    text-transform: none;
+}
+
+.browse-form-select{
+    display: block;
+    width: 100%;
+    padding: rem(4px) rem(8px);
+    margin-bottom: rem(40px);
+    font-size: rem(10px);
+}

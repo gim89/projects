@@ -1,0 +1,31 @@
+.search{
+    flex-basis: 60%;
+}
+
+.search-form-title{
+    margin-bottom: rem(10px);
+}
+
+label{
+    width: 49%;
+    margin-bottom: rem(10px);
+    &:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+    @media (min-width: rem(1024px)){
+        width: 100%;
+    }
+}
+
+#search-form-destination,
+#search-form-price,
+#search-form-departing,
+#search-form-duration{
+    width: 90%;
+    padding: rem(4px) rem(8px);
+    font-size: rem(10px);
+
+    @media (min-width: rem(1024px)){
+        width: 100%;
+    }
+}

@@ -1,0 +1,51 @@
+.contact-form{
+    @media (min-width: rem(768px)){
+        flex-basis: 65%;
+    }
+
+    @media (min-width: rem(1024px)){
+        flex-basis: 24%;
+        order: 1;
+    }
+}
+
+.form-body{
+    margin-bottom: rem(40px);
+    text-align: right;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    padding: rem(5px) rem(10px);
+    margin-bottom: rem(15px);
+    font-size: rem(14px);
+    border: 1px solid #dedbdb;
+    text-transform: none;
+}
+
+textarea{
+    height: rem(115px);
+    resize: none;
+
+    @media (min-width: rem(1024px)){
+        height: rem(225px);
+    }
+}
+
+input::placeholder,
+textarea::placeholder{
+    text-transform: uppercase;
+}
+
+input[type="submit"]{
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    margin-left: 1rem;
+    text-transform: none;
+
+    &[value="clear"]{
+        margin-left: 0;
+    }
+}

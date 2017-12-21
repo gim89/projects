@@ -28,6 +28,7 @@ body{
 
 .container-fluid{
 	min-width: rem(480px);
+	max-width: rem(1024px);
 }
 
 .clearfix:after{
@@ -46,6 +47,39 @@ body{
 
 	@media (min-width: rem(1024px)){
 		padding: rem(40px) rem(40px) rem(60px) rem(40px);
+	}
+}
+
+.blog-main{
+	@media (min-width: rem(1024px)){
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.contacts-main{
+	@media (min-width: rem(768px)){
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+
+.tours-main{
+	@media (min-width: rem(1024px)){
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.tours-section{
+	display: flex;
+	justify-content: space-between;
+
+	@media (min-width: rem(1024px)){
+		display: flex;
+		flex-direction: column;
+		flex-basis: 20%;
 	}
 }
 
