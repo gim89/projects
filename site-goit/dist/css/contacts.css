@@ -197,8 +197,8 @@ input {
 }
 
 .header {
-	padding-top: 1.5rem;
-	padding-bottom: 3.75rem;
+	padding-top: 1.25rem;
+	padding-bottom: 2.5rem;
 }
 
 .header-section {
@@ -239,7 +239,7 @@ input {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	width: 75%;
+	width: 90%;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -292,57 +292,6 @@ input {
 	-webkit-transition: all ease-in .1s;
 	-o-transition: all ease-in .1s;
 	transition: all ease-in .1s;
-}
-
-.dropdown {
-	display: none;
-	position: absolute;
-	top: 2rem;
-	background-color: #f2f2f3;
-	-webkit-border-radius: 0.25rem;
-	border-radius: 0.25rem;
-	-webkit-transition: all .2s ease-in .2s;
-	-o-transition: all .2s ease-in .2s;
-	transition: all .2s ease-in .2s;
-}
-
-.dropdown:before {
-	position: absolute;
-	top: -0.5rem;
-	left: 50%;
-	content: "";
-	border: 0.25rem solid transparent;
-	border-bottom: 0.25rem solid #fff;
-	-webkit-transform: translate(-50%, 0);
-	-ms-transform: translate(-50%, 0);
-	transform: translate(-50%, 0);
-}
-
-.dropdown-item {
-	padding: 0 0.5rem;
-	text-align: center;
-	-webkit-border-radius: 0.25rem;
-	border-radius: 0.25rem;
-}
-
-.dropdown-item:first-child {
-	padding-top: 0.25rem;
-}
-
-.dropdown-link {
-	color: #7f8798;
-	word-spacing: 0;
-	letter-spacing: 0;
-	text-transform: uppercase;
-	font: 300 0.875rem "Pathway Gothic One";
-	text-align: center;
-	-webkit-transition: all .1s ease-in .1s;
-	-o-transition: all .1s ease-in .1s;
-	transition: all .1s ease-in .1s;
-}
-
-.dropdown-link:hover {
-	color: #263555;
 }
 
 .form-body {
@@ -450,10 +399,9 @@ input[type="submit"][value="clear"] {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
 	-webkit-box-align: stretch;
 	-webkit-align-items: stretch;
 	-ms-flex-align: stretch;
@@ -482,7 +430,6 @@ input[type="submit"][value="clear"] {
 }
 
 .footer-list {
-	margin-right: 3.125rem;
 	margin-bottom: 1rem;
 }
 
@@ -517,12 +464,10 @@ input[type="submit"][value="clear"] {
 }
 
 .footer-title {
-	margin-right: 1.25rem;
 	color: #fff;
 }
 
 .footer-text {
-	margin-right: 2.25rem;
 	font-size: 0.625rem;
 	color: #fff;
 }
@@ -626,6 +571,62 @@ input[type="submit"][value="clear"] {
 	margin-bottom: 0;
 	font-size: 0.625rem;
 	color: #eef5f6;
+	text-align: center;
+}
+
+@media (min-width: 20rem) {
+
+.footer-title {
+	margin-right: 1rem;
+}
+
+.footer-text {
+	margin-right: 1rem;
+}
+
+}
+
+@media (min-width: 30rem) {
+
+.header-list {
+	width: 75%;
+}
+
+.footer-part {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+}
+
+.footer-list {
+	margin-right: 3.125rem;
+}
+
+.footer-title {
+	margin-right: 1.25rem;
+}
+
+.footer-text {
+	margin-right: 2.25rem;
+}
+
+}
+
+@media (min-width: 36rem) {
+
+.header-logo {
+	font-size: 2.75rem;
+}
+
 }
 
 @media (min-width: 48rem) {
@@ -663,24 +664,8 @@ h2 {
 	font-size: 2.1875rem;
 }
 
-.header {
-	padding-bottom: 1.25rem;
-}
-
-.header-logo {
-	font-size: 2.75rem;
-}
-
 .header-link {
 	font-size: 1.5rem;
-}
-
-.dropdown {
-	top: 2.5rem;
-}
-
-.dropdown-link {
-	font-size: 1.125rem;
 }
 
 .contact-form {
@@ -796,6 +781,53 @@ h2 {
 
 }
 
+@media (min-width: 62rem) {
+
+.header-logo {
+	position: absolute;
+	left: 50%;
+	padding: 2.75rem 2.25rem;
+	font-size: 3.75rem;
+	-webkit-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+}
+
+.header-list {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
+	margin: 3.75rem 0;
+}
+
+.header-item {
+	-webkit-flex-basis: auto;
+	-ms-flex-preferred-size: auto;
+	flex-basis: auto;
+	margin-right: 3.75rem;
+	margin-bottom: 0;
+}
+
+.header-item:last-child {
+	margin-right: 0;
+}
+
+.header-item:nth-child(2) {
+	margin-left: 0;
+}
+
+.header-item:nth-child(3) {
+	margin-right: 15rem;
+}
+
+.header-link {
+	font-size: 1.75rem;
+}
+
+}
+
 @media (min-width: 64rem) {
 
 .main {
@@ -867,59 +899,12 @@ h2 {
 
 .header {
 	padding-top: 2.5rem;
-	padding-bottom: 3.125rem;
+	padding-bottom: 2.5rem;
 }
 
 .header-section {
 	position: relative;
 	margin-bottom: 0;
-}
-
-.header-logo {
-	position: absolute;
-	left: 50%;
-	padding: 2.75rem 2.25rem;
-	font-size: 3.75rem;
-	-webkit-transform: translate(-50%, 0);
-	-ms-transform: translate(-50%, 0);
-	transform: translate(-50%, 0);
-}
-
-.header-list {
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	width: 100%;
-	margin: 3.75rem 0;
-}
-
-.header-item {
-	-webkit-flex-basis: auto;
-	-ms-flex-preferred-size: auto;
-	flex-basis: auto;
-	margin-right: 3.75rem;
-	margin-bottom: 0;
-}
-
-.header-item:last-child {
-	margin-right: 0;
-}
-
-.header-item:nth-child(2) {
-	margin-left: 0;
-}
-
-.header-item:nth-child(3) {
-	margin-right: 15rem;
-}
-
-.header-link {
-	font-size: 1.75rem;
-}
-
-.dropdown-link {
-	font-size: 1.25rem;
 }
 
 .contact-form {

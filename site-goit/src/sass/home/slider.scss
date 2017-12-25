@@ -131,31 +131,84 @@
 
 .carousel-caption{
     position: absolute;
-    right: 27%;
-    bottom: -7%;
-    left: 45%;
+    right: 12%;
+    bottom: -19%;
+    left: 24%;
     padding-top: 0;
     padding-bottom: 0;
     text-align: left;
 
+    @media (min-width: rem(240px)){
+        right: 16%;
+        bottom: -12%;
+    }
+
+    @media (min-width: rem(280px)){
+        right: 27%;
+    }
+
+    @media (min-width: rem(320px)){
+        right: 35%;
+    }
+
+    @media (min-width: rem(360px)){
+        right: 40%;
+        bottom: -10%;
+    }
+
+    @media (min-width: rem(375px)){
+        right: 42%;
+    }
+
+    @media (min-width: rem(412px)){
+        right: 45%;
+        bottom: -8%;
+    }
+
+    @media (min-width: rem(480px)){
+        right: 27%;
+        bottom: -7%;
+        left: 45%;
+    }
+
+    @media (min-width: rem(540px)){
+        right: 31%;
+    }
+
+    @media (min-width: rem(576px)){
+        right: 32%;
+    }
+
     @media (min-width: rem(768px)){
         top: 35%;
         left: 0;
-        right: 72%;
+        right: 70%;
+    }
+
+    @media (min-width: rem(992px)){
+        right: 78%;
     }
 
     @media (min-width: rem(1024px)){
-        right: 71%;
+        right: 68%;
+    }
+
+    @media (min-width: rem(1200px)){
+        right: 74%;
     }
 }
 
 .slider-text{
     display: inline-block;
     background-color: #fff;
-    padding: rem(10px) rem(6px);
+    padding: rem(6px) rem(2px);
     font: 300 rem(10px) 'Pathway Gothic One';
     @include decor(#344260, uppercase);
     text-shadow: none;
+
+    @media (min-width: rem(480px)){
+        padding: rem(10px) rem(6px);
+    }
 
     @media (min-width: rem(768px)){
         font-size: rem(18px);
@@ -168,10 +221,14 @@
 
 .slider-title{
     background-color: #38afe5;
-    padding: rem(10px) rem(6px);
+    padding: rem(6px) rem(2px);
     font: 300 rem(14px) 'Pathway Gothic One';
     @include decor(#fff, uppercase);
     text-shadow: none;
+
+    @media (min-width: rem(480px)){
+        padding: rem(10px) rem(6px);
+    }
 
     @media (min-width: rem(768px)){
         font-size: rem(24px);

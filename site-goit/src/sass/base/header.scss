@@ -1,14 +1,10 @@
 .header{
-    padding-top: rem(24px);
-    padding-bottom: rem(60px);
-
-    @media (min-width: rem(768px)){
-        padding-bottom: rem(20px);
-    }
+    padding-top: rem(20px);
+    padding-bottom: rem(40px);
 
     @media (min-width:rem(1024px)){
         padding-top: rem(40px);
-        padding-bottom: rem(50px);
+        padding-bottom: rem(40px);
     }
 }
 
@@ -34,11 +30,11 @@
         color: #263555;
     }
 
-    @media (min-width: rem(768px)){
+    @media (min-width: rem(576px)){
         font-size: rem(44px);
     }
 
-    @media (min-width: rem(1024px)){
+    @media (min-width: rem(992px)){
         position: absolute;
         left: 50%;
         padding: rem(44px) rem(36px);
@@ -50,11 +46,15 @@
 .header-list{
     @include flex(flex, space-between, center);
     flex-wrap: wrap;
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
 
-    @media (min-width: rem(1024px)){
+    @media (min-width: rem(480px)){
+        width: 75%;
+    }
+
+    @media (min-width: rem(992px)){
         justify-content: center;
         width: 100%;
         margin: rem(60px) 0;
@@ -65,7 +65,7 @@
     flex-basis: 33.33%;
     margin-bottom: rem(12px);
 
-    @media (min-width: rem(1024px)){
+    @media (min-width: rem(992px)){
         flex-basis: auto;
         margin-right: rem(60px);
         margin-bottom: 0;
@@ -79,13 +79,13 @@
         @include flex(flex, center);
         position: relative;
 
-        @media (min-width: rem(1024px)){
+        @media (min-width: rem(992px)){
             margin-left: 0;
         }
     }
 
     &:nth-child(3){
-        @media (min-width: rem(1024px)){
+        @media (min-width: rem(992px)){
             margin-right: rem(240px);
         }
     }
@@ -114,60 +114,7 @@
         font-size: rem(24px);
     }
 
-    @media (min-width: rem(1024px)){
+    @media (min-width: rem(992px)){
         font-size: rem(28px);
-    }
-}
-
-.dropdown{
-    display: none;
-    position: absolute;
-    top: rem(32px);
-    background-color: #f2f2f3;
-    border-radius: rem(4px);
-    transition: all .2s ease-in .2s;
-
-    &:before{
-        position: absolute;
-        top: rem(-8px);
-        left: 50%;
-        content: "";
-        border: rem(4px) solid transparent;
-        border-bottom: rem(4px) solid #fff;
-        transform: translate(-50%, 0);
-    }
-
-    @media (min-width: rem(768px)){
-        top: rem(40px);
-    }
-}
-
-.dropdown-item{
-    padding: 0 rem(8px);
-    text-align: center;
-    border-radius: rem(4px);
-
-    &:first-child{
-        padding-top: rem(4px);
-    }
-
-}
-
-.dropdown-link{
-    @include decor(#7f8798, uppercase);
-    font: 300 rem(14px) 'Pathway Gothic One';
-    text-align: center;
-    transition: all .1s ease-in .1s;
-
-    &:hover{
-        color: #263555;
-    }
-
-    @media (min-width: rem(768px)){
-        font-size: rem(18px);
-    }
-
-    @media (min-width: rem(1024px)){
-        font-size: rem(20px);
     }
 }

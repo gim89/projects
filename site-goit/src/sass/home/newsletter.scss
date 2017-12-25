@@ -8,11 +8,12 @@
 }
 
 .newsletter-title{
-    padding: rem(6px) 0 rem(2px) rem(48px);
+    padding: rem(6px) 0 rem(2px) 0;
     font: 300 rem(20px) 'Open Sans';
     @include decor(#263555, uppercase);
     border: rem(1px) solid #dbdede;
     border-bottom: 0;
+    text-align: center;
 
     @media (min-width: rem(1024px)){
         padding-bottom: rem(4px);
@@ -39,8 +40,14 @@
 }
 
 .newsletter-form{
-    padding: rem(30px) rem(14px) rem(30px) rem(40px);
+
+    padding: rem(30px) rem(5px) rem(30px) rem(5px);
     border-bottom: 0;
+
+    @media (min-width: rem(480px)){
+        padding: rem(30px) rem(14px) rem(30px) rem(40px);
+
+    }
 
     @media (min-width: rem(768px)){
         flex-basis: 42%;
@@ -69,13 +76,17 @@ label{
 }
 
 input[type="email"]{
-    width: 86%;
+    width: 100%;
     padding: rem(6px) rem(24px);
     margin: 0 auto;
     font-size: rem(12px);
     @include decor(#868f8f);
     border: rem(1px) solid #dedbdb;
     border-radius: rem(4px);
+
+    @media (min-width: rem(480px)){
+        width: 86%;
+    }
 
     @media (min-width: rem(768px)){
         width: 100%;
@@ -87,11 +98,17 @@ input[type="email"]{
 }
 
 .newsletter-list{
-    padding-left: rem(40px);
     padding-bottom: rem(36px);
-    columns: 2;
+    padding-left: rem(5px);
+    columns: 1;
     column-gap: 0;
     border-top: 0;
+
+    @media (min-width: rem(480px)){
+        padding-left: rem(40px);
+        columns: 2;
+    }
+
 
     @media (min-width: rem(768px)){
         flex-basis: 54%;
@@ -109,9 +126,14 @@ input[type="email"]{
 .newsletter-item{
     margin-bottom: rem(12px);
 
-    &:nth-child(4){
-        margin-bottom: 0;
+    @media (min-width: rem(480px)){
+
+        &:nth-child(4){
+            margin-bottom: 0;
+        }
     }
+
+
 
     @media (min-width: rem(1024px)){
         margin-bottom: rem(20px);

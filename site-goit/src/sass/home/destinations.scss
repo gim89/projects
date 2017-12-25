@@ -66,12 +66,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 100%;
     min-height: 100%;
     background-color: rgba(25,49,73,0.8);
     text-align: right;
     transform: translate(-100%, 0);
     transition: all 0.1s ease-in 0.1s;
+
+    @media (min-width: rem(480px)){
+        width: 50%;
+    }
 }
 
 .card-item:hover .card-item-hover{
@@ -79,9 +83,14 @@
 }
 
 .card-title{
-    margin: rem(10px) 0 rem(10px) rem(10px);
+    margin-bottom: 0;
+    margin-left: rem(10px);
     color: #fff;
     text-align: left;
+
+    @media (min-width: rem(480px)){
+        margin: rem(10px) 0 rem(10px) rem(10px);
+	}
 
     @media (min-width: rem(768px)){
         margin: rem(26px) 0;
@@ -89,19 +98,36 @@
         text-align: center;
 	}
 
-    @media (min-width: rem(1024px)){
+    @media (min-width: rem(992px)){
         margin: rem(16px) 0;
 	}
 }
 
 .card-text{
-    max-height: rem(70px);
-    margin: 0 rem(10px) rem(10px) rem(10px);
+    max-height: rem(20px);
+    margin: 0 rem(10px);
     font-size: rem(12px);
     line-height: 1.5;
     color: #cbc6c6;
     text-align: left;
     overflow: hidden;
+
+    @media (min-width: rem(320px)){
+        max-height: rem(40px);
+	}
+
+    @media (min-width: rem(375px)){
+        max-height: rem(55px);
+	}
+
+    @media (min-width: rem(412px)){
+        max-height: rem(75px);
+	}
+
+    @media (min-width: rem(480px)){
+        max-height: rem(70px);
+        margin-bottom: rem(10px);
+	}
 
     @media (min-width: rem(768px)){
         max-height: rem(142px);
@@ -109,7 +135,7 @@
 		font-size: rem(12px);
 	}
 
-    @media (min-width: rem(1024px)){
+    @media (min-width: rem(992px)){
         max-height: rem(138px);
         font-size: rem(10px);
 	}

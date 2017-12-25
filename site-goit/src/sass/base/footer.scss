@@ -1,5 +1,5 @@
 .footer-part{
-    @include flex(flex, center);
+    @include flex(flex, space-around);
     flex-wrap: wrap;
     background-color: #30455b;
     padding-top: rem(20px);
@@ -13,17 +13,24 @@
         padding-bottom: rem(16px);
     }
 
+    @media (min-width: rem(480px)){
+        @include flex(flex, center);
+    }
+
     @media (min-width: rem(768px)){
         justify-content: center;
     }
 }
 
 .footer-list{
-    margin-right: rem(50px);
     margin-bottom: rem(16px);
 
     &:nth-child(3){
         margin-right: 0;
+    }
+
+    @media (min-width: rem(480px)){
+        margin-right: rem(50px);
     }
 
     @media (min-width: rem(768px)){
@@ -69,8 +76,16 @@
 }
 
 .footer-title{
-    margin-right: rem(20px);
+
     color: #fff;
+
+    @media (min-width: rem(320px)){
+        margin-right: 1rem;
+    }
+
+    @media (min-width: rem(480px)){
+        margin-right: rem(20px);
+    }
 
     @media (min-width: rem(768px)){
         margin-right: 0;
@@ -80,13 +95,20 @@
 }
 
 .footer-text{
-    margin-right: rem(36px);
     font-size: rem(10px);
     color: #fff;
 
     &:last-child{
         margin-right: 0;
 
+    }
+
+    @media (min-width: rem(320px)){
+        margin-right: 1rem;
+    }
+
+    @media (min-width: rem(480px)){
+        margin-right: rem(36px);
     }
 
     @media (min-width: rem(768px)){
@@ -194,6 +216,7 @@
     margin-bottom: 0;
     font-size: rem(10px);
     color: #eef5f6;
+    text-align: center;
 
     @media (min-width: rem(768px)){
         font-size: rem(12px);

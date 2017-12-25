@@ -13,13 +13,26 @@
 }
 
 .nav-tabs .nav-link{
-    padding: rem(4px) rem(16px);
+
+    padding: rem(1px);
+
+    @media (min-width: rem(280px)){
+        padding: rem(4px);
+    }
+
+    @media (min-width: rem(320px)){
+        padding: rem(4px) rem(10px);
+    }
+
+    @media (min-width: rem(480px)){
+        padding: rem(4px) rem(16px);
+    }
 
     @media (min-width: rem(768px)){
         padding: rem(10px) rem(30px);
     }
 
-    @media (min-width: rem(768px)){
+    @media (min-width: rem(992px)){
         padding: rem(4px) rem(30px);
     }
 }
@@ -68,8 +81,13 @@
 }
 
 .tab-info{
-    @include flex(flex, space-between);
-    align-self: flex-start;
+    text-align: right;
+
+    @media (min-width: rem(480px)){
+        @include flex(flex, space-between);
+        align-self: flex-start;
+    }
+
     @media (min-width: rem(768px)){
         display: block;
         flex-basis: 56%;
@@ -79,12 +97,15 @@
 
 .article-post{
     flex-basis: 65%;
+    margin-bottom: rem(5px);
+    text-align: left;
 }
 
 .tab-title{
     margin-bottom: rem(8px);
     font: rem(10px) Arial;
     @include decor(#263555);
+
     @media (min-width: rem(768px)){
         margin-bottom: rem(20px);
         font-size: rem(18px);
