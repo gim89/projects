@@ -90,17 +90,6 @@ body {
 	padding: 1.25rem 1rem 1.875rem 1rem;
 }
 
-.tours-section {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-}
-
 .section {
 	margin-bottom: 3.125rem;
 }
@@ -343,7 +332,6 @@ textarea::placeholder {
 input[type="submit"] {
 	background-color: transparent;
 	padding: 0.5rem 1.5rem;
-	margin-left: 1rem;
 	text-transform: none;
 }
 
@@ -352,14 +340,6 @@ input[type="submit"][value="clear"] {
 }
 
 .phones {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
 	margin-bottom: 2.5rem;
 }
 
@@ -367,6 +347,11 @@ input[type="submit"][value="clear"] {
 	-webkit-flex-basis: 49%;
 	-ms-flex-preferred-size: 49%;
 	flex-basis: 49%;
+	margin-bottom: 1.25rem;
+}
+
+.phones-address:last-child {
+	margin-bottom: 0;
 }
 
 .phones-text {
@@ -592,6 +577,21 @@ input[type="submit"][value="clear"] {
 	width: 75%;
 }
 
+input[type="submit"] {
+	margin-left: 1rem;
+}
+
+.phones {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
 .footer-part {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -649,6 +649,17 @@ input[type="submit"][value="clear"] {
 	flex-wrap: wrap;
 }
 
+.tours-section {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
 .about-section:last-child {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -684,11 +695,15 @@ h2 {
 }
 
 .phones-address {
-	margin-bottom: 40px;
+	margin-bottom: 2.5rem;
 }
 
 .phones-address:last-child {
 	margin-bottom: 0;
+}
+
+.phones-number {
+	margin-left: 0;
 }
 
 .map {
@@ -729,9 +744,9 @@ h2 {
 }
 
 .footer-contact {
-	-webkit-flex-basis: 13%;
-	-ms-flex-preferred-size: 13%;
-	flex-basis: 13%;
+	-webkit-flex-basis: 14%;
+	-ms-flex-preferred-size: 14%;
+	flex-basis: 14%;
 	display: block;
 }
 
@@ -857,10 +872,6 @@ h2 {
 }
 
 .tours-section {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
@@ -869,6 +880,10 @@ h2 {
 	-webkit-flex-basis: 20%;
 	-ms-flex-preferred-size: 20%;
 	flex-basis: 20%;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
 }
 
 .home-section {
@@ -942,9 +957,9 @@ textarea {
 }
 
 .footer-contact {
-	-webkit-flex-basis: 10%;
-	-ms-flex-preferred-size: 10%;
-	flex-basis: 10%;
+	-webkit-flex-basis: 11%;
+	-ms-flex-preferred-size: 11%;
+	flex-basis: 11%;
 	display: block;
 }
 

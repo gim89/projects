@@ -13,8 +13,7 @@
 }
 
 .nav-tabs .nav-link{
-
-    padding: rem(1px);
+    padding: rem(2px);
 
     @media (min-width: rem(280px)){
         padding: rem(4px);
@@ -73,6 +72,7 @@
 
 .tab-img{
     margin-bottom: rem(14px);
+
     @media (min-width: rem(768px)){
         align-self: flex-start;
         flex-basis: 40%;
@@ -97,7 +97,7 @@
 
 .article-post{
     flex-basis: 65%;
-    margin-bottom: rem(5px);
+    margin-bottom: rem(6px);
     text-align: left;
 }
 
@@ -128,6 +128,7 @@
         margin-bottom: rem(20px);
         font-size: rem(12px);
         text-align: left;
+
         &:last-child{
             margin-bottom: rem(20px);
         }
@@ -149,6 +150,7 @@
     align-self: flex-end;
     margin-right: 0;
     font-size: rem(8px);
+    
     @media (min-width: rem(768px)){
         font-size: rem(14px);
     }

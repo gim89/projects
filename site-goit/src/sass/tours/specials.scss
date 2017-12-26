@@ -1,7 +1,8 @@
 .specials{
     margin-bottom: 40px;
     @media (min-width: rem(1024px)){
-        flex-basis: 75%;
+        flex-basis: 78%;
+        margin-bottom: 0;
     }
 }
 
@@ -14,8 +15,7 @@
 }
 
 .specials-item{
-    display: flex;
-    justify-content: space-between;
+
     margin-bottom: rem(40px);
 
     &:last-child{
@@ -26,6 +26,11 @@
         display: none;
     }
 
+    @media (min-width: rem(480px)){
+        display: flex;
+        justify-content: space-between;
+    }
+
     @media (min-width: rem(768px)){
         width: 49%;
         &:nth-last-child(-n+2){
@@ -33,19 +38,49 @@
             justify-content: space-between;
         }
     }
+
+    @media (min-width: rem(1024px)){
+        &:nth-last-child(-n+2){
+            margin-bottom: 0;
+        }
+    }
 }
 
 .specials-img{
-    flex-basis: 48%;
+    margin-bottom: rem(20px);
+    flex-basis: 50%;
+
+    @media (min-width: rem(480px)){
+        margin-bottom: 0;
+    }
+
+    @media (min-width: rem(576px)){
+        flex-basis: 55%;
+    }
+
+    @media (min-width: rem(768px)){
+        flex-basis: 43%;
+    }
 }
 
 .specials-passage{
-    flex-basis: 51%;
+    flex-basis: 46%;
+
+    @media (min-width: rem(576px)){
+        flex-basis: 40%;
+    }
+
+    @media (min-width: rem(768px)){
+        flex-basis: 55%;
+    }
 }
 
 .passage-title{
-    font-size: rem(16px);
     margin-bottom: rem(25px);
+
+    @media (min-width: rem(768px)){
+        margin-bottom: rem(15px);
+    }
 }
 
 .passage-text{
@@ -55,4 +90,11 @@
 .passage-span{
     display: block;
     margin-top: rem(10px);
+    color: #38afe5;
+    text-transform: uppercase;
+}
+
+.passage-btn{
+    padding: rem(8px) rem(20px);
+    font-size: 1rem;
 }

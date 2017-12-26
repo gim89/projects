@@ -42,10 +42,13 @@ textarea::placeholder{
 input[type="submit"]{
     background-color: transparent;
     padding: 0.5rem 1.5rem;
-    margin-left: 1rem;
     text-transform: none;
 
     &[value="clear"]{
         margin-left: 0;
+    }
+
+    @media (min-width: rem(480px)){
+        margin-left: 1rem;
     }
 }

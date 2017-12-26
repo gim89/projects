@@ -90,17 +90,6 @@ body {
 	padding: 1.25rem 1rem 1.875rem 1rem;
 }
 
-.tours-section {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-}
-
 .section {
 	margin-bottom: 3.125rem;
 }
@@ -299,14 +288,6 @@ input {
 }
 
 .specials-item {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
 	margin-bottom: 2.5rem;
 }
 
@@ -319,19 +300,19 @@ input {
 }
 
 .specials-img {
-	-webkit-flex-basis: 48%;
-	-ms-flex-preferred-size: 48%;
-	flex-basis: 48%;
+	margin-bottom: 1.25rem;
+	-webkit-flex-basis: 50%;
+	-ms-flex-preferred-size: 50%;
+	flex-basis: 50%;
 }
 
 .specials-passage {
-	-webkit-flex-basis: 51%;
-	-ms-flex-preferred-size: 51%;
-	flex-basis: 51%;
+	-webkit-flex-basis: 46%;
+	-ms-flex-preferred-size: 46%;
+	flex-basis: 46%;
 }
 
 .passage-title {
-	font-size: 1rem;
 	margin-bottom: 1.5625rem;
 }
 
@@ -342,6 +323,13 @@ input {
 .passage-span {
 	display: block;
 	margin-top: 0.625rem;
+	color: #38afe5;
+	text-transform: uppercase;
+}
+
+.passage-btn {
+	padding: 0.5rem 1.25rem;
+	font-size: 1rem;
 }
 
 .browse {
@@ -349,11 +337,6 @@ input {
 	-ms-flex-preferred-size: 35%;
 	flex-basis: 35%;
 	margin-bottom: 2.5rem;
-}
-
-.browse-form {
-	width: 60%;
-	margin: 0 auto;
 }
 
 .browse-form-title {
@@ -365,7 +348,7 @@ input {
 	display: block;
 	width: 100%;
 	padding: 0.25rem 0.5rem;
-	margin-bottom: 2.5rem;
+	margin-bottom: 1.25rem;
 	font-size: 0.625rem;
 }
 
@@ -380,19 +363,15 @@ input {
 }
 
 label {
-	width: 49%;
+	width: 100%;
 	margin-bottom: 0.625rem;
-}
-
-label:nth-last-child(-n+2) {
-	margin-bottom: 0;
 }
 
 #search-form-destination,
 #search-form-price,
 #search-form-departing,
 #search-form-duration {
-	width: 90%;
+	width: 100%;
 	padding: 0.25rem 0.5rem;
 	font-size: 0.625rem;
 }
@@ -595,6 +574,41 @@ label:nth-last-child(-n+2) {
 	width: 75%;
 }
 
+.specials-item {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.specials-img {
+	margin-bottom: 0;
+}
+
+.browse-form {
+	width: 60%;
+	margin: 0 auto;
+}
+
+label {
+	width: 49%;
+}
+
+label:nth-last-child(-n+2) {
+	margin-bottom: 0;
+}
+
+#search-form-destination,
+#search-form-price,
+#search-form-departing,
+#search-form-duration {
+	width: 90%;
+}
+
 .footer-part {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -630,6 +644,18 @@ label:nth-last-child(-n+2) {
 	font-size: 2.75rem;
 }
 
+.specials-img {
+	-webkit-flex-basis: 55%;
+	-ms-flex-preferred-size: 55%;
+	flex-basis: 55%;
+}
+
+.specials-passage {
+	-webkit-flex-basis: 40%;
+	-ms-flex-preferred-size: 40%;
+	flex-basis: 40%;
+}
+
 }
 
 @media (min-width: 48rem) {
@@ -650,6 +676,17 @@ label:nth-last-child(-n+2) {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+}
+
+.tours-section {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 .about-section:last-child {
@@ -700,6 +737,22 @@ h2 {
 	justify-content: space-between;
 }
 
+.specials-img {
+	-webkit-flex-basis: 43%;
+	-ms-flex-preferred-size: 43%;
+	flex-basis: 43%;
+}
+
+.specials-passage {
+	-webkit-flex-basis: 55%;
+	-ms-flex-preferred-size: 55%;
+	flex-basis: 55%;
+}
+
+.passage-title {
+	margin-bottom: 0.9375rem;
+}
+
 .browse-form {
 	width: 100%;
 }
@@ -732,9 +785,9 @@ h2 {
 }
 
 .footer-contact {
-	-webkit-flex-basis: 13%;
-	-ms-flex-preferred-size: 13%;
-	flex-basis: 13%;
+	-webkit-flex-basis: 14%;
+	-ms-flex-preferred-size: 14%;
+	flex-basis: 14%;
 	display: block;
 }
 
@@ -860,10 +913,6 @@ h2 {
 }
 
 .tours-section {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
@@ -872,6 +921,10 @@ h2 {
 	-webkit-flex-basis: 20%;
 	-ms-flex-preferred-size: 20%;
 	flex-basis: 20%;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
 }
 
 .home-section {
@@ -911,13 +964,37 @@ h2 {
 }
 
 .specials {
-	-webkit-flex-basis: 75%;
-	-ms-flex-preferred-size: 75%;
-	flex-basis: 75%;
+	-webkit-flex-basis: 78%;
+	-ms-flex-preferred-size: 78%;
+	flex-basis: 78%;
+	margin-bottom: 0;
+}
+
+.specials-item:nth-last-child(-n+2) {
+	margin-bottom: 0;
+}
+
+.browse {
+	margin-bottom: 0;
+}
+
+.search {
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
 }
 
 label {
 	width: 100%;
+}
+
+label:nth-last-child(-n+2) {
+	margin-bottom: 1.25rem;
 }
 
 #search-form-destination,
@@ -928,9 +1005,9 @@ label {
 }
 
 .footer-contact {
-	-webkit-flex-basis: 10%;
-	-ms-flex-preferred-size: 10%;
-	flex-basis: 10%;
+	-webkit-flex-basis: 11%;
+	-ms-flex-preferred-size: 11%;
+	flex-basis: 11%;
 	display: block;
 }
 

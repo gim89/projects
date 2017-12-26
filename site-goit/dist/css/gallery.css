@@ -90,17 +90,6 @@ body {
 	padding: 1.25rem 1rem 1.875rem 1rem;
 }
 
-.tours-section {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-}
-
 .section {
 	margin-bottom: 3.125rem;
 }
@@ -587,6 +576,17 @@ input {
 	flex-wrap: wrap;
 }
 
+.tours-section {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
 .about-section:last-child {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -664,9 +664,9 @@ h2 {
 }
 
 .footer-contact {
-	-webkit-flex-basis: 13%;
-	-ms-flex-preferred-size: 13%;
-	flex-basis: 13%;
+	-webkit-flex-basis: 14%;
+	-ms-flex-preferred-size: 14%;
+	flex-basis: 14%;
 	display: block;
 }
 
@@ -792,10 +792,6 @@ h2 {
 }
 
 .tours-section {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
@@ -804,6 +800,10 @@ h2 {
 	-webkit-flex-basis: 20%;
 	-ms-flex-preferred-size: 20%;
 	flex-basis: 20%;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
 }
 
 .home-section {
@@ -861,9 +861,9 @@ h2 {
 }
 
 .footer-contact {
-	-webkit-flex-basis: 10%;
-	-ms-flex-preferred-size: 10%;
-	flex-basis: 10%;
+	-webkit-flex-basis: 11%;
+	-ms-flex-preferred-size: 11%;
+	flex-basis: 11%;
 	display: block;
 }
 

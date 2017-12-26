@@ -65,18 +65,17 @@
     @include flex(flex, center, center);
 
     @media (min-width: rem(768px)){
-        flex-basis: 13%;
+        flex-basis: 14%;
         display: block;
     }
 
     @media (min-width: rem(1024px)){
-        flex-basis: 10%;
+        flex-basis: 11%;
         display: block;
     }
 }
 
 .footer-title{
-
     color: #fff;
 
     @media (min-width: rem(320px)){

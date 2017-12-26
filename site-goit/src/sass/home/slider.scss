@@ -90,6 +90,7 @@
 
     @media (min-width: rem(768px)){
         border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+
         &:hover{
             background-color: #193149;
         }
@@ -125,7 +126,6 @@
 
     @media (min-width: rem(768px)){
         right: 55%;
-
     }
 }
 

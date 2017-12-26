@@ -1,5 +1,10 @@
 .search{
     flex-basis: 60%;
+
+    @media (min-width: rem(1024px)){
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 
 .search-form-title{
@@ -7,13 +12,22 @@
 }
 
 label{
-    width: 49%;
+    width: 100%;
     margin-bottom: rem(10px);
-    &:nth-last-child(-n+2){
-        margin-bottom: 0;
+
+    @media (min-width: rem(480px)){
+        width: 49%;
+
+        &:nth-last-child(-n+2){
+            margin-bottom: 0;
+        }
     }
+
     @media (min-width: rem(1024px)){
         width: 100%;
+        &:nth-last-child(-n+2){
+            margin-bottom: rem(20px);
+        }
     }
 }
 
@@ -21,9 +35,13 @@ label{
 #search-form-price,
 #search-form-departing,
 #search-form-duration{
-    width: 90%;
+    width: 100%;
     padding: rem(4px) rem(8px);
     font-size: rem(10px);
+
+    @media (min-width: rem(480px)){
+        width: 90%;
+    }
 
     @media (min-width: rem(1024px)){
         width: 100%;

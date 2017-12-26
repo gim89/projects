@@ -8,12 +8,13 @@
 }
 
 .newsletter-title{
-    padding: rem(6px) 0 rem(2px) 0;
+    padding-top: rem(6px);
+    padding-bottom: rem(2px);
     font: 300 rem(20px) 'Open Sans';
     @include decor(#263555, uppercase);
+    text-align: center;
     border: rem(1px) solid #dbdede;
     border-bottom: 0;
-    text-align: center;
 
     @media (min-width: rem(1024px)){
         padding-bottom: rem(4px);
@@ -46,16 +47,12 @@
 
     @media (min-width: rem(480px)){
         padding: rem(30px) rem(14px) rem(30px) rem(40px);
-
     }
 
     @media (min-width: rem(768px)){
         flex-basis: 42%;
         align-self: flex-start;
-        padding-top: 0;
-        padding-right: 0;
-        padding-bottom: 0;
-        padding-left: rem(16px);
+        padding: 0 0 0 1rem;
     }
 
     @media (min-width: rem(1024px)){

@@ -35,7 +35,6 @@
     justify-content: space-between;
     margin-top: rem(10px);
     font-size: 0.75rem;
-
 }
 
 .posts-header:before{
@@ -55,16 +54,20 @@
     border-radius: 0.9375rem;
 }
 
+.posts-img{
+    margin-bottom: 10px;
+
+    @media (min-width: rem(768px)){
+        flex-basis: 49%;
+    }
+}
+
 .posts-passage{
     text-align: center;
 
     @media (min-width: rem(768px)){
-        flex-basis: 53%;
+        flex-basis: 49%;
         text-align: left;
-    }
-
-    @media (min-width: rem(1024px)){
-        flex-basis: 50%;
     }
 }
 
@@ -74,7 +77,11 @@
 }
 
 .posts-btn{
-    padding: rem(10px) rem(120px);
+    padding: rem(6px) rem(30px);
+
+    @media (min-width: rem(480px)){
+        padding: rem(10px) rem(120px);
+    }
 
     @media (min-width: rem(768px)){
         padding: rem(5px) rem(15px);

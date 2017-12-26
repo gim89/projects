@@ -90,17 +90,6 @@ body {
 	padding: 1.25rem 1rem 1.875rem 1rem;
 }
 
-.tours-section {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-}
-
 .section {
 	margin-bottom: 3.125rem;
 }
@@ -490,7 +479,7 @@ input {
 }
 
 .nav-tabs .nav-link {
-	padding: 0.0625rem;
+	padding: 0.125rem;
 }
 
 .nav-title:hover {
@@ -527,7 +516,7 @@ input {
 	-webkit-flex-basis: 65%;
 	-ms-flex-preferred-size: 65%;
 	flex-basis: 65%;
-	margin-bottom: 0.3125rem;
+	margin-bottom: 0.375rem;
 	text-align: left;
 }
 
@@ -571,15 +560,16 @@ input {
 }
 
 .newsletter-title {
-	padding: 0.375rem 0 0.125rem 0;
+	padding-top: 0.375rem;
+	padding-bottom: 0.125rem;
 	font: 300 1.25rem "Open Sans";
 	color: #263555;
 	word-spacing: 0;
 	letter-spacing: 0;
 	text-transform: uppercase;
+	text-align: center;
 	border: 0.0625rem solid #dbdede;
 	border-bottom: 0;
-	text-align: center;
 }
 
 .newsletter-body {
@@ -1047,6 +1037,17 @@ input[type="email"] {
 	flex-wrap: wrap;
 }
 
+.tours-section {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
 .about-section:last-child {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -1284,10 +1285,7 @@ h2 {
 	-webkit-align-self: flex-start;
 	-ms-flex-item-align: start;
 	align-self: flex-start;
-	padding-top: 0;
-	padding-right: 0;
-	padding-bottom: 0;
-	padding-left: 1rem;
+	padding: 0 0 0 1rem;
 }
 
 label {
@@ -1341,9 +1339,9 @@ input[type="email"] {
 }
 
 .footer-contact {
-	-webkit-flex-basis: 13%;
-	-ms-flex-preferred-size: 13%;
-	flex-basis: 13%;
+	-webkit-flex-basis: 14%;
+	-ms-flex-preferred-size: 14%;
+	flex-basis: 14%;
 	display: block;
 }
 
@@ -1486,10 +1484,6 @@ input[type="email"] {
 }
 
 .tours-section {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
@@ -1498,6 +1492,10 @@ input[type="email"] {
 	-webkit-flex-basis: 20%;
 	-ms-flex-preferred-size: 20%;
 	flex-basis: 20%;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
 }
 
 .home-section {
@@ -1652,9 +1650,9 @@ input[type="email"] {
 }
 
 .footer-contact {
-	-webkit-flex-basis: 10%;
-	-ms-flex-preferred-size: 10%;
-	flex-basis: 10%;
+	-webkit-flex-basis: 11%;
+	-ms-flex-preferred-size: 11%;
+	flex-basis: 11%;
 	display: block;
 }
 
