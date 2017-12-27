@@ -2,8 +2,8 @@
     flex-basis: 60%;
 
     @media (min-width: rem(1024px)){
-        justify-content: flex-start;
-        align-items: flex-start;
+        @include flex(flex, flex-start, flex-start);
+        flex-direction: column;
     }
 }
 
@@ -11,7 +11,10 @@
     margin-bottom: rem(10px);
 }
 
-label{
+label[for="search-form-destination"],
+label[for="search-form-price"],
+label[for="search-form-departing"],
+label[for="search-form-duration"]{
     width: 100%;
     margin-bottom: rem(10px);
 
@@ -25,6 +28,7 @@ label{
 
     @media (min-width: rem(1024px)){
         width: 100%;
+
         &:nth-last-child(-n+2){
             margin-bottom: rem(20px);
         }
@@ -46,4 +50,8 @@ label{
     @media (min-width: rem(1024px)){
         width: 100%;
     }
+}
+
+.btn-search{
+    margin-top: rem(10px);
 }

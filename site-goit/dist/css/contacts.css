@@ -74,11 +74,6 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-.container-fluid {
-	min-width: 30rem;
-	max-width: 64rem;
-}
-
 .clearfix:after {
 	display: table;
 	content: "";
@@ -135,6 +130,7 @@ p {
 	letter-spacing: 0;
 	text-transform: none;
 	font: 0.875rem "Arial";
+	line-height: 1.3;
 }
 
 a {
@@ -369,6 +365,10 @@ input[type="submit"][value="clear"] {
 	font-size: 0.8125rem;
 }
 
+.phones-span:last-child {
+	margin-bottom: 0;
+}
+
 .phones-number {
 	font-style: normal;
 	margin-left: 2rem;
@@ -590,6 +590,14 @@ input[type="submit"] {
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+}
+
+.phones-address {
+	margin-bottom: 0;
 }
 
 .footer-part {
@@ -644,6 +652,10 @@ input[type="submit"] {
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
@@ -658,6 +670,10 @@ input[type="submit"] {
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
 }
 
 .about-section:last-child {
@@ -669,6 +685,10 @@ input[type="submit"] {
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
 }
 
 h2 {
@@ -683,6 +703,10 @@ h2 {
 	-webkit-flex-basis: 65%;
 	-ms-flex-preferred-size: 65%;
 	flex-basis: 65%;
+}
+
+.form-body {
+	margin-bottom: 0;
 }
 
 .phones {
@@ -858,6 +882,10 @@ h2 {
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
 }
 
 .tours-main {
@@ -869,6 +897,10 @@ h2 {
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
 }
 
 .tours-section {
@@ -910,6 +942,10 @@ h2 {
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
 }
 
 .header {

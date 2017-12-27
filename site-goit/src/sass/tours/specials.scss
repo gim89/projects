@@ -1,5 +1,6 @@
 .specials{
     margin-bottom: 40px;
+
     @media (min-width: rem(1024px)){
         flex-basis: 78%;
         margin-bottom: 0;
@@ -7,15 +8,14 @@
 }
 
 .specials-body{
+
     @media (min-width: rem(768px)){
-        display: flex;
-        justify-content: space-between;
+        @include flex(flex, space-between);
         flex-wrap: wrap;
     }
 }
 
 .specials-item{
-
     margin-bottom: rem(40px);
 
     &:last-child{
@@ -27,20 +27,14 @@
     }
 
     @media (min-width: rem(480px)){
-        display: flex;
-        justify-content: space-between;
+        @include flex(flex, space-between);
     }
 
     @media (min-width: rem(768px)){
         width: 49%;
-        &:nth-last-child(-n+2){
-            display: flex;
-            justify-content: space-between;
-        }
-    }
 
-    @media (min-width: rem(1024px)){
         &:nth-last-child(-n+2){
+            @include flex(flex, space-between);
             margin-bottom: 0;
         }
     }
@@ -95,6 +89,6 @@
 }
 
 .passage-btn{
-    padding: rem(8px) rem(20px);
+    padding: rem(6px) rem(20px);
     font-size: 1rem;
 }

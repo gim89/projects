@@ -24,6 +24,15 @@
     &:last-child{
         margin-bottom: 0;
     }
+
+    @media (min-width: rem(768px)){
+        margin-bottom: 0;
+    }
+
+    @media (min-width: rem(1024px)){
+        margin-bottom: rem(20px);
+    }
+
 }
 
 .principles-item:before{

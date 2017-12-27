@@ -8,12 +8,12 @@
     margin-bottom: rem(40px);
 
     @media (min-width: rem(768px)){
-        display: flex;
-        justify-content: space-between;
+        @include flex(flex, space-between);
         flex-wrap: wrap;
     }
 
     @media (min-width: rem(1024px)){
+
         &:last-child{
             margin-bottom: 0;
         }
@@ -31,8 +31,7 @@
 }
 
 .header-comments{
-    display: flex;
-    justify-content: space-between;
+    @include flex(flex, space-between);
     margin-top: rem(10px);
     font-size: 0.75rem;
 }
@@ -54,8 +53,7 @@
     border-radius: 0.9375rem;
 }
 
-.posts-img{
-    margin-bottom: 10px;
+.profile-img{
 
     @media (min-width: rem(768px)){
         flex-basis: 49%;
@@ -63,7 +61,12 @@
 }
 
 .posts-passage{
+    margin-top: rem(6px);
     text-align: center;
+
+    @media (min-width: rem(480px)){
+        margin-top: rem(10px);
+    }
 
     @media (min-width: rem(768px)){
         flex-basis: 49%;

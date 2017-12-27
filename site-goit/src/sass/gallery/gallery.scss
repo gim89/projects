@@ -1,8 +1,7 @@
 .gallery-body{
 
     @media (min-width: rem(768px)){
-        display: flex;
-        justify-content: space-between;
+        @include flex(flex, space-between);
         flex-wrap: wrap;
     }
 }
@@ -71,5 +70,4 @@
     height: rem(40px);
     transform: translate(-50%, -50%);
     cursor: pointer;
-
 }

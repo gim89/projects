@@ -69,12 +69,18 @@
     width: 100%;
     min-height: 100%;
     background-color: rgba(25,49,73,0.8);
+    padding: rem(4px);
     text-align: right;
     transform: translate(-100%, 0);
     transition: all 0.1s ease-in 0.1s;
 
     @media (min-width: rem(480px)){
         width: 50%;
+    }
+
+    @media (min-width: rem(1024px)){
+        width: 50%;
+        padding: 0;
     }
 }
 
@@ -137,6 +143,11 @@
 
     @media (min-width: rem(992px)){
         max-height: rem(138px);
+        font-size: rem(10px);
+	}
+
+    @media (min-width: rem(1024px)){
+        margin-bottom: rem(6px);
         font-size: rem(10px);
 	}
 }
