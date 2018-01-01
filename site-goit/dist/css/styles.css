@@ -617,13 +617,11 @@ input[type="email"] {
 
 .newsletter-item:before {
 	display: inline-block;
-	content: url(../img/right.png);
-	width: 0.875rem;
-	height: 0.875rem;
-	background-color: #5abce9;
+	content: "→";
 	margin-right: 0.625rem;
 	text-align: center;
 	line-height: 0.9;
+	color: #5abce9;
 	-webkit-border-radius: 0.5rem;
 	border-radius: 0.5rem;
 }
@@ -1612,12 +1610,13 @@ input[type="email"] {
 }
 
 .card-text {
+	max-height: 100%;
 	margin-bottom: 0.375rem;
-	font-size: 0.625rem;
+	font-size: 0.6875rem;
 }
 
 .card-btn {
-	padding: 0.125rem 0.75rem;
+	padding: 0.25rem 1rem;
 	font-size: 0.75rem;
 }
 

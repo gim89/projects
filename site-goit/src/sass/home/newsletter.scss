@@ -143,13 +143,11 @@ input[type="email"]{
 
 .newsletter-item:before{
     display: inline-block;
-	content: url(../img/right.png);
-    width: rem(14px);
-    height: rem(14px);
-    background-color: #5abce9;
+	content: "→";
 	margin-right: rem(10px);
     text-align: center;
     line-height: 0.9;
+    color: #5abce9;
     border-radius: rem(8px);
 
 }

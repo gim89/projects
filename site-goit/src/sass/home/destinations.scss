@@ -147,8 +147,9 @@
 	}
 
     @media (min-width: rem(1024px)){
+        max-height: 100%;
         margin-bottom: rem(6px);
-        font-size: rem(10px);
+        font-size: rem(11px);
 	}
 }
 
@@ -163,7 +164,7 @@
 	}
 
     @media (min-width: rem(1024px)){
-        padding: rem(2px) rem(12px);
+        padding: rem(4px) rem(16px);
         font-size: rem(12px);
 	}
 }
