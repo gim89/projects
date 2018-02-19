@@ -2,11 +2,11 @@
     background-color: #fff;
     margin-bottom: rem(36px);
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         margin-bottom: rem(80px);
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         flex-basis: 66%;
         margin-bottom: 0;
     }
@@ -15,29 +15,29 @@
 .nav-tabs .nav-link{
     padding: rem(2px);
 
-    @media (min-width: rem(280px)){
+    @media all and (min-width: 280px){
         padding: rem(4px);
     }
 
-    @media (min-width: rem(320px)){
+    @media all and (min-width: 320px){
         padding: rem(4px) rem(10px);
     }
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         padding: rem(4px) rem(16px);
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         padding: rem(10px) rem(30px);
     }
 
-    @media (min-width: rem(992px)){
+    @media all and (min-width: 992px){
         padding: rem(4px) rem(30px);
     }
 }
 
 .nav-title{
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         font-size: 22px;
     }
 }
@@ -63,7 +63,7 @@
         padding-top: 0;
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         @include flex(flex, space-between);
         padding: rem(46px) rem(16px) 0 rem(16px);
         margin-bottom: rem(46px);
@@ -73,7 +73,7 @@
 .tab-img{
     margin-bottom: rem(14px);
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         align-self: flex-start;
         flex-basis: 40%;
         margin-bottom: 0;
@@ -83,12 +83,12 @@
 .tab-info{
     text-align: right;
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         @include flex(flex, space-between);
         align-self: flex-start;
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         display: block;
         flex-basis: 56%;
         text-align: right;
@@ -106,7 +106,7 @@
     font: rem(10px) Arial;
     @include decor(#263555);
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         margin-bottom: rem(20px);
         font-size: rem(18px);
         text-align: left;
@@ -124,7 +124,7 @@
         color: #4e5050;
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         margin-bottom: rem(20px);
         font-size: rem(12px);
         text-align: left;
@@ -140,7 +140,7 @@
     font-size: rem(8px);
     color: #fa7e7e;
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         margin-right: rem(2px);
         font-size: rem(12px);
     }
@@ -150,8 +150,8 @@
     align-self: flex-end;
     margin-right: 0;
     font-size: rem(8px);
-    
-    @media (min-width: rem(768px)){
+
+    @media all and (min-width: 768px){
         font-size: rem(14px);
     }
 }

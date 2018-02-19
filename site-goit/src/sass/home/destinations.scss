@@ -2,11 +2,11 @@
     background-color: #fff;
     margin-bottom: rem(70px);
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         margin-bottom: rem(80px);
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         margin-bottom: rem(60px);
     }
 }
@@ -14,11 +14,11 @@
 .destinations-title{
     margin-bottom: rem(20px);
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         margin-bottom: rem(40px);
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         margin-bottom: rem(50px);
     }
 }
@@ -26,7 +26,7 @@
 .destinations-card{
     padding-bottom: 0;
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         @include flex(flex, space-between);
     }
 }
@@ -36,23 +36,23 @@
     margin-bottom: rem(38px);
     overflow: hidden;
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         flex-basis: 49%;
         margin-bottom: 0;
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         flex-basis: 32%;
     }
 
     &:last-child{
         margin-bottom: 0;
 
-        @media (min-width: rem(768px)){
+        @media all and (min-width: 768px){
             display: none;
         }
 
-        @media (min-width: rem(1024px)){
+        @media all and (min-width: 1024px){
             display: block;
         }
     }
@@ -74,11 +74,11 @@
     transform: translate(-100%, 0);
     transition: all 0.1s ease-in 0.1s;
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         width: 50%;
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         width: 50%;
         padding: 0;
     }
@@ -94,17 +94,17 @@
     color: #fff;
     text-align: left;
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         margin: rem(10px) 0 rem(10px) rem(10px);
 	}
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         margin: rem(26px) 0;
 		font-size: rem(36px);
         text-align: center;
 	}
 
-    @media (min-width: rem(992px)){
+    @media all and (min-width: 992px){
         margin: rem(16px) 0;
 	}
 }
@@ -118,35 +118,35 @@
     text-align: left;
     overflow: hidden;
 
-    @media (min-width: rem(320px)){
+    @media all and (min-width: 320px){
         max-height: rem(40px);
 	}
 
-    @media (min-width: rem(375px)){
+    @media all and (min-width: 375px){
         max-height: rem(55px);
 	}
 
-    @media (min-width: rem(412px)){
+    @media all and (min-width: 412px){
         max-height: rem(75px);
 	}
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         max-height: rem(70px);
         margin-bottom: rem(10px);
 	}
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         max-height: rem(142px);
         margin-bottom: rem(20px);
 		font-size: rem(12px);
 	}
 
-    @media (min-width: rem(992px)){
+    @media all and (min-width: 992px){
         max-height: rem(138px);
         font-size: rem(10px);
 	}
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         max-height: 100%;
         margin-bottom: rem(6px);
         font-size: rem(11px);
@@ -158,12 +158,12 @@
     margin-right: rem(10px);
     font-size: rem(12px);
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         padding: rem(2px) rem(12px);
         font-size: rem(14px);
 	}
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         padding: rem(4px) rem(16px);
         font-size: rem(12px);
 	}

@@ -13,11 +13,11 @@
         padding-bottom: rem(16px);
     }
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         @include flex(flex, center);
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         justify-content: center;
     }
 }
@@ -29,11 +29,11 @@
         margin-right: 0;
     }
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         margin-right: rem(50px);
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         align-self: flex-start;
         margin-right: rem(76px);
         margin-bottom: 0;
@@ -51,7 +51,7 @@
         margin-bottom: 0;
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         margin-bottom: rem(10px);
 
         &:last-child{
@@ -64,12 +64,12 @@
     flex-basis: 100%;
     @include flex(flex, center, center);
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         flex-basis: 14%;
         display: block;
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         flex-basis: 11%;
         display: block;
     }
@@ -78,15 +78,15 @@
 .footer-title{
     color: #fff;
 
-    @media (min-width: rem(320px)){
+    @media all and (min-width: 320px){
         margin-right: 1rem;
     }
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         margin-right: rem(20px);
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         margin-right: 0;
         margin-bottom: rem(10px);
         font-size: rem(18px);
@@ -102,15 +102,15 @@
 
     }
 
-    @media (min-width: rem(320px)){
+    @media all and (min-width: 320px){
         margin-right: 1rem;
     }
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         margin-right: rem(36px);
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         margin-right: 0;
         margin-bottom: rem(6px);
         font-size: rem(12px);
@@ -127,7 +127,7 @@
     font-family: 'Open Sans';
     @include decor(#fff, uppercase);
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         font-size: rem(16px);
     }
 }
@@ -143,7 +143,7 @@
         margin-right: 0;
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         display: none;
     }
 }
@@ -170,13 +170,13 @@
         margin-right: 0;
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         width: rem(36px);
         height: rem(36px);
         margin-right: rem(16px);
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         width: rem(40px);
         height: rem(40px);
     }
@@ -194,7 +194,7 @@
         transition: all ease-in .1s;
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         width: 100%;
         height: 100%;
     }
@@ -205,7 +205,7 @@
     height: rem(10px);
     fill: #e4b264;
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         width: rem(16px);
         height: rem(16px);
     }
@@ -217,7 +217,7 @@
     color: #eef5f6;
     text-align: center;
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         font-size: rem(12px);
     }
 }

@@ -559,7 +559,7 @@ input[type="submit"][value="clear"] {
 	text-align: center;
 }
 
-@media (min-width: 20rem) {
+@media all and (min-width: 320px) {
 
 .footer-title {
 	margin-right: 1rem;
@@ -571,7 +571,7 @@ input[type="submit"][value="clear"] {
 
 }
 
-@media (min-width: 30rem) {
+@media all and (min-width: 480px) {
 
 .header-list {
 	width: 75%;
@@ -629,7 +629,7 @@ input[type="submit"] {
 
 }
 
-@media (min-width: 36rem) {
+@media all and (min-width: 576px) {
 
 .header-logo {
 	font-size: 2.75rem;
@@ -637,7 +637,7 @@ input[type="submit"] {
 
 }
 
-@media (min-width: 48rem) {
+@media all and (min-width: 768px) {
 
 .main {
 	padding: 1.875rem 1.625rem 2.75rem 1.625rem;
@@ -820,7 +820,7 @@ h2 {
 
 }
 
-@media (min-width: 62rem) {
+@media all and (min-width: 992px) {
 
 .header-logo {
 	position: absolute;
@@ -867,7 +867,7 @@ h2 {
 
 }
 
-@media (min-width: 64rem) {
+@media all and (min-width: 1024px) {
 
 .main {
 	padding: 2.5rem 2.5rem 3.75rem 2.5rem;

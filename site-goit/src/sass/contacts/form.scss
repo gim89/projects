@@ -1,10 +1,10 @@
 .contact-form{
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         flex-basis: 65%;
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         flex-basis: 24%;
         order: 1;
     }
@@ -14,7 +14,7 @@
     margin-bottom: rem(40px);
     text-align: right;
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         margin-bottom: 0;
     }
 }
@@ -34,7 +34,7 @@ textarea{
     height: rem(115px);
     resize: none;
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         height: rem(225px);
     }
 }
@@ -53,7 +53,7 @@ input[type="submit"]{
         margin-left: 0;
     }
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         margin-left: 1rem;
     }
 }

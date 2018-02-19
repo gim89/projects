@@ -1,11 +1,11 @@
 .offer{
-    @media (min-width: 768px){
+    @media all and (min-width: 768px){
         flex-basis: 65%;
         align-self: flex-start;
         margin-bottom: 0;
     }
 
-    @media (min-width: 1024px){
+    @media all and (min-width: 1024px){
         flex-basis: 70%;
     }
 }
@@ -17,12 +17,12 @@
 .offer-section{
     margin-top: rem(36px);
 
-    @media (min-width: 480px){
+    @media all and (min-width: 480px){
         display: flex;
         justify-content: space-between;
     }
 
-    @media (min-width: 1024px){
+    @media all and (min-width: 1024px){
         justify-content: flex-start;
     }
 }
@@ -34,11 +34,11 @@
         margin-bottom: 0;
     }
 
-    @media (min-width: 480px){
+    @media all and (min-width: 480px){
         margin-bottom: 0;
     }
 
-    @media (min-width: 1024px){
+    @media all and (min-width: 1024px){
         margin-right: rem(40px);
         &:last-child{
             margin-right: 0;

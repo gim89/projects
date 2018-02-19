@@ -36,41 +36,41 @@ body{
 	background-color: #fff;
 	padding: rem(20px) rem(16px) rem(30px) rem(16px);
 
-	@media (min-width: rem(768px)){
+	@media all and (min-width: 768px){
 		padding: rem(30px) rem(26px) rem(44px) rem(26px);
 	}
 
-	@media (min-width: rem(1024px)){
+	@media all and (min-width: 1024px){
 		padding: rem(40px) rem(40px) rem(60px) rem(40px);
 	}
 }
 
 .blog-main{
-	@media (min-width: rem(1024px)){
+	@media all and (min-width: 1024px){
 		@include flex(flex, space-between);
 	}
 }
 
 .contacts-main{
-	@media (min-width: rem(768px)){
+	@media all and (min-width: 768px){
 		@include flex(flex, space-between);
 		flex-wrap: wrap;
 	}
 }
 
 .tours-main{
-	@media (min-width: rem(1024px)){
+	@media all and (min-width: 1024px){
 		@include flex(flex, space-between);
 	}
 }
 
 .tours-section{
 
-	@media (min-width: rem(768px)){
+	@media all and (min-width: 768px){
 		@include flex(flex, space-between);
 	}
 
-	@media (min-width: rem(1024px)){
+	@media all and (min-width: 1024px){
 		flex-direction: column;
 		flex-basis: 20%;
 		justify-content: flex-start;
@@ -83,20 +83,20 @@ body{
 
 .home-section{
 
-	@media (min-width: rem(1024px)){
+	@media all and (min-width: 1024px){
 		@include flex(flex, space-between);
 	}
 }
 
 .about-section{
 
-	@media (min-width: rem(768px)){
+	@media all and (min-width: 768px){
 		&:last-child{
 			@include flex(flex, space-between);
 		}
 	}
 
-	@media (min-width: rem(1024px)){
+	@media all and (min-width: 1024px){
 		&:first-child{
 			@include flex(flex, space-between);
 		}
@@ -118,7 +118,7 @@ h2{
 	@include decor(#263555, uppercase, 0, 0);
     font: 300 rem(25px) 'Pathway Gothic One';
 
-	@media (min-width: rem(768px)){
+	@media all and (min-width: 768px){
 		font-size: rem(35px);
 	}
 }

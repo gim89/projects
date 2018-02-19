@@ -810,7 +810,7 @@ input[type="email"] {
 	text-align: center;
 }
 
-@media (min-width: 15rem) {
+@media all and (min-width: 240px) {
 
 .carousel-caption {
 	right: 16%;
@@ -819,7 +819,7 @@ input[type="email"] {
 
 }
 
-@media (min-width: 17.5rem) {
+@media all and (min-width: 280px) {
 
 .carousel-caption {
 	right: 27%;
@@ -831,7 +831,7 @@ input[type="email"] {
 
 }
 
-@media (min-width: 20rem) {
+@media all and (min-width: 320px) {
 
 .carousel-caption {
 	right: 35%;
@@ -855,7 +855,7 @@ input[type="email"] {
 
 }
 
-@media (min-width: 22.5rem) {
+@media all and (min-width: 360px) {
 
 .carousel-caption {
 	right: 40%;
@@ -864,7 +864,7 @@ input[type="email"] {
 
 }
 
-@media (min-width: 23.4375rem) {
+@media all and (min-width: 375px) {
 
 .carousel-caption {
 	right: 42%;
@@ -876,7 +876,7 @@ input[type="email"] {
 
 }
 
-@media (min-width: 25.75rem) {
+@media all and (min-width: 412px) {
 
 .carousel-caption {
 	right: 45%;
@@ -889,7 +889,7 @@ input[type="email"] {
 
 }
 
-@media (min-width: 30rem) {
+@media all and (min-width: 480px) {
 
 .header-list {
 	width: 75%;
@@ -992,7 +992,7 @@ input[type="email"] {
 
 }
 
-@media (min-width: 33.75rem) {
+@media all and (min-width: 540px) {
 
 .carousel-caption {
 	right: 31%;
@@ -1000,7 +1000,7 @@ input[type="email"] {
 
 }
 
-@media (min-width: 36rem) {
+@media all and (min-width: 576px) {
 
 .header-logo {
 	font-size: 2.75rem;
@@ -1012,7 +1012,15 @@ input[type="email"] {
 
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 768px) {
+
+.arrow-left {
+	left: 55%;
+}
+
+}
+
+@media all and (min-width: 768px) {
 
 .main {
 	padding: 1.875rem 1.625rem 2.75rem 1.625rem;
@@ -1121,10 +1129,6 @@ h2 {
 .arrow-left,
 .arrow-right {
 	opacity: 1;
-}
-
-.arrow-left {
-	left: 55%;
 }
 
 .arrow-right {
@@ -1398,7 +1402,7 @@ input[type="email"] {
 
 }
 
-@media (min-width: 62rem) {
+@media all and (min-width: 992px) {
 
 .header-logo {
 	position: absolute;
@@ -1462,7 +1466,7 @@ input[type="email"] {
 
 }
 
-@media (min-width: 64rem) {
+@media all and (min-width: 1024px) {
 
 .main {
 	padding: 2.5rem 2.5rem 3.75rem 2.5rem;
@@ -1693,7 +1697,7 @@ input[type="email"] {
 
 }
 
-@media (min-width: 75rem) {
+@media all and (min-width: 1200px) {
 
 .carousel-caption {
 	right: 74%;

@@ -1,5 +1,5 @@
 .posts{
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         flex-basis: 70%;
     }
 }
@@ -7,12 +7,12 @@
 .posts-article{
     margin-bottom: rem(40px);
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         @include flex(flex, space-between);
         flex-wrap: wrap;
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
 
         &:last-child{
             margin-bottom: 0;
@@ -55,7 +55,7 @@
 
 .profile-img{
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         flex-basis: 49%;
     }
 }
@@ -64,11 +64,11 @@
     margin-top: rem(6px);
     text-align: center;
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         margin-top: rem(10px);
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         flex-basis: 49%;
         text-align: left;
     }
@@ -82,11 +82,11 @@
 .posts-btn{
     padding: rem(6px) rem(30px);
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         padding: rem(10px) rem(120px);
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         padding: rem(5px) rem(15px);
     }
 }

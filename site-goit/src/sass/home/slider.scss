@@ -2,11 +2,11 @@
     background-color: #fff;
     margin-bottom: rem(40px);
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         margin-bottom: rem(60px);
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         margin-bottom: rem(56px);
     }
 }
@@ -20,7 +20,7 @@
 }
 
 .controls{
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         display: flex;
         position: absolute;
         top: 75%;
@@ -37,7 +37,7 @@
     width: 50%;
     min-height: 100%;
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         position: static;
         width: rem(38px);
         min-height: 0;
@@ -46,7 +46,7 @@
         transition: all .1s ease-in .1s;
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         width: rem(46px);
         height: rem(90px);
         background-color: #38afe5;
@@ -66,7 +66,7 @@
         transition: all ease-in .3s;
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         border-radius: 100% 0 0 100% / 50% 0 0 50%;
 
         &:hover{
@@ -88,7 +88,7 @@
         transition: all ease-in .3s;
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         border-radius: 0 100% 100% 0 / 0 50% 50% 0;
 
         &:hover{
@@ -103,11 +103,11 @@
     width: rem(10px);
     height: rem(10px);
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         opacity: 1;
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         opacity: 1;
         width: rem(16px);
         height: rem(16px);
@@ -116,7 +116,7 @@
 
 .arrow-left{
     margin-left: rem(20px);
-    @media (min-width: rem(768px)){
+    @media (min-width: 768px){
         left: 55%;
     }
 }
@@ -124,7 +124,7 @@
 .arrow-right{
     margin-right: rem(20px);
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         right: 55%;
     }
 }
@@ -138,62 +138,62 @@
     padding-bottom: 0;
     text-align: left;
 
-    @media (min-width: rem(240px)){
+    @media all and (min-width: 240px){
         right: 16%;
         bottom: -12%;
     }
 
-    @media (min-width: rem(280px)){
+    @media all and (min-width: 280px){
         right: 27%;
     }
 
-    @media (min-width: rem(320px)){
+    @media all and (min-width: 320px){
         right: 35%;
     }
 
-    @media (min-width: rem(360px)){
+    @media all and (min-width: 360px){
         right: 40%;
         bottom: -10%;
     }
 
-    @media (min-width: rem(375px)){
+    @media all and (min-width: 375px){
         right: 42%;
     }
 
-    @media (min-width: rem(412px)){
+    @media all and (min-width: 412px){
         right: 45%;
         bottom: -8%;
     }
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         right: 27%;
         bottom: -7%;
         left: 45%;
     }
 
-    @media (min-width: rem(540px)){
+    @media all and (min-width: 540px){
         right: 31%;
     }
 
-    @media (min-width: rem(576px)){
+    @media all and (min-width: 576px){
         right: 32%;
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         top: 35%;
         left: 0;
         right: 70%;
     }
 
-    @media (min-width: rem(992px)){
+    @media all and (min-width: 992px){
         right: 78%;
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         right: 68%;
     }
 
-    @media (min-width: rem(1200px)){
+    @media all and (min-width: 1200px){
         right: 74%;
     }
 }
@@ -206,15 +206,15 @@
     @include decor(#344260, uppercase);
     text-shadow: none;
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         padding: rem(10px) rem(6px);
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         font-size: rem(18px);
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         font-size: rem(22px);
     }
 }
@@ -226,15 +226,15 @@
     @include decor(#fff, uppercase);
     text-shadow: none;
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         padding: rem(10px) rem(6px);
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         font-size: rem(24px);
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         font-size: rem(34px);
     }
 }

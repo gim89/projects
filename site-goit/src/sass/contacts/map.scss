@@ -1,15 +1,15 @@
 .map{
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         flex-basis: 100%;
     }
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         flex-basis: 50%;
         order: -1;
     }
 }
 
 .map-iframe{
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         height: rem(400px);
     }
 }

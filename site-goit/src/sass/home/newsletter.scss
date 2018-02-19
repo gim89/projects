@@ -1,7 +1,7 @@
 .newsletter{
     background-color: #fff;
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         flex-basis: 32%;
         border: rem(1px) solid #dbdede;
     }
@@ -16,7 +16,7 @@
     border: rem(1px) solid #dbdede;
     border-bottom: 0;
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         padding-bottom: rem(4px);
         padding-left: 0;
         text-align: center;
@@ -28,13 +28,13 @@
 .newsletter-body{
     border: rem(1px) solid #dbdede;
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         @include flex(flex, space-between);
         padding-top: rem(40px);
         padding-bottom: rem(30px);
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         flex-direction: column;
         border: none;
     }
@@ -45,17 +45,17 @@
     padding: rem(30px) rem(5px) rem(30px) rem(5px);
     border-bottom: 0;
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         padding: rem(30px) rem(14px) rem(30px) rem(40px);
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         flex-basis: 42%;
         align-self: flex-start;
         padding: 0 0 0 1rem;
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         width: 100%;
         margin-bottom: rem(46px);
     }
@@ -67,7 +67,7 @@ label{
     font: rem(14px) Arial;
     color: #263555;
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         font-size: rem(16px);
     }
 }
@@ -81,15 +81,15 @@ input[type="email"]{
     border: rem(1px) solid #dedbdb;
     border-radius: rem(4px);
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         width: 86%;
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         width: 100%;
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         width: 86%;
     }
 }
@@ -101,20 +101,20 @@ input[type="email"]{
     column-gap: 0;
     border-top: 0;
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
         padding-left: rem(40px);
         columns: 2;
     }
 
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         flex-basis: 54%;
         align-self: flex-start;
         padding-left: 0;
         padding-bottom: 0;
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         margin-left: rem(16px);
         columns: 1;
     }
@@ -123,16 +123,14 @@ input[type="email"]{
 .newsletter-item{
     margin-bottom: rem(12px);
 
-    @media (min-width: rem(480px)){
+    @media all and (min-width: 480px){
 
         &:nth-child(4){
             margin-bottom: 0;
         }
     }
 
-
-
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         margin-bottom: rem(20px);
 
         &:nth-child(4){
@@ -155,11 +153,11 @@ input[type="email"]{
 .newsletter-link{
     font-size: rem(12px);
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         line-height: 0.8;
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         font-size: rem(16px);
     }
 }

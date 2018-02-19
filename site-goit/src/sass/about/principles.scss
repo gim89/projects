@@ -8,10 +8,10 @@
 
 .principles-list{
     counter-reset: section;
-    @media (min-width: 768px){
+    @media all and (min-width: 768px){
         display: flex;
     }
-    @media (min-width: 1024px){
+    @media all and (min-width: 1024px){
         display: block;
     }
 }
@@ -25,11 +25,11 @@
         margin-bottom: 0;
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         margin-bottom: 0;
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         margin-bottom: rem(20px);
     }
 

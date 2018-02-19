@@ -8,13 +8,13 @@
 }
 
 .profile-img{
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         float: left;
         margin-right: rem(20px);
         margin-bottom: rem(16px);
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         margin-bottom: rem(15px);
     }
 }
@@ -28,7 +28,7 @@
     color: #4e5050;
     overflow: hidden;
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         overflow: inherit;
         max-height: inherit;
     }

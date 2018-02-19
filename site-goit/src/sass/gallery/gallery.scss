@@ -1,6 +1,6 @@
 .gallery-body{
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         @include flex(flex, space-between);
         flex-wrap: wrap;
     }
@@ -22,7 +22,7 @@
         display: block;
     }
 
-    @media (min-width: rem(768px)){
+    @media all and (min-width: 768px){
         flex-basis: 48%;
         margin-bottom: rem(40px);
 
@@ -36,7 +36,7 @@
         }
     }
 
-    @media (min-width: rem(1024px)){
+    @media all and (min-width: 1024px){
         flex-basis: 32%;
 
         &:nth-last-child(-n+1){
