@@ -11,7 +11,9 @@ var gulp         = require('gulp'),
     cache        = require('gulp-cache'),
     del          = require('del'),
     browserSync  = require('browser-sync').create(),
-    flatten      = require('gulp-flatten');
+    flatten      = require('gulp-flatten'),
+    babel        = require('gulp-babel'),
+    uglify       = require('gulp-uglifyjs');
 
 gulp.task('html', function() {
     return gulp.src('src/html/*.html')
@@ -60,6 +62,32 @@ gulp.task('sass', function() {
         .pipe(browserSync.reload({stream: true}));
 });
 
+gulp.task('js', function() {
+    return gulp.src('src/js/*.js')
+    .pipe(rigger())
+    .pipe(
+        babel({
+            "presets": [
+                ["env", {
+                    "targets": {
+                        "browsers": ["last 2 versions", "safari >= 7"]
+                    }
+                }]
+            ]
+})
+    )
+    .pipe(uglify('scripts.min.js'))
+    .pipe(gulp.dest('dist/js'))
+    .pipe(browserSync.reload({stream: true}));
+});
+
+gulp.task('lib', function() {
+    return gulp.src('src/lib/*.js')
+    .pipe(rigger())
+    .pipe(gulp.dest('dist/lib'))
+    .pipe(browserSync.reload({stream: true}));
+});
+
 gulp.task('img', function() {
     return gulp.src('src/img/**/*')
         .pipe(cache(imagemin({
@@ -84,6 +112,8 @@ gulp.task('watch', function() {
     gulp.watch('src/html/**/*.html', ['html'], browserSync.reload);
     gulp.watch('src/css/**/*.css', ['css'], browserSync.reload);
     gulp.watch('src/sass/**/*.scss', ['sass'], browserSync.reload);
+    gulp.watch('src/js/**/*.js', ['js'], browserSync.reload);
+    gulp.watch('src/js/**/*.js', ['lib'], browserSync.reload);
     gulp.watch('src/img/**/*', ['img'], browserSync.reload);
     gulp.watch('src/fonts/**/*', ['fonts'], browserSync.reload);
 });
@@ -105,6 +135,6 @@ gulp.task('clear', function (callback) {
 	return cache.clearAll();
 })
 
-gulp.task('build', ['html', 'css', 'sass', 'img', 'fonts']);
+gulp.task('build', ['html', 'css', 'sass', 'js', 'lib', 'img', 'fonts']);
 
 gulp.task('start', [ 'del', 'build', 'server', 'watch']);
