@@ -1,0 +1,46 @@
+.contact__form {
+  @include flexin(space-between);
+  flex-wrap: wrap;
+}
+
+.contact__input {
+  flex-basis: 45%;
+}
+
+.contact__name,
+.contact__email,
+.contact__subject {
+  width: 100%;
+  padding: .5rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.contact__suject {
+  margin-bottom: 0;
+}
+
+.contact__message {
+  flex-basis: 45%;
+  height: 163px;
+  padding: .5rem;
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  resize: none;
+  transition: all .2s ease-in-out;
+
+  &:focus::placeholder {
+    position: relative;
+    top: -10px;
+    vertical-align: super;
+    font-size: 0.5rem;
+  }
+}
+
+.contact__btn {
+  margin: auto;
+  margin-top: 1rem;
+  border: 2px solid transparent;
+}
+

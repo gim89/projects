@@ -1,0 +1,16 @@
+.custom {
+  background: url(../img/custom.jpg) no-repeat;
+  background-size: cover;
+}
+
+.custom__title {
+  color: #fff;
+}
+
+.custom__title--after:after {
+  background-color: #fff;
+}
+
+.custom__subtitle {
+  margin-bottom: 2rem;
+}

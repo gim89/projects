@@ -1,0 +1,42 @@
+@import "nav";
+@import "signup";
+.head {
+  background: rgba(0, 0, 0, 0.52) url(../img/head.jpg) no-repeat;
+  background-size: cover;
+  padding-bottom: 8.5rem;
+}
+
+.head__container {
+  @include flex;
+}
+
+.head__content {
+  flex-basis: 50%;
+}
+
+.head__logo {
+  color: #ff8b38;
+  font-weight: 300;
+}
+
+.head__span {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.head__title {
+  color: #fff;
+  text-transform: uppercase;
+  &--after:after {
+    @include pseudo(5rem, 2px);
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+}
+
+.head__text {
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}

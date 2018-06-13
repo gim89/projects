@@ -1,0 +1,62 @@
+.pricing {
+  background-color: #f5f5f5;
+}
+
+.pricing__body {
+  @include flexin(space-between, flex-end);
+}
+
+.pricing__item {
+  flex-basis: 28%;
+}
+
+.pricing__part:nth-child(1) {
+  padding: 0.5rem 0;
+  margin-bottom: 2px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.pricing__part:nth-child(2) {
+  padding: 1rem 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 5.625rem;
+  font-weight: 700;
+
+  .pricing__span {
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+}
+
+.pricing__part:nth-child(3) {
+  padding: 0.5rem 0;
+  background-color: #333;
+  color: #f5f5f5;
+  font-size: .875rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.pricing__part:nth-child(4) {
+  padding: 2px 0;
+  background-color: #ff8b38;
+  color: #fff;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.pricing__item .pricing__professional {
+  padding: .75rem 0;
+  text-transform: uppercase;
+}
+
+.pricing__part:nth-last-child(-n + 6) {
+  padding: .75rem 0;
+  background-color: #fff;
+  font-size: .875rem;
+  text-transform: uppercase;
+}

@@ -1,0 +1,121 @@
+$shadow: 0 0.5px 1px #8b8580;
+
+body {
+  font-family: "opensans-regular";
+}
+
+h1 {
+  @include fonts(#fff, "opensans-regular", 4rem);
+  text-transform: uppercase;
+  text-shadow: $shadow;
+}
+
+h2 {
+  @include fonts(#000, "opensans-bold", 2.25rem);
+  text-shadow: $shadow;
+}
+
+h3 {
+  @include fonts(#000, "opensans-bold", 1.25rem);
+  text-shadow: $shadow;
+}
+
+h4 {
+  @include fonts(#000, "opensans-bold", 0.875rem);
+  text-shadow: $shadow;
+}
+
+p {
+  @include fonts(#86878b, "raleway-light", 0.875rem);
+  text-shadow: $shadow;
+}
+
+a {
+  @include fonts(#b0b0b0, "opensans-semibold", 0.875rem);
+  text-shadow: $shadow;
+}
+
+span {
+  @include fonts(#fff, "opensans-regular", 0.875rem);
+  text-shadow: $shadow;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  @include fonts(#bdbdbd, "opensans-regular", 0.875rem);
+  text-shadow: $shadow;
+}
+
+input[type="submit"],
+button {
+  @include fonts(#fff, "opensans-regular", 0.89375rem);
+  text-shadow: $shadow;
+  box-shadow: 0px 4px 5px 0px #000000;
+}
+
+input:focus::placeholder {
+  position: relative;
+  top: -10px;
+  vertical-align: super;
+  font-size: 0.5rem;
+  transition: all .2s ease-in-out;
+}
+
+.btn {
+  padding: 10px 35px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+
+  &--transparent {
+    background-color: transparent;
+  }
+
+  &--orange {
+    background-color: #333;
+  }
+
+  &--hover:hover {
+    background-color: #ff8b38;
+    border: 2px solid transparent;
+  }
+
+  &--active:active {
+    transform: scale(0.98);
+  }
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.section__padding {
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+
+.section__text {
+  text-align: center;
+}
+
+.title--after:after {
+  @include pseudo(5rem, 2px);
+  margin: 2rem auto;
+  background-color: #ff8b38;
+}
+
+.title__transform {
+  text-transform: uppercase;
+}
+
+.subtitle__margin {
+  margin-bottom: 5rem;
+}
+
+.section__body {
+  @include flex;
+}

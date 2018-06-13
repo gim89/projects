@@ -1,0 +1,36 @@
+.testimonials__body {
+  text-align: left;
+}
+
+.testimonials__item {
+  flex-basis: 30%;
+}
+
+.testimonials__part {
+  @include flexin(flex-start, center);
+}
+
+.testimonials__text {
+  position: relative;
+  padding: 1.5rem 0.75rem;
+  margin-bottom: 1.5rem;
+  background-color: #f5f5f5;
+
+  &--after:after {
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    content: '';
+    border: 20px solid transparent;	
+    border-top: 20px solid #f5f5f5;
+  }
+}
+
+.testimonials__img {
+  width: 70px;
+  height: 70px;
+  margin-right: 0.875em;
+  background: url(../img/icon.png) no-repeat;
+  background-position: -370px 0;
+}
+

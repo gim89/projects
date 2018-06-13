@@ -1,0 +1,51 @@
+.feature-two__container {
+  @include flexin(space-between);
+}
+
+.feature-two__title--after:after {
+  margin: 2rem 0;
+}
+
+.feature-two__img {
+  flex-basis: 53%;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.feature-two__section {
+  flex-basis: 37%;
+}
+
+.feature-two__text {
+  margin-bottom: 3rem;
+}
+
+.feature-two__item {
+  @include flexin(space-between);
+  margin-bottom: 2.5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.feature-two__link {
+  display: block;
+  flex-basis: 2.5rem;
+  height: 2.5rem;
+  background: url(../img/icon.png) no-repeat;
+}
+
+.feature__link-one {
+  background-position: 0 0;
+}
+
+.feature__link-two {
+  background-position: -56px 0;
+}
+
+.feature-two__paragraph {
+  flex-basis: 85%;
+}
+
+.feature-two__caption {
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,38 @@
+.process__subtitle {
+  margin-bottom: 5rem;
+}
+
+.process__body {
+  @include flex;
+}
+
+.process__item {
+  width: 30%;
+}
+
+.process__img {
+  width: 4.4rem;
+  height: 4.4rem;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  background: url(../img/icon.png) no-repeat;
+}
+
+.process__design {
+  background-position: -112px 0;
+}
+
+.process__crafter {
+  background-position: -198px 0;
+}
+
+.process__customize {
+  background-position: -284px 0;
+}
+
+.process__caption {
+  margin-bottom: 1.5rem;
+}
+
+
+
