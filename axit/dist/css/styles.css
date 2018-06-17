@@ -230,6 +230,10 @@ body {
 	font-family: "opensans-regular";
 }
 
+.body-page {
+	position: relative;
+}
+
 h1 {
 	color: #fff;
 	font-family: "opensans-regular";
@@ -433,6 +437,40 @@ input:focus::placeholder {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
+}
+
+.scroll {
+	position: fixed;
+	top: 3rem;
+	right: 1rem;
+	display: none;
+	width: 50px;
+	height: 50px;
+	border: .5rem solid #333;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	cursor: pointer;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.scroll--hover:hover {
+	border-color: #ff8b38;
+}
+
+.scroll--hover:hover .scroll__top {
+	border-bottom-color: #ff8b38;
+}
+
+.scroll__top {
+	width: 50%;
+	margin: auto;
+	border: 11px solid transparent;
+	border-bottom: 11px solid #333;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .nav {

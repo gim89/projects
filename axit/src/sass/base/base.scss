@@ -4,6 +4,10 @@ body {
   font-family: "opensans-regular";
 }
 
+.body-page {
+  position: relative;
+}
+
 h1 {
   @include fonts(#fff, "opensans-regular", 4rem);
   text-transform: uppercase;

@@ -7,7 +7,10 @@
   <title>AX IT</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="body-page">
+  <div class="scroll scroll--hover">
+    <div class="scroll__top scroll__top--hover"></div>
+  </div>
   <header class="head">
     <nav class="nav">
       <div class="nav__container container">
@@ -17,19 +20,19 @@
         </a>
         <ul class="nav__list">
           <li class="nav__item">
-            <a href=".feature-one" class="nav__link nav__link--hover nav__link--active">Features</a>
+            <a href="#feature-one" class="nav__link nav__link--hover nav__link--active">Features</a>
           </li>
           <li class="nav__item">
-            <a href=".process" class="nav__link nav__link--hover nav__link--active">About</a>
+            <a href="#process" class="nav__link nav__link--hover nav__link--active">About</a>
           </li>
           <li class="nav__item">
-            <a href=".pricing" class="nav__link nav__link--hover nav__link--active">Pricing</a>
+            <a href="#pricing" class="nav__link nav__link--hover nav__link--active">Pricing</a>
           </li>
           <li class="nav__item">
-            <a href=".testimonial" class="nav__link nav__link--hover nav__link--active">Reviews</a>
+            <a href="#testimonial" class="nav__link nav__link--hover nav__link--active">Reviews</a>
           </li>
           <li class="nav__item">
-            <a href=".contact" class="nav__link nav__link--hover nav__link--active">Contact</a></li>
+            <a href="#contact" class="nav__link nav__link--hover nav__link--active">Contact</a></li>
         </ul>
       </div>
     
@@ -76,17 +79,17 @@
       </div>
     </div>
   </div>
-  <div class="feature-one section__padding">
+  <div id="feature-one" class="feature-one section__padding">
     <div class="feature-one__container container">
       <ul class="feature-one__tab">
         <li class="feature-one__item">
-          <a href=".feature-one" class="feature-one__link feature-one__link--hover feature-one__link--active link">tab 1</a>
+          <a href="#feature-one" class="feature-one__link feature-one__link--hover feature-one__link--active link">tab 1</a>
         </li>
         <li class="feature-one__item">
-          <a href=".feature-two" class="feature-one__link feature-one__link--hover feature-one__link--active">tab 2</a>
+          <a href="#feature-two" class="feature-one__link feature-one__link--hover feature-one__link--active">tab 2</a>
         </li>
         <li class="feature-one__item">
-          <a href="feature-three" class="feature-one__link feature-one__link--hover feature-one__link--active">tab 3</a>
+          <a href="#feature-three" class="feature-one__link feature-one__link--hover feature-one__link--active">tab 3</a>
         </li>
       </ul>
       <section class="feature-one__article">
@@ -105,7 +108,7 @@
     </div>
   
   </div>
-  <div class="feature-two section__padding">
+  <div id="feature-two" class="feature-two section__padding">
     <div class="feature-two__container container">
       <img src="img/feature-two.jpg" alt="feature-two__img" class="feature-two__img">
       <section class="feature-two__section">
@@ -134,7 +137,7 @@
       </section>
     </div>
   </div>
-  <div class="feature-three section__padding">
+  <div id="feature-three" class="feature-three section__padding">
     <div class="feature-three__container container">
       <section class="feature-three__section">
         <h3 class="feature-three__title feature-three__title--after title--after">Standart Picture Section</h3>
@@ -144,7 +147,7 @@
       <img src="img/feature-three.jpg" alt="feature-three__img" class="feature-three__img">
     </div>
   </div>
-  <section class="process section__padding section__text">
+  <section id="process" class="process section__padding section__text">
     <div class="process-container container">
       <h2 class="process__title title__transform title--after">why this is awesome</h2>
       <p class="process__subtitle subtitle__margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -170,7 +173,7 @@
       </div>
     </div>
   </section>
-  <section class="pricing section__padding section__text">
+  <section id="pricing" class="pricing section__padding section__text">
     <div class="pricing__container container">
       <h2 class="pricing__title title__transform title--after">pricing options</h2>
       <p class="pricing__subtitle subtitle__margin">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
@@ -214,7 +217,7 @@
       </div>
     </div>
   </section>
-  <section class="testimonials section__padding section__text">
+  <section id="testimonial" class="testimonials section__padding section__text">
     <div class="testimonials__container container">
       <h2 class="testimonials__title title__transform title--after">what our customers are saying</h2>
       <p class="testimonials__subtitle subtitle__margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -262,7 +265,7 @@
       <button class="custom__btn btn btn--transparent btn--hover btn--active">Download</button>
     </div>
   </section>
-  <section class="contact section__padding section__text">
+  <section id="contact" class="contact section__padding section__text">
     <div class="contact__container container">
       <h2 class="contact__title title__transform title--after">contact us</h2>
       <p class="contact__subtitle subtitle__margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -291,5 +294,6 @@
       <p class="footer-page__text">&copy; 2015 Axure Themes</p>
     </div>
   </footer>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
