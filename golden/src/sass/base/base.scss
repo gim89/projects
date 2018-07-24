@@ -1,0 +1,131 @@
+h1 {
+  @include fonts(#fff, "ArialRegular", 4.75rem, 400);
+  text-transform: uppercase;
+}
+
+h2 {
+  @include fonts(#000, "ArialBold", 2.5rem, 400);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  @include fonts(#000, "ArialBold", 1.125rem);
+}
+
+p {
+  @include fonts(#777, "Times New Roman", 1rem);
+}
+
+a {
+  @include fonts(#fff, "ArialRegular", 0.875rem);
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  @include fonts(#bbb, "ArialBold", 0.875rem);
+  text-transform: uppercase;
+}
+
+input[type="submit"],
+button {
+  @include fonts(#fff, "ArialBold", 1.5rem);
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  position: relative;
+  top: -10px;
+  vertical-align: super;
+  font-size: 0.5rem;
+  transition: all .2s ease-in-out;
+}
+
+.btn {
+  padding: 1.5rem 2rem;
+  background-color: #fed136;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+
+  &--hover:hover {
+    background-color: #ff8b38;
+  }
+
+  &--active:active {
+    transform: scale(0.98);
+  }
+}
+
+.container {
+  width: 58.75rem;
+  margin: 0 auto;
+}
+
+.section__padding {
+  padding-top: 7.5rem;
+  padding-bottom: 6.875rem;
+  text-align: center;
+}
+
+.section__text {
+  text-align: center;
+}
+
+.subtitle__margin {
+  margin-bottom: 5rem;
+}
+
+.social__icon {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  background: url(../img/social.png) no-repeat;
+  border: 2px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.twitter {
+  background-position: 2px 1px;
+
+  &--hover:hover {
+    background-color: #00aced;
+    background-position: 3px -39px;
+    border: 2px solid #00aced;
+  }
+}
+
+.facebook {
+  background-position: -37px 1px;
+
+  &--hover:hover {
+    background-color: #3b5998;
+    background-position: -37px -39px;
+    border: 2px solid #3b5998;
+  }
+}
+
+.pinterest {
+  background-position: -79px 1px;
+
+  &--hover:hover {
+    background-color: #cb2028;
+    background-position: -79px -39px;
+    border: 2px solid #cb2028;
+  }
+}
+
+.google {
+  background-position: -118px 1px;
+
+  &--hover:hover {
+    background-color: #d95232;
+    background-position: -118px -39px;
+    border: 2px solid #d95232;
+  }
+}

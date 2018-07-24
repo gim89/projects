@@ -1,0 +1,15 @@
+.logos {
+  padding: 3rem 0;
+}
+
+.logos__container {
+  @include flex;
+}
+
+.logos__img {
+  margin-right: 1rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

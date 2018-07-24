@@ -1,0 +1,29 @@
+@import "nav";
+
+.head {
+  padding-top: 2rem;
+  padding-bottom: 12rem;
+  background-image: url(../img/header.jpg);
+}
+
+.head__promo {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.head__title {
+  margin-bottom: 2.875rem;
+  color: #fff;
+  text-transform: none;
+}
+
+.head__caption {
+  margin-bottom: 3.75rem;
+}
+
+.head__btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+}

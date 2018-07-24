@@ -1,0 +1,24 @@
+.footer-page {
+  padding: 2rem 0;
+}
+
+.footer-page__container {
+  @include flex;
+}
+
+.footer-page__text {
+  flex-grow: 1;
+}
+
+.footer-page__social {
+  flex-grow: 3;
+}
+
+.footer-page__icon {
+  margin-right: 1rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+

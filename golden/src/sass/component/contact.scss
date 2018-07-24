@@ -1,0 +1,44 @@
+.contact {
+  background: url(../img/contact.jpg) no-repeat;
+  background-size: cover;
+}
+
+.contact__title {
+  color: #fff;
+}
+
+.contact__item {
+  @include flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+
+  &:last-child {
+    display: inline-block;
+  }
+}
+
+.contact__inputs {
+  flex-basis: 48%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+textarea {
+  height: 200px;
+  resize: 0;
+}
+
+.contact__message {
+  flex-basis: 48%;
+}

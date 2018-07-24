@@ -1,0 +1,30 @@
+.nav {
+  @include flex;
+  margin-bottom: 12.5rem;
+}
+
+.nav__logo {
+  @include fonts (#fed136, 'WisdomScript', 1.625rem);
+}
+
+.nav__list {
+  @include flex;
+}
+
+.nav__item {
+  margin-right: 2.5rem;
+  border-bottom: 2px solid transparent;
+  transition: all .2s ease-in;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--hover:hover {
+    border-bottom: 2px solid #fff;
+  }
+}
+
+.nav__link {
+  font-weight: 700;
+}

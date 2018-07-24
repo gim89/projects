@@ -1,0 +1,17 @@
+.service__body {
+  @include flexin(space-between);
+}
+
+.section__item {
+  flex-basis: 30%;
+}
+
+.service__img {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.service__caption {
+  margin-bottom: 1rem;
+}

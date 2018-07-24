@@ -1,0 +1,47 @@
+.about__body {
+  @include flex;
+  flex-wrap: wrap;
+}
+
+.about__item{
+  flex-basis: 33.33%;
+  margin-bottom: 5.625rem;
+
+  &:nth-child(3n+1) {
+    text-align: right;
+  }
+
+  &:nth-child(3n+3) {
+    text-align: left;
+  }
+
+  &:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+}
+
+.about__title {
+  margin-bottom: 1rem;
+}
+
+.about__subcaption {
+  margin-bottom: 1rem;
+  @include fonts(#222, 1.125rem, 700);
+  font-family: 'ArialBold';
+}
+
+.about__img {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.about__btn {
+  width: 11rem;
+  height: 11rem;
+  background-color: #fed136;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0.5rem solid #f0f0f0;
+  border-radius: 50%;
+}

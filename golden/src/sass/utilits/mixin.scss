@@ -1,0 +1,25 @@
+@mixin fonts($color: #000, $font-family: inherit, $font-size: 1rem, $font-weight: inherit) {
+  color: $color;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexin($justify, $align: stretch){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin pseudo($width, $height){
+  display: block;
+  width: $width;
+  height: $height;
+  content: "";
+}
