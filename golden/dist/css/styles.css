@@ -488,6 +488,8 @@ textarea:focus::placeholder {
 	padding-top: 2rem;
 	padding-bottom: 12rem;
 	background-image: url(../img/header.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .head__promo {
