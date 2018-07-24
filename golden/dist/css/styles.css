@@ -634,9 +634,9 @@ textarea:focus::placeholder {
 .about__subcaption {
 	margin-bottom: 1rem;
 	color: #222;
-	font-family: 1.125rem;
-	font-size: 700;
-	font-weight: inherit;
+	font-family: inherit;
+	font-size: 1.125rem;
+	font-weight: 700;
 	font-family: 'ArialBold';
 }
 
@@ -778,7 +778,7 @@ textarea:last-child {
 
 textarea {
 	height: 200px;
-	resize: 0;
+	resize: none;
 }
 
 .contact__message {

@@ -26,7 +26,7 @@
 
 .about__subcaption {
   margin-bottom: 1rem;
-  @include fonts(#222, 1.125rem, 700);
+  @include fonts(#222, inherit, 1.125rem, 700);
   font-family: 'ArialBold';
 }
 
