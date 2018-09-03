@@ -1,0 +1,37 @@
+.about__container {
+  position: relative;
+}
+
+.about__img {
+  width: 48%;
+}
+
+.about__part {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 58%;
+  margin-top: 5rem;
+  background-color: #fff;
+}
+
+.about__article {
+  padding: 5rem;
+  background: url(../img/one.png) no-repeat 1% 1%;
+  box-shadow: -5px -5px 10px #9a9a9a;
+}
+
+.about__text {
+  line-height: 1.8;
+  &:nth-child(2) {
+    margin-bottom: 3rem;
+  }
+}
+
+.about__lines-range {
+  @include flex;
+}
+
+.about__line {
+  flex-basis: 25%;
+}

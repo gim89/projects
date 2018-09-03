@@ -1,0 +1,34 @@
+.touch {
+  background: #ccc url(../img/ten.png) no-repeat 50% 1%;
+}
+
+.touch__body {
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.touch__input {
+  flex-basis: 49%;
+  margin-bottom: 1.5rem;
+}
+
+.touch__message {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  resize: none;
+}
+
+.touch__input,
+.touch__message {
+  padding: 1rem;
+  text-align: center;
+  border: none;
+  border-radius: .25rem;
+}
+
+.touch__btn {
+  margin: 0 auto;
+  text-transform: uppercase;
+  border: none;
+}

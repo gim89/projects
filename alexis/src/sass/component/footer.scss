@@ -1,0 +1,61 @@
+.footer-page {
+  background-color: #ccc;
+}
+
+.footer-page__container {
+  padding-top: 3.75rem;
+  background-color: #3f4049;
+}
+
+.footer-page__logo {
+  color: #fff;
+  font-family: "wisdom-script";
+  font-size: 2.1875rem;
+  font-weight: inherit;
+  line-height: 1;
+
+  &:first-letter {
+    color: #fc5f45;
+  }
+}
+
+.footer-page__body {
+  @include flexin(space-around, center);
+  margin-bottom: 3.5rem;
+}
+
+.footer-page__lines {
+  @include flex;
+}
+
+.footer-page__line {
+  flex-basis: 25%;
+}
+
+.footer-page__icons {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  margin-right: 1rem;
+  background: url(../img/footer-social.png) no-repeat;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer-page__facebook {
+  background-position: -10px -10px;
+}
+
+.footer-page__twitter {
+  background-position: -10px -61px;
+}
+
+.footer-page__instagram {
+  background-position: -60px -10px;
+}
+
+.footer-page__google {
+  background-position: -110px -10px;
+}

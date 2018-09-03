@@ -1,0 +1,130 @@
+$text-shadow: 1px 1px 1px #9a9a9a;
+
+body {
+  font-family: "poppins-regular";
+  text-shadow: $text-shadow;
+}
+
+h1 {
+  @include fonts(#fff, "librebaskerville-regular", 3.75rem);
+  margin-bottom: 3rem;
+}
+
+h2 {
+  @include fonts(#313131, "librebaskerville-regular", 3.125rem, 700);
+  margin-bottom: 3rem;
+}
+
+h3 {
+  @include fonts(#272727, "poppins-medium", 1.25rem, 400);
+  margin-bottom: 2rem;
+}
+
+h4 {
+  @include fonts(#000, "opensans-medium", 1.125rem, 500);
+  margin-bottom: 1rem;
+}
+
+p {
+  @include fonts(#898989, "poppins-regular", 0.9375rem, 400);
+}
+
+a {
+  @include fonts(#272727, "poppins-semibold", 1rem, 500);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  @include fonts(#616161, "poppins-regular", 1rem);
+}
+
+input[type="submit"],
+button {
+  @include fonts(#fff, "opensans-regular", 1rem, 600);
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  position: relative;
+  top: -10px;
+  vertical-align: super;
+  font-size: 0.5rem;
+  transition: all .2s ease-in-out;
+}
+
+.btn {
+  background-color: #fc5f45;
+  padding: 1.5rem 4rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px #fc5f45;
+  transition: all .3s ease-in-out;
+
+  &--hover:hover {
+    background-color: #f73818;
+  }
+
+  &--active:active {
+    transform: scale(0.99);
+  }
+}
+
+.container {
+  width: 1144px;
+  margin: 0 auto;
+}
+
+.section__padding {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.section__text {
+  text-align: center;
+}
+
+.subtitle__margin {
+  margin-bottom: 5rem;
+}
+
+.section__body {
+  @include flex;
+}
+
+.color__red {
+  color: #fc5f45;
+}
+
+.color__green {
+  color: #38c695;
+}
+
+.color__purple {
+  color: #b27cf5;
+}
+
+.color__orange {
+  color: #feb960;
+}
+
+.background__red {
+  background-color: #fc5f45;
+}
+
+.background__green {
+  background-color: #38c695;
+}
+
+.background__purple {
+  background-color: #b27cf5;
+}
+
+.background__orange {
+  background-color: #feb960;
+}
+
+.line {
+  height: .25rem;
+}

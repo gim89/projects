@@ -1,0 +1,63 @@
+.part-two {
+  padding: 6rem 0;
+  background: url(../img/part-two.jpg) no-repeat;
+  background-size: cover;
+}
+
+.part-two__body {
+  @include flexin(space-around);
+}
+
+.part-two__icons {
+  width: 51px;
+  height: 50px;
+  margin: 0 auto 1.5rem auto;
+  background: url(../img/part-two.png) no-repeat;
+}
+
+.part-two__one {
+  background-position: 0 0;
+}
+
+.part-two__two {
+  background-position: -72px 0;
+}
+
+.part-two__three {
+  background-position: -140px 0;
+}
+
+.part-two__four {
+  background-position: -212px 0;
+}
+
+.part-two__counter {
+  margin-bottom: 1rem;
+}
+
+.part-two__text {
+  margin-bottom: 1.5rem;
+}
+
+.part-two__icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 auto;
+  background: url(../img/part-two.png) no-repeat;
+}
+
+.part-two__red {
+  background-position: -297px -4px;
+}
+
+.part-two__green {
+  background-position: -333px -4px;
+}
+
+.part-two__purple {
+  background-position: -368px -4px;
+}
+
+.part-two__orange {
+  background-position: -405px -4px;
+}

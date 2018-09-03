@@ -1,0 +1,24 @@
+.part-one {
+  background-color: #3f4049;
+}
+
+.part-one__container {
+    position: relative;
+    padding-top: 4.6875rem;
+    height: 20.109375rem;
+}
+
+.part-one__img {
+    display: block;
+    width: 30%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.part-one__video {
+    position: absolute;
+    top: -10.0625rem;
+    display: none;
+    width: 100%;
+    transform: scaleY(0.5);
+}

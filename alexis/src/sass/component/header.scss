@@ -1,0 +1,34 @@
+.head {
+  padding-bottom: 10rem;
+  background: #3f4049 url(../img/head__number.png) no-repeat 50% 49%;
+}
+
+.head__promo {
+  width: 72%;
+  margin: 0 auto;
+}
+
+.head__btn {
+  display: inline-block;
+  margin-bottom: 5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.head__icons {
+  @include flexin(space-between);
+}
+
+.head__figure {
+  width: 33.33%;
+}
+
+.head__img {
+  width: 15%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.head__figcaption {
+  text-transform: uppercase;
+}

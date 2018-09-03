@@ -1,0 +1,80 @@
+.blog {
+  background: #f7f7f7 url(../img/nine.png) no-repeat 50% 1%;
+}
+
+.blog__body {
+  @include flexin(space-between);
+  text-align: left;
+}
+
+.blog__sign {
+  position: relative;
+}
+
+.blog__img {
+  height: 37.5rem;
+}
+
+.blog__inscription {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.blog__scription {
+  position: absolute;
+  bottom: 2rem;
+  left: 3.125rem;
+  margin-bottom: 0;
+}
+
+.blog__subscription {
+  margin-left: 1.25rem;
+  color: #fff;
+  font-size: .8125rem;
+  text-transform: none;
+  opacity: .7;
+}
+
+.blog__item {
+  flex-basis: 48%;
+}
+
+.blog__info {
+  flex-basis: 48%;
+}
+
+.blog__part {
+  padding: 2rem 3.125rem 2.5rem 3.125rem;
+  background-color: #fff;
+}
+
+.blog__caption {
+  margin-bottom: 2rem;
+}
+
+.blog__text {
+  line-height: 1.8;
+}
+
+.blog__link {
+
+  &--hover:hover {
+    display: inline-block;
+    color: #272727;
+    transition: all .2s ease-in-out;
+  }
+
+}
+
+.blog__info-item {
+  margin-bottom: 1.5rem;
+}
+
+.blog__article {
+  padding: 2rem;
+  background-color: #fff;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

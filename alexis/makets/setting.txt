@@ -1,0 +1,35 @@
+fonts
+logo - Wisdom Scripts 35px
+menu - poppins medium 14px
+h1 - libreBaskerville regular 60px
+h2 - librebskerville bold 50px
+h3 - poppins medium 20px
+h4 - poppins medium 18px
+background - myriad pro regular 60px
+background second - myriad pro regolar 15px
+button poppins semibold 16px
+icon - poppins medium 18px
+p - poppins regular 15px
+section video - ?????
+
+p.subtitle - poppins regular 18px
+social - poppins regular 15px
+placeholder poppins regular 16px
+
+section
+nav
+header
+about
+focus
+part-one
+portfolio
+team
+part-two
+steps
+pricing
+testimonials
+select
+blog
+newsletter
+touch
+footer

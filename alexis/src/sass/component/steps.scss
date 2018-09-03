@@ -1,0 +1,51 @@
+.steps {
+  padding-bottom: 12rem;
+  background: url(../img/five.png) no-repeat 50% 1%,
+              url(../img/steps-one.jpg) no-repeat 50% 30%,
+              url(../img/steps-two.jpg) no-repeat 50% 50%,
+              url(../img/steps-three.jpg) no-repeat 50% 70%,
+              url(../img/steps-four.jpg) no-repeat 50% 90%;
+}
+
+.steps__item {
+  width: 40%;
+  background-color: #fff;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+
+  &:nth-child(2n + 2) {
+    margin: 0 0 0 auto;
+  }
+}
+
+.steps__article {
+  padding: 4rem 3rem 0 7rem;
+  margin-bottom: 4rem;
+  background-repeat: no-repeat;
+  background-position: 7% 22%;
+}
+
+.steps__one {
+  background-image: url(../img/s-one.png);
+}
+
+.steps__two {
+  background-image: url(../img/s-two.png);
+}
+
+.steps__three {
+  background-image: url(../img/s-three.png);
+}
+
+.steps__four {
+  background-image: url(../img/s-four.png);
+}
+
+.steps__caption {
+  margin-bottom: 1.5rem;
+}
+
+.steps__text {
+  color: #616161;
+  line-height: 1.8;
+}

@@ -1,0 +1,28 @@
+.scroll {
+  position: fixed;
+  top: 3rem;
+  right: 1rem;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border: .5rem solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+
+  &--hover:hover {
+    border-color: #fc5f45; 
+  }
+
+  &--hover:hover .scroll__top{
+    border-bottom-color: #fc5f45; 
+  }
+}
+
+.scroll__top {
+  width: 50%;
+  margin: auto;
+  border: 11px solid transparent;
+  border-bottom: 11px solid #333;
+  transition: all .2s ease-in-out;
+}

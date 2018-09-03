@@ -1,0 +1,97 @@
+.pricing {
+  background: #f7f7f7 url(../img/six.png) no-repeat 50% 1%;
+}
+
+.pricing__item {
+  flex-basis: 30%;
+  padding-bottom: 2.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.pricing__line,
+.pricing__caption,
+.pricing__img {
+  margin-bottom: 2rem;
+}
+
+.pricing__img {
+  width: 7.25rem;
+  height: 7.25rem;
+  margin-right: auto;
+  margin-left: auto;
+  background: url(../img/pricing-icons.png) no-repeat;
+}
+
+.pricing__one {
+  background-position: -10px -10px;
+}
+
+.pricing__two {
+  background-position: -146px -10px;
+}
+
+.pricing__three {
+  background-position: -10px -146px;
+}
+
+.pricing__text {
+  margin-bottom: 1.5rem;
+
+  &:nth-last-child(-n + 4)>.pricing__bold-text {
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    margin-right: .25rem;
+    background: url(../img/gul.png) no-repeat;
+  } 
+}
+
+.pricing__bold-text {
+  margin-right: 0.25rem;
+  color: #272727;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.pricing__btn {
+  background-color: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+$btn__green: #38c695;
+.pricing__btn-green {
+  color: $btn__green;
+  border: 1px solid $btn__green;
+  box-shadow: 0px 4px 4px $btn__green;
+
+  &--hover:hover {
+    background-color: $btn__green;
+    color: #fff;
+  }
+}
+
+$btn__red: #fc5f45;
+.pricing__btn-red {
+  color: $btn__red;
+  border: 1px solid $btn__red;
+  box-shadow: 0px 4px 4px $btn__red;
+
+  &--hover:hover {
+    background-color: $btn__red;
+    color: #fff;
+  }
+}
+
+$btn__purple: #b27cf5;
+.pricing__btn-purple {
+  color: $btn__purple;
+  border: 1px solid $btn__purple;
+  box-shadow: 0px 4px 4px $btn__purple;
+
+  &--hover:hover {
+    background-color: $btn__purple;
+    color: #fff;
+  }
+}

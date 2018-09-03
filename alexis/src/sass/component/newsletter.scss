@@ -1,0 +1,21 @@
+.newsletter__title {
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+.newsletter__email {
+  padding: 1rem 1.5rem;
+  background-color: #f7f7f7;
+  border: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.newsletter__btn {
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
